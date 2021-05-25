@@ -54,7 +54,7 @@ html.submenu-opened{
     color: white;
     transition: color .25s;
 }
-.nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up, .nav__menu a i.fa-angle-right{
+.nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up, .nav__menu i.fa-angle-right{
     padding-left: 2px;
     font-size: 23px;
     vertical-align: middle;
@@ -508,7 +508,7 @@ html.submenu-opened{
         max-width: 20%;
         justify-content: space-between;
     }
-    .nav__menu a i.fa-map-marker-alt, .nav__menu a i.fa-angle-up,.nav__menu a i.fa-angle-down{
+    .nav__menu a i.fa-map-marker-alt, .nav__menu a i.fa-angle-up,.nav__menu a i.fa-angle-down, .nav__location, .nav__menu ul li.is-active i.fa-angle-up{
         display: none;
     }
     .responsive__view{
@@ -516,8 +516,11 @@ html.submenu-opened{
     }
 }
 @media screen and (min-width:992px){
-    .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right{
+    .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right,.honda-search__hide,.fa-angle-right{
         display: none;
+    }
+    .nav__location{
+        display: block;
     }
 }
 @media screen and (min-width: 1053px ) and (max-width:1499px) {
