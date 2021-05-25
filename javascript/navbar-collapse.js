@@ -67,6 +67,23 @@ function getidButton(clicked) {
 // mobile-first
 function getidMobileBtn(clicked) {
     document.getElementById("navbarbtn").classList.toggle("hamburger__btnclick");
+    document.getElementById("vehicle").classList.toggle("row");
+    document.getElementById("vehicle").classList.toggle("justify-content-between");
+    document.getElementById("vehicle").classList.toggle("align-items-center");
+    document.getElementById("tool").classList.toggle("row");
+    document.getElementById("tool").classList.toggle("justify-content-between");
+    document.getElementById("tool").classList.toggle("align-items-center");
+    document.getElementById("owner").classList.toggle("row");
+    document.getElementById("owner").classList.toggle("justify-content-between");
+    document.getElementById("owner").classList.toggle("align-items-center");
+    document.getElementById("explore").classList.toggle("row");
+    document.getElementById("explore").classList.toggle("justify-content-between");
+    document.getElementById("explore").classList.toggle("align-items-center");
+    document.getElementById("language").classList.toggle("row");
+    document.getElementById("language").classList.toggle("justify-content-between");
+    document.getElementById("language").classList.toggle("align-items-center");
+    document.getElementById("languageId").innerHTML="Language";
+
     if(document.getElementById("navbarMenu").style.display==="block"){
         setTimeout(function() {
             document.getElementById("navbarMenu").style.display="none";
