@@ -54,7 +54,7 @@ html.submenu-opened{
     color: white;
     transition: color .25s;
 }
-.nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up{
+.nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up, .nav__menu a i.fa-angle-right{
     padding-left: 2px;
     font-size: 23px;
     vertical-align: middle;
@@ -437,7 +437,7 @@ html.submenu-opened{
     transition: all .7s;
 }
 .hamburger__btn p.top{
-    top: 30%;
+    top: 20%;
 }
 .hamburger__btn p.bottom{
     top: 50%;
@@ -448,7 +448,7 @@ html.submenu-opened{
     color: white;
     box-shadow: none;
     background: none;
-    top: 55%;
+    top: 60%;
 }
 .hamburger__btnclick p.top{
     top: 50%;
@@ -465,7 +465,9 @@ html.submenu-opened{
     transform: translateY(0);
     overflow-x: hidden;
 }
-
+.language__content{
+    display: none;
+}
 @media screen and (max-width:992px){
     .navbar .hamburger{
         display: block;
@@ -481,11 +483,40 @@ html.submenu-opened{
         top: 48px;
         transform: translateY(-200%);
         z-index: -2;
-        transition: transform 1.2s;
+        transition: transform .9s;
+    }
+    .nav__menu ul li a.nav-link{
+        color: #00324f;
+        text-transform: uppercase;
+    }
+    .nav__menu li.nav-item:hover::before{
+        display: none;
+    }
+    .nav__menu ul li.nav-item:hover>a{
+        color: #00324f;
+    }
+    .navbar-nav{
+        max-width: 95%;
+        margin: auto;
+    }
+    .nav__menu ul li.nav-item{
+        border: none;
+    }
+    .language__content{
+        display: block;
+        display: flex;
+        max-width: 20%;
+        justify-content: space-between;
+    }
+    .nav__menu a i.fa-map-marker-alt, .nav__menu a i.fa-angle-up,.nav__menu a i.fa-angle-down{
+        display: none;
+    }
+    .responsive__view{
+        display: block;
     }
 }
 @media screen and (min-width:992px){
-    .navbar .hamburger{
+    .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right{
         display: none;
     }
 }
