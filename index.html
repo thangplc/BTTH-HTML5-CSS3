@@ -2,30 +2,779 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honda</title>
-
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Official Honda Autos USA | Honda</title>
 
 
     <!-- GOOGLE FONT  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FONT AWESOME  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <!-- BS4 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <!-- Responsive Youtube & Vimeo Video Lightbox Plugin - YouTubePopUp -->
-    <link rel="stylesheet" href="./javascript/Responsive-Youtube-Vimeo-Video-Lightbox-Plugin-YouTubePopUp/YouTubePopUp.css">
+    <link rel="stylesheet"
+        href="./javascript/Responsive-Youtube-Vimeo-Video-Lightbox-Plugin-YouTubePopUp/YouTubePopUp.css">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/style.css">
 
+
+    <!-- bootraps4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- font-aewsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-between">
+        <div id="navbaroverlay" style="visibility: visible"></div>
+        <a class="navbar-brand" href="#">
+          <div class="nav__logo"></div>
+        </a>
+        <div class="hamburger">
+          <a href=""><i class="fa fa-map-marker-alt"></i></a>
+          <button id="navbarbtn" class="hamburger__btn" data-target="#navbarMenu">
+            <p class="hamburger__bar top"></p>
+            <p class="hamburger__bar bottom"></p>
+            <p class="hamburger__bar text">Menu</p>
+          </button>
+        </div>
+  
+        <div class="nav__menu" id="navbarMenu">
+          <ul class="navbar-nav ml-auto" id="menuList">
+            <li class="nav-item nav__main" id="vehicle">
+              <a href="#" class="nav-link" data-target="#navVehicle">
+                <!-- data-toggle="collapse" -->
+                VEHICLES
+                <i class="fa fa-angle-down"></i>
+                <i class="fa fa-angle-up"></i>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </li>
+            <hr class="responsive__view">
+            <div class="vehicleList" id="navVehicle">
+              <div class="vehicleList__content">
+                <div class="vehiclelist__type">
+                  <ul class="text-center row justify-content-center">
+                    <li class="col-lg-12d4">
+                      <a href="#suvscross">SUVS & SCROSSOVERS</a>
+                    </li>
+                    <li class="col-lg-12d8"><a href="#cars">CARS</a></li>
+                    <li class="col-lg-12d5">
+                      <a href="#minivantruck">MINIVAN & TRUCK</a>
+                    </li>
+                    <li class="col-lg-12d7">
+                      <a href="#electrified">ELECTRIFIED</a>
+                    </li>
+                    <li class="col-lg-12d7"><a href="#future">FUTURE</a></li>
+                    <li class="col-lg-12d7"><a href="#preowned">PRE-OWNED</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vehicleList__carInfo">
+                <div class="vehiclelist__item">
+                  <h6 id="suvscross" class="vehiclelist__title">
+                    SUVS & SCROSSOVERS
+                  </h6>
+                  <div class="vehiclelist__car row justify-content-between">
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img src="./images/MY21-hr-v-nav.png" alt="" />
+                      <h6 class="title">HR-V</h6>
+                      <hr />
+                      <p>
+                        $21,220 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        28/34 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-CR-V-non-VLP-nav-NH-830M-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">CR-V</h6>
+                      <hr />
+                      <p>
+                        $25,350 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        28/34 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">CR-V Hybrid</h6>
+                      <hr />
+                      <p>
+                        $30,560 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        40/35 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-2021-Pilot-side-profile-992x428.png"
+                        alt=""
+                      />
+                      <h6 class="title">Pilot</h6>
+                      <hr />
+                      <p>
+                        $32,550 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        20/27 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-passport-nav-jelly-sport-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">Passport</h6>
+                      <hr />
+                      <p>
+                        $32,790 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        20/25 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vehiclelist__item">
+                  <h6 id="cars" class="vehiclelist__title">CARS - Sedans</h6>
+                  <div class="vehiclelist__car row justify-content-between">
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-MY20-Civic-Sedan-non-VLP-nav-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">Civic Sedan</h6>
+                      <hr />
+                      <p>
+                        $21,250 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        30/38 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-MY19-insight-nonVLP-global-nav-992x428.png"
+                        alt=""
+                      />
+                      <h6 class="title">Insight</h6>
+                      <hr />
+                      <p>
+                        $23,130 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        55/49 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img src="./images/MY21-accord-nav-main.png" alt="" />
+                      <h6 class="title">Accord</h6>
+                      <hr />
+                      <p>
+                        $24,970 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        30/38 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-accord-hybrid-nav-main.png"
+                        alt=""
+                      />
+                      <h6 class="title">Accord Hybrid</h6>
+                      <hr />
+                      <p>
+                        $26,570 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        48/48 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-MY20-clarity-phev-nonVLP-global-nav.png"
+                        alt=""
+                      />
+                      <h6 class="title">Clarity Plug-In Hybrid</h6>
+                      <hr />
+                      <p>
+                        $33,400 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        47/340 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-MY20-clarity-fuel-cell-global-nav.png"
+                        alt=""
+                      />
+                      <h6 class="title">Clarity Fuel Cell</h6>
+                      <hr />
+                      <p>
+                        Lease Only <span>AVAILABLE<a href="">*</a></span>
+                      </p>
+                      <p>
+                        360 <span>MILE RNG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vehiclelist__item">
+                  <h6 id="minivantruck" class="vehiclelist__title">
+                    CARS - Hatchbacks
+                  </h6>
+                  <div class="vehiclelist__car row justify-content-start">
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-civic-hatch-nav-jelly-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">Civic Hatchback</h6>
+                      <hr />
+                      <p>
+                        $22,200 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        31/40 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-civic-type-r-nav-jelly-trim-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">Civic Type R</h6>
+                      <hr />
+                      <p>
+                        $37,895 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        22/28 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vehiclelist__item">
+                  <h6 id="" class="vehiclelist__title">MINIVAN & TRUCK</h6>
+                  <div class="vehiclelist__car row justify-content-start">
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img src="./images/GMC-MY21-odyssey-657x283.png" alt="" />
+                      <h6 class="title">Odyssey</h6>
+                      <hr />
+                      <p>
+                        $32,090 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        19/28 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img src="./images/MY21-ridgeline-nav-main.png" alt="" />
+                      <h6 class="title">Ridgeline</h6>
+                      <hr />
+                      <p>
+                        $36,490 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        18/24 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vehiclelist__item">
+                  <h6 id="electrified" class="vehiclelist__title">ELECTRIFIED</h6>
+                  <div class="vehiclelist__car row justify-content-between">
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-MY19-insight-nonVLP-global-nav-992x428.png"
+                        alt=""
+                      />
+                      <h6 class="title">Insight</h6>
+                      <hr />
+                      <p>
+                        $23,130 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        55/49 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-accord-hybrid-nav-main.png"
+                        alt=""
+                      />
+                      <h6 class="title">Accord Hybrid</h6>
+                      <hr />
+                      <p>
+                        $26,570 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        48/48 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">CR-V Hybrid</h6>
+                      <hr />
+                      <p>
+                        $30,560 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        40/35 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/GMC-2021-Pilot-side-profile-992x428.png"
+                        alt=""
+                      />
+                      <h6 class="title">Pilot</h6>
+                      <hr />
+                      <p>
+                        $32,550 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        20/27 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                    <div class="car__item col-lg-12d5 m-1">
+                      <img
+                        src="./images/MY21-passport-nav-jelly-sport-2x.png"
+                        alt=""
+                      />
+                      <h6 class="title">Passport</h6>
+                      <hr />
+                      <p>
+                        $32,790 <span>STARTING MSRP<a href="">*</a></span>
+                      </p>
+                      <p>
+                        20/25 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                      </p>
+                      <div class="car__btn row justify-content-xl-center mx-auto">
+                        <a href="#" class="car__btnitem">EXPLORE</a>
+                        <a href="#" class="car__btnitem">BUILD</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vehiclelist__item">
+                  <h6 id="future" class="vehiclelist__title">FUTURE</h6>
+                  <div class="vehiclelist__car car__future">
+                    <div class="car_futureImg m-auto">
+                      <picture class="carfurtureimg__background">
+                        <img
+                          class="car_ImgBackground"
+                          src="./images/Global_Nav_Civic_Phase_3_Large.jpg"
+                          alt=""
+                        />
+                      </picture>
+  
+                      <div class="car_Imgtext">
+                        <img src="./images/MY22-Civic-Sedan-White.svg" alt="" />
+                        <p>Arriving Summer 2021</p>
+                        <a href="">LEARN MORE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vehiclelist__item">
+                  <h6 id="preowned" class="vehiclelist__title">PRE-OWNED</h6>
+                  <div class="vehiclelist__car car__preOwned">
+                    <div class="car_futureImg m-auto">
+                      <picture class="carfurtureimg__background">
+                        <img
+                          class="car_ImgBackground"
+                          src="./images/2020-CPO-global-nav-promo-banner-A-L.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="car_Imgtext">
+                        <img src="./images/HCPV_logo.png" alt="" />
+                        <a href="">SHOP CERTIFIED</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item nav__main" id="tool">
+              <a class="nav-link" href="#" data-target="#navtool">
+                SHOPPING TOOLS
+                <i class="fa fa-angle-down"></i>
+                <i class="fa fa-angle-up"></i>
+                <i class="fa fa-angle-right"></i>
+              </a>
+              <div class="nav__colapseitem" id="navtool">
+                <div class="nav__colapseitemContent">
+                  <div class="tool__itemlist">
+                    <div class="tool__item">
+                      <a href="#">
+                        <i class="fa fa-tools tool__icon"></i>
+                        <p>Build & Price</p>
+                      </a>
+                    </div>
+                    <div class="tool__item">
+                      <a href="#">
+                        <i class="fa fa-tag tool__icon"></i>
+                        <p>See Offers</p>
+                      </a>
+                    </div>
+                    <div class="tool__item">
+                      <a href="#">
+                        <i class="fa fa-search tool__icon"></i>
+                        <p>Searcch Inventory</p>
+                      </a>
+                    </div>
+                    <div class="tool__item">
+                      <a href="#">
+                        <i class="fa fa-calculator tool__icon"></i>
+                        <p>Estimate Payments</p>
+                      </a>
+                    </div>
+                    <div class="tool__item">
+                      <a href="#">
+                        <i class="fa fa-pager tool__icon"></i>
+                        <p>Buy Online</p>
+                      </a>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="tool__service">
+                    <a href="#"
+                      >Trade-In Value <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      >Honda Financial Services
+                      <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      >Buyer’s Guide <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      >For Financing <i class="fa fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr class="responsive__view">
+            <li class="nav-item nav__main" id="owner">
+              <a class="nav-link" href="#" data-target="#navowners">
+                Owners
+                <i class="fa fa-angle-down"></i>
+                <i class="fa fa-angle-up"></i>
+                <i class="fa fa-angle-right"></i>
+              </a>
+              <div class="nav__colapseitem" id="navowners">
+                <div class="nav__ownerItem">
+                  <div class="nav__itemLeft">
+                    <a href="#"
+                      ><span>Owners Site</span>
+                      <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      ><span>Owner's Manual & Warranties </span
+                      ><i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      ><span>Schedule Service</span>
+                      <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      ><span>Shop parts & Accessories</span>
+                      <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      ><span>Certified Body Shop Locator</span>
+                      <i class="fa fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                  <div class="nav__itemRight">
+                    <a href="#"
+                      ><span>Roadside Assistance</span>
+                      <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      ><span>Pay My Bill</span
+                      ><i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"
+                      ><span>Recalls</span> <i class="fa fa-external-link-alt"></i
+                    ></a>
+                    <a href="#"><span>Customer Service</span></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr class="responsive__view">
+            <li class="nav-item" id="explore">
+              <a class="nav-link" href="#" data-target="#navExplore">
+                Explore
+                <i class="fa fa-angle-down"></i>
+                <i class="fa fa-angle-up"></i>
+                <i class="fa fa-angle-right"></i>
+              </a>
+              <div class="nav__colapseitem" id="navExplore">
+                <div class="nav__exploreItem">
+                  <a href="#"><span>Honda Safety</span></a>
+                  <a href="#"
+                    ><span>Honda Sensing<sup>@</sup></span></a
+                  >
+                  <a href="#"><span>Rugged Capability</span></a>
+                  <a href="#"><span>Electrified Vehicles</span></a>
+                  <a href="#"><span>News & Events</span></a>
+                  <a href="#"
+                    ><span>Honda Racing</span>
+                    <i class="fa fa-external-link-alt"></i
+                  ></a>
+                  <a href="#"
+                    ><span>Honda in the Community</span>
+                    <i class="fa fa-external-link-alt"></i
+                  ></a>
+                  <a href="#"
+                    ><span>Honda on Inclusion and Diversity</span>
+                    <i class="fa fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </li>
+            <hr class="responsive__view">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find a Dealer</a>
+            </li>
+            <hr class="responsive__view">
+            <li class="nav-item">
+              <a class="nav-link" id="languageId" href="#">Español</a>
+              <div class="language__content">
+                <a class="car__btnitem" href="#">English</a>
+                <a class="car__btnitem" href="#">Español</a>
+              </div>
+            </li>
+            <hr class="responsive__view">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Location<i class="fa fa-map-marker-alt"></i
+              ></a>
+            </li>
+            <hr class="responsive__view">
+          </ul>
+          <div class="col honda-search pb-4">
+            <form class="">
+                <input class="mt-4" type="text" name="s" placeholder="Search for anything Honda">
+                <div class="navbar__find navbar__findDis">
+                  <i class="fa fa-search"></i>
+                </div>
+                
+            </form>
+        </div>
+        </div>
+      </nav>
+      <section class="carousel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque
+        sapiente iusto facere, quos facilis eos nemo incidunt. Molestias possimus,
+        maxime neque autem reprehenderit voluptate sunt dicta saepe unde
+        voluptates! Porro repudiandae magni quae voluptatum? Obcaecati, odit
+        mollitia illo nam impedit totam enim sapiente qui iste ex optio recusandae
+        dignissimos possimus debitis natus quo iure animi. Accusantium consectetur
+        unde odio cum asperiores porro officia sit veniam repudiandae vero, rem
+        corrupti assumenda corporis harum? Rem error et facere id nisi maiores
+        deserunt, itaque doloribus recusandae cumque numquam alias laudantium eos
+        tenetur tempore voluptatem unde voluptates voluptatum nihil accusantium
+        dolorem ducimus ipsa totam. In modi autem facere soluta corporis
+        repudiandae officiis officia consectetur accusamus ducimus. Iure cum culpa
+        non architecto labore nobis hic sit! Vitae neque libero sapiente, sint
+        eos, molestiae corrupti, aperiam inventore labore unde ducimus perferendis
+        consequuntur voluptas enim! Architecto tempora, esse deserunt aliquam at
+        quos enim quis eaque quia fugiat fuga commodi, sunt quasi numquam
+        inventore provident cupiditate explicabo minima cum maiores ipsa magni.
+        Quibusdam, dolorum voluptates temporibus doloremque sit mollitia! Nulla,
+        alias doloremque in deserunt rerum et saepe facere quis magnam temporibus.
+        Culpa modi unde excepturi sapiente ab mollitia quae obcaecati architecto
+        similique reprehenderit, necessitatibus minima fugiat beatae repellendus
+        recusandae itaque alias natus harum, veritatis adipisci eaque. Dolore hic,
+        perferendis porro, quas consequatur dignissimos deleniti culpa soluta
+        magni omnis eligendi esse ipsum consectetur in, nesciunt itaque! Suscipit
+        ea exercitationem ipsum dolor ex provident corrupti maxime cum natus
+        fugiat unde possimus laboriosam eius quisquam doloremque sunt deleniti
+        beatae, et dolorum quis vel. Reiciendis laboriosam voluptatem laborum
+        cupiditate quidem nisi placeat quas ex dolores, error consectetur
+        laudantium qui atque quia, maxime numquam saepe consequatur sint
+        accusantium. Ex laudantium, consequatur quia, earum dicta officia tenetur
+        sapiente fugit, nisi illo eos nostrum facere quos nihil! Molestiae
+        consequatur, vero inventore voluptate quidem nisi distinctio non est animi
+        ipsum totam velit quam perspiciatis suscipit aliquid reprehenderit
+        possimus? Aliquid ratione, dolorem sed beatae ullam, quia laboriosam culpa
+        repudiandae obcaecati magni rem eveniet! Eos incidunt autem quo asperiores
+        voluptatibus! Hic repudiandae labore culpa pariatur, aliquam alias error
+        itaque magni doloremque excepturi tenetur atque nostrum cum molestias
+        natus sed beatae impedit quae at dolor consectetur delectus ducimus.
+        Voluptatum, distinctio quasi? Odio quasi repellat perferendis illum iusto
+        totam veniam commodi nisi. Voluptatum quas vero sequi, esse deleniti error
+        numquam quae cupiditate consectetur aliquam quo. Ipsum, fugit. Cumque
+        impedit, iusto modi atque quam distinctio quae, ex sint commodi vel,
+        soluta fugiat qui nostrum sequi culpa ratione! Quaerat molestiae tenetur
+        eum commodi consectetur. Iste porro quis perferendis ut enim aut
+        voluptates voluptatem dolore neque explicabo optio, obcaecati maxime
+        voluptatibus quia! Sint repellendus commodi, exercitationem iste repellat,
+        magni cumque itaque iusto numquam earum omnis illo voluptas culpa
+        reiciendis, maxime laborum voluptate atque natus dolorum. Repellendus ex
+        optio illum, fugiat quas autem. Voluptatum amet tempora alias animi nihil
+        inventore sed quo consequuntur earum rerum nisi reprehenderit, odio atque
+        distinctio similique magni sunt iure sapiente saepe impedit! Facilis
+        debitis quam deserunt iste eaque minima facere illum doloribus officia
+        deleniti reiciendis quo cupiditate veritatis, sint, ad, beatae placeat
+        quasi suscipit similique voluptatibus quia odio numquam dolorem! Quibusdam
+        nam a facilis quidem hic laudantium recusandae dignissimos illum unde
+        dolorem quasi ullam nemo laboriosam similique, vel ab sequi, autem saepe?
+        Doloribus numquam maxime obcaecati quae error ex voluptatibus, repudiandae
+        perspiciatis ipsa veritatis voluptates perferendis ipsum in vero? Cum
+        magni, nobis sit nostrum mollitia molestias. Aut beatae corrupti modi sunt
+        unde, dolores illum, omnis dicta eius ab mollitia quidem tempore minima,
+        harum cupiditate quia quod impedit pariatur vel nam quae! Eaque inventore
+        provident quo, laboriosam quidem illum praesentium maxime doloribus optio
+        fuga ratione molestiae, hic blanditiis nemo placeat sed iusto! Magni
+        accusamus est exercitationem reprehenderit quod at totam aspernatur sed
+        quam, sit fugit pariatur porro, quasi aut quas dicta repudiandae! Quo
+        iure, ipsum consectetur reiciendis sed aliquam omnis possimus quae, optio
+        similique tempora itaque ipsam. Voluptatum dicta, eligendi minima
+        consequatur consequuntur deleniti maiores praesentium provident omnis quae
+        harum, aperiam facilis placeat, iste incidunt? Aspernatur, fugit,
+        doloribus accusamus labore eum officia tempora officiis eveniet enim rerum
+        illo ad natus harum. Modi ullam nulla exercitationem officiis, quasi
+        adipisci corporis asperiores assumenda. Officiis accusantium similique
+        ullam odit quia, soluta repellendus. Excepturi id odit, eum dolor esse
+        ullam facilis suscipit quo quidem! Vero dolorum, ducimus laudantium,
+        fugiat delectus non accusamus expedita dolor aut quos adipisci eveniet
+        tempora dignissimos suscipit, in culpa repudiandae hic? Officia molestiae
+        beatae accusamus incidunt in corrupti vel quas. Ad deleniti sint ipsa
+        eveniet corrupti perspiciatis officiis, iure, temporibus doloremque odio
+        reiciendis similique saepe quia itaque, inventore ipsam magnam asperiores
+        pariatur? Repudiandae consectetur ab quidem perferendis? Ipsum in
+        exercitationem corrupti totam, odio quasi ratione laudantium maiores
+        voluptate id quos facere, magnam nostrum eos. Ut pariatur amet soluta, quo
+        autem sed. Temporibus, quos dolorum corrupti eaque eligendi voluptatum. Id
+        cumque ad esse dolor, architecto, quisquam iure, consectetur aspernatur
+        libero voluptatum similique illum vero reiciendis! Repellendus rem optio
+        enim sit? Nemo numquam reprehenderit aspernatur consectetur dignissimos
+        doloremque magnam quaerat sequi sed ducimus exercitationem nisi velit ea,
+        animi, eos reiciendis nostrum officiis molestiae. Veritatis repudiandae
+        voluptates iure ullam, nam distinctio ex excepturi et omnis ipsam
+        cupiditate porro inventore nihil voluptatem facere perspiciatis esse
+        delectus aperiam ad? Temporibus autem ea ex doloribus, ab architecto eos
+        in reprehenderit magnam obcaecati porro debitis quia delectus iure, ipsum
+        aspernatur fuga! Dolorum, sit? Cumque accusamus dignissimos possimus eos
+        magni, inventore obcaecati sequi, adipisci deleniti nisi rerum eveniet
+        labore laborum nulla! Rerum doloremque architecto cumque quis consequuntur
+        in animi neque delectus deleniti placeat natus exercitationem ratione
+        expedita saepe, cupiditate laborum. Totam, consectetur id illo sed saepe
+        sunt? Modi quidem nobis dicta soluta et voluptatem architecto, ad, qui ea
+        eligendi explicabo! Eligendi, molestiae labore velit ex at sed magnam!
+        Nobis velit obcaecati soluta cumque dolorem odio, tempora repudiandae ex,
+        maiores mollitia hic iure alias itaque ipsa voluptate facere numquam
+        veniam facilis illum vitae ipsum voluptatibus illo modi molestiae. Tempora
+        itaque labore, rerum odit qui corrupti consequuntur unde cum illum vero
+        officia voluptatem sit quae tempore voluptas ipsam, repudiandae, neque
+        aliquam laboriosam repellat blanditiis nobis. Accusamus porro nulla et?
+      </section>
+
 
 
     <!-- TOUTS -->
@@ -35,6 +784,7 @@
                 <i class="fa fa-tools"></i>
                 <h3>Build and Price</h3>
                 <button>GO</button>
+
             </a>
 
             <a class="touts__item" href="https://automobiles.honda.com/tools/current-offers">
@@ -63,13 +813,15 @@
     <!-- EXPLORE -->
     <section class="explore pt-4">
         <div class="explore__content m-auto container p-3">
-            <a class="explore__left" href="https://www.hondacertified.com/?_ga=2.4927095.510131106.1621645820-2098413714.1620735537">
+            <a class="explore__left"
+                href="https://www.hondacertified.com/?_ga=2.4927095.510131106.1621645820-2098413714.1620735537">
                 <img src="./images/2020-CPO-homepage-T3-1400-2x.png" alt="">
                 <div class="explore__certified">
                     <button>SHOP CERTIFIED</button>
                     <p class="ml-1">
                         Condition apply
-                        <span class="mr-2 condition-apply" data-toggle="modal" data-target="#explore-modal" onclick="showDIV()">*
+                        <span class="mr-2 condition-apply" data-toggle="modal" data-target="#explore-modal"
+                            onclick="showDIV()">*
                         </span>
                         <!-- modal -->
 
@@ -84,7 +836,8 @@
                 <div class="explore__howtovideo">
                     <h5>How-To Videos and Guides</h5>
                     <p>
-                        Find owner manuals, instructional guides, how-to videos and helpful links designed to help you make the most of your Honda.
+                        Find owner manuals, instructional guides, how-to videos and helpful links designed to help you
+                        make the most of your Honda.
                     </p>
                     <button>GO</button>
 
@@ -116,7 +869,9 @@
 
                     <div class="discover__text p-4">
                         <h5>Fighting COVID-19 Together</h5>
-                        <p>Discover how Honda has helped in the fight against COVID-19. From supporting our customers to donating personal protective equipment to our healthcare heroes, we’re dedicated to doing everything we can for our communities.</p>
+                        <p>Discover how Honda has helped in the fight against COVID-19. From supporting our customers to
+                            donating personal protective equipment to our healthcare heroes, we’re dedicated to doing
+                            everything we can for our communities.</p>
                     </div>
                     <a href="https://www.honda.com/music/civictour"> >
                         <button class="discover__learnmore">LEARN MORE</button>
@@ -132,7 +887,9 @@
 
                     <div class="discover__text p-4">
                         <h5>Fighting COVID-19 Together</h5>
-                        <p>Discover how Honda has helped in the fight against COVID-19. From supporting our customers to donating personal protective equipment to our healthcare heroes, we’re dedicated to doing everything we can for our communities.</p>
+                        <p>Discover how Honda has helped in the fight against COVID-19. From supporting our customers to
+                            donating personal protective equipment to our healthcare heroes, we’re dedicated to doing
+                            everything we can for our communities.</p>
                     </div>
                     <a href="https://covid19.honda.com/"> <button class="discover__learnmore">LEARN MORE</button>
                     </a>
@@ -148,7 +905,9 @@
 
                     <div class="discover__text p-4">
                         <h5>Honda Awarded Best Value Brand by KBB.com for Seventh Consecutive Year</h5>
-                        <p>This marks the consecutive year that Honda has been honored with the Best Value Brand award by Kelley Blue Book’s KBB.com.* The KBB.com editors noted how consistent “reliability, resale value, and quality” contributed to the win.</p>
+                        <p>This marks the consecutive year that Honda has been honored with the Best Value Brand award
+                            by Kelley Blue Book’s KBB.com.* The KBB.com editors noted how consistent “reliability,
+                            resale value, and quality” contributed to the win.</p>
                     </div>
                     <a href="https://automobiles.honda.com/awards"> <button class="discover__learnmore">LEARN
                             MORE</button>
@@ -168,7 +927,9 @@
                     </div>
                     <div class="discover__text p-4">
                         <h5>Get to Know the Redesigned 2021 Accord Hybrid</h5>
-                        <p>With its thrilling driving performance and torque, outstanding fuel-economy ratings* and all the comfort and cargo space you’ve come to expect from the Accord, the 2021 Accord Hybrid checks all your boxes and more.</p>
+                        <p>With its thrilling driving performance and torque, outstanding fuel-economy ratings* and all
+                            the comfort and cargo space you’ve come to expect from the Accord, the 2021 Accord Hybrid
+                            checks all your boxes and more.</p>
                     </div>
 
 
@@ -191,7 +952,9 @@
 
                     <div class="discover__text p-4">
                         <h5>2021 Accord: One of Car and Driver’s 10Best</h5>
-                        <p>The Honda Accord is synonymous with excellence. Which is why it’s no surprise that the 2021 Accord has been named to Car and Driver’s 10Best list. This marks the 35th time the Accord has been awarded such a distinction.</p>
+                        <p>The Honda Accord is synonymous with excellence. Which is why it’s no surprise that the 2021
+                            Accord has been named to Car and Driver’s 10Best list. This marks the 35th time the Accord
+                            has been awarded such a distinction.</p>
                     </div>
                     <a href="https://automobiles.honda.com/news-and-events"> <button class="discover__learnmore">LEARN
                             MORE</button>
@@ -208,7 +971,8 @@
                     <div class="discover__text p-4">
                         <h5>Honda Sensing®
                         </h5>
-                        <p>Learn more about our suite of safety and driver-assistive technologies designed to alert you to things you might miss while driving.
+                        <p>Learn more about our suite of safety and driver-assistive technologies designed to alert you
+                            to things you might miss while driving.
                         </p>
                     </div>
                     <a href="https://automobiles.honda.com/sensing"> <button class="discover__learnmore">LEARN
@@ -234,7 +998,9 @@
     <section class="contact pt-5">
         <div class="honda__logo mx-auto py-3">
             <a href="" data-utopia-id="hondalogo" data-utopia-function="utopiaFooterLinks">
-                <svg version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92px" height="60px" viewBox="0 0 92 60" style="enable-background:new 0 0 92 60;" xml:space="preserve">
+                <svg version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92px" height="60px"
+                    viewBox="0 0 92 60" style="enable-background:new 0 0 92 60;" xml:space="preserve">
                     <title>Visit Honda Automobiles homepage</title>
                     <g id="Footer">
                         <g id="Footer_Large_1400px" transform="translate(-631.000000, -588.000000)">
@@ -301,9 +1067,15 @@
                     <p>Stay In Touch</p>
                     <div class="col__icon">
                         <!-- icon facebook -->
-                        <a href="https://www.facebook.com/Honda" class="" aria-label="Circular Facebook icon containing link to Honda Facebook page. [hyperlink to: https://www.facebook.com/Honda]" target="_blank" data-utopia-id="aria-label=" circular="" facebook="" icon="" containing=""
-                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.facebook.com="" honda] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="fs3-fb-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" preserveAspectRatio="xMinYMax meet" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+                        <a href="https://www.facebook.com/Honda" class=""
+                            aria-label="Circular Facebook icon containing link to Honda Facebook page. [hyperlink to: https://www.facebook.com/Honda]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" facebook="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.facebook.com=""
+                            honda] ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="fs3-fb-svg" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25"
+                                preserveAspectRatio="xMinYMax meet" style="enable-background:new 0 0 25 25;"
+                                xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-fb {
                                         fill: #2198dc;
@@ -316,9 +1088,14 @@
 
                         </a>
                         <!-- icon instagram -->
-                        <a href="https://instagram.com/honda/" class="" aria-label="Circular Instagram icon containing link to Honda Instagram page. [hyperlink to: https://www.instagram.com/honda/]" target="_blank" data-utopia-id="aria-label=" circular="" instagram="" icon=""
-                            containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.instagram.com="" ] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9" style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
+                        <a href="https://instagram.com/honda/" class=""
+                            aria-label="Circular Instagram icon containing link to Honda Instagram page. [hyperlink to: https://www.instagram.com/honda/]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" instagram="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.instagram.com="" ] ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9"
+                                style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-ig {
                                         fill: #2198dc;
@@ -350,9 +1127,15 @@
 
 
                         <!-- icon linkedin -->
-                        <a href="https://www.linkedin.com/company/american-honda-motor-company-inc-" class="" aria-label="Circular LinkedIn icon containing link to Honda LinkedIn page. [hyperlink to: https://www.linkedin.com/company/american-honda-motor-company-inc-]" target="_blank"
-                            data-utopia-id="aria-label=" circular="" linkedin="" icon="" containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.linkedin.com="" company="" american-honda-motor-company-inc-] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                        <a href="https://www.linkedin.com/company/american-honda-motor-company-inc-" class=""
+                            aria-label="Circular LinkedIn icon containing link to Honda LinkedIn page. [hyperlink to: https://www.linkedin.com/company/american-honda-motor-company-inc-]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" linkedin="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.linkedin.com=""
+                            company="" american-honda-motor-company-inc-] ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                                style="enable-background:new 0 0 24 24;" xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-linkedin {
                                         fill: #2198dc;
@@ -370,9 +1153,14 @@
 
 
                         <!-- icon pinterest -->
-                        <a href="https://www.pinterest.com/honda/" class="" aria-label="Circular Pinterest icon containing link to Honda Pinterest page. [hyperlink to: https://www.pinterest.com/honda/]" target="_blank" data-utopia-id="aria-label=" circular="" pinterest="" icon=""
-                            containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.pinterest.com="" ] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9" style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
+                        <a href="https://www.pinterest.com/honda/" class=""
+                            aria-label="Circular Pinterest icon containing link to Honda Pinterest page. [hyperlink to: https://www.pinterest.com/honda/]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" pinterest="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.pinterest.com="" ] ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9"
+                                style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-pinterest {
                                         fill: #2198dc;
@@ -391,9 +1179,14 @@
 
 
                         <!-- icon twitter -->
-                        <a href="https://twitter.com/Honda" class="" aria-label="Circular Twitter icon containing link to Honda Twitter page. [hyperlink to: https://twitter.com/Honda]" target="_blank" data-utopia-id="aria-label=" circular="" twitter="" icon="" containing=""
-                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" twitter.com="" honda] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9" style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
+                        <a href="https://twitter.com/Honda" class=""
+                            aria-label="Circular Twitter icon containing link to Honda Twitter page. [hyperlink to: https://twitter.com/Honda]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" twitter="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" twitter.com="" honda] ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9"
+                                style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
 
                                 <style type="text/css">
                                     #fs3-twitter {
@@ -412,9 +1205,14 @@
 
 
                         <!-- icon snapchat -->
-                        <a href="https://www.snapchat.com/add/officialhonda" class="" aria-label="Circular Snapchat icon containing link to Honda Snapchat page. [hyperlink to: https://www.snapchat.com/add/officialhonda]" target="_blank" data-utopia-id="aria-label=" circular=""
-                            snapchat="" icon="" containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.snapchat.com="" add="" officialhonda] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9" style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
+                        <a href="https://www.snapchat.com/add/officialhonda" class=""
+                            aria-label="Circular Snapchat icon containing link to Honda Snapchat page. [hyperlink to: https://www.snapchat.com/add/officialhonda]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" snapchat="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.snapchat.com="" add=""
+                            officialhonda] ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9"
+                                style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-snapchat {
                                         fill: #2198dc;
@@ -435,9 +1233,14 @@
 
 
                         <!-- icon youtube -->
-                        <a href="https://www.youtube.com/user/Honda" class="" aria-label="Circular YouTube icon containing link to Honda YouTube page. [hyperlink to: https://www.youtube.com/user/Honda]" target="_blank" data-utopia-id="aria-label=" circular="" youtube="" icon=""
-                            containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.youtube.com="" user="" honda] ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9" style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
+                        <a href="https://www.youtube.com/user/Honda" class=""
+                            aria-label="Circular YouTube icon containing link to Honda YouTube page. [hyperlink to: https://www.youtube.com/user/Honda]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" youtube="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.youtube.com="" user=""
+                            honda] ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9"
+                                style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-youtube {
                                         fill: #2198dc;
@@ -452,9 +1255,14 @@
 
 
                         <!-- icon tiktok -->
-                        <a href="https://www.tiktok.com/@honda?lang=en" class="" aria-label="Circular TikTok icon containing link to Honda TikTok page. [hyperlink to: https://www.tiktok.com/@honda?lang=en]" target="_blank" data-utopia-id="aria-label=" circular="" tiktok="" icon=""
-                            containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.tiktok.com="" @honda?lang="en]&quot;&quot;" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;fill: #2198dc;" xml:space="preserve">
+                        <a href="https://www.tiktok.com/@honda?lang=en" class=""
+                            aria-label="Circular TikTok icon containing link to Honda TikTok page. [hyperlink to: https://www.tiktok.com/@honda?lang=en]"
+                            target="_blank" data-utopia-id="aria-label=" circular="" tiktok="" icon="" containing=""
+                            link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.tiktok.com=""
+                            @honda?lang="en]&quot;&quot;" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25"
+                                style="enable-background:new 0 0 25 25;fill: #2198dc;" xml:space="preserve">
                                 <style type="text/css">
                                     #tiktok {
                                         fill: #2198dc;
@@ -523,31 +1331,46 @@
                     <h3 class="desktop-header " data-utopia-id="linksheader">Vehicles</h3>
                     <div class="accordion">
                         <ul class="px-0">
-                            <li><a href="https://automobiles.honda.com/civic" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Civic
+                            <li><a href="https://automobiles.honda.com/civic" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Civic
                                     Models</a></li>
-                            <li><a href="/insight" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Insight
+                            <li><a href="/insight" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Insight
                                     Hybrid</a></li>
-                            <li><a href="/accord" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Accord
+                            <li><a href="/accord" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Accord
                                     Models</a></li>
-                            <li><a href="/clarity" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Clarity
+                            <li><a href="/clarity" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Clarity
                                     Models</a></li>
-                            <li><a href="/hr-v" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">HR-V
+                            <li><a href="/hr-v" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">HR-V
                                     Crossover</a></li>
-                            <li><a href="/cr-v" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">CR-V
+                            <li><a href="/cr-v" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">CR-V
                                     Crossover</a></li>
-                            <li><a href="/passport" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Passport SUV</a></li>
-                            <li><a href="/pilot" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Pilot
+                            <li><a href="/passport" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Passport SUV</a></li>
+                            <li><a href="/pilot" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Pilot
                                     SUV</a></li>
-                            <li><a href="/odyssey" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Odyssey
+                            <li><a href="/odyssey" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Odyssey
                                     Minivan</a></li>
-                            <li><a href="/ridgeline" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Ridgeline Truck</a></li>
-                            <li><a href="/future-cars/" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Future Vehicles</a></li>
-                            <li><a href="/rugged" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Rugged
+                            <li><a href="/ridgeline" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Ridgeline Truck</a></li>
+                            <li><a href="/future-cars/" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Future Vehicles</a></li>
+                            <li><a href="/rugged" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Rugged
                                     Capability</a></li>
-                            <li><a href="/vehicle-electrification" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Electrified Vehicles</a></li>
-                            <li><a href=" http://automobiles.honda.com/certified-pre-owned" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda
+                            <li><a href="/vehicle-electrification" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Electrified Vehicles</a></li>
+                            <li><a href=" http://automobiles.honda.com/certified-pre-owned" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda
                                     Certified Pre-Owned</a></li>
-                            <li><a href="/vehicles" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">All
+                            <li><a href="/vehicles" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">All
                                     Vehicles</a></li>
                         </ul>
                     </div>
@@ -577,16 +1400,26 @@
                     <h3 class="desktop-header" data-utopia-id="linksheader">Shopping Tools</h3>
                     <div class="accordion">
                         <ul class="px-0">
-                            <li><a href="/tools/build-and-price" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Build &amp; Price</a></li>
-                            <li><a href="/tools/current-offers" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">See Offers</a></li>
-                            <li><a href="/tools/inventory-model" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Search Inventory</a></li>
-                            <li><a href="/tools/payment-estimator" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Estimate Payments</a></li>
-                            <li><a href=" https://www.hondafinancialservices.com/finance/applying" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Apply for
+                            <li><a href="/tools/build-and-price" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Build &amp; Price</a></li>
+                            <li><a href="/tools/current-offers" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">See Offers</a></li>
+                            <li><a href="/tools/inventory-model" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Search Inventory</a></li>
+                            <li><a href="/tools/payment-estimator" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Estimate Payments</a></li>
+                            <li><a href=" https://www.hondafinancialservices.com/finance/applying" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Apply for
                                     Financing</a></li>
-                            <li><a href="https://www.intelliprice.com/intellipricedealer/start.htm?dealerID=3101010" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Trade-In Value</a></li>
-                            <li><a href="http://www.hondafinancialservices.com" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda Financial Services</a>
+                            <li><a href="https://www.intelliprice.com/intellipricedealer/start.htm?dealerID=3101010"
+                                    target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Trade-In Value</a></li>
+                            <li><a href="http://www.hondafinancialservices.com" target="_blank" aria-hidden="false"
+                                    tabindex="0" data-utopia-function="utopiaFooterLinks">Honda Financial Services</a>
                             </li>
-                            <li><a href="http://www.hondafinancialservices.com/shopping-tools/lease-or-finance" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Lease or
+                            <li><a href="http://www.hondafinancialservices.com/shopping-tools/lease-or-finance"
+                                    target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Lease or
                                     Finance</a></li>
                         </ul>
                     </div>
@@ -616,15 +1449,24 @@
                     <h3 class="desktop-header" data-utopia-id="linksheader">Discover Honda</h3>
                     <div class="accordion">
                         <ul class="px-0">
-                            <li><a href="http://honda.com/about" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">About Us</a></li>
-                            <li><a href="/news-and-events" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">News &amp; Events</a></li>
-                            <li><a href="/awards/" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Awards, Accolades &amp; Ratings</a></li>
-                            <li><a href="http://honda.com/careers/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Careers</a></li>
-                            <li><a href="https://global.honda/investors/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Investor Relations</a></li>
-                            <li><a href="http://csr.honda.com/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Corporate Social Responsibility</a></li>
-                            <li><a href="http://hondainamerica.com/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda in America</a></li>
-                            <li><a href="http://world.honda.com/link/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda Worldwide</a></li>
-                            <li><a href="https://hondadrivergear.staples.com/default.aspx" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda
+                            <li><a href="http://honda.com/about" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">About Us</a></li>
+                            <li><a href="/news-and-events" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">News &amp; Events</a></li>
+                            <li><a href="/awards/" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Awards, Accolades &amp; Ratings</a></li>
+                            <li><a href="http://honda.com/careers/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Careers</a></li>
+                            <li><a href="https://global.honda/investors/" target="_blank" aria-hidden="false"
+                                    tabindex="0" data-utopia-function="utopiaFooterLinks">Investor Relations</a></li>
+                            <li><a href="http://csr.honda.com/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Corporate Social Responsibility</a></li>
+                            <li><a href="http://hondainamerica.com/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Honda in America</a></li>
+                            <li><a href="http://world.honda.com/link/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Honda Worldwide</a></li>
+                            <li><a href="https://hondadrivergear.staples.com/default.aspx" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda
                                     Merchandise &amp; Apparel</a></li>
                         </ul>
                     </div>
@@ -654,15 +1496,21 @@
                     <h3 class="desktop-header" data-utopia-id="linksheader">Help & Support</h3>
                     <div class="accordion">
                         <ul class="px-0">
-                            <li><a href="https://crrs.secure.force.com/hondaknowledge" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">FAQ</a>
+                            <li><a href="https://crrs.secure.force.com/hondaknowledge" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">FAQ</a>
                             </li>
-                            <li><a href="/information/customer-relations" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Customer Service</a></li>
-                            <li><a href="/mobility-assistance" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Mobility Assistance Program</a></li>
-                            <li><a href="/educational-content/res-accessibility-for-individuals-with-disabilities" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Rear
+                            <li><a href="/information/customer-relations" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Customer Service</a></li>
+                            <li><a href="/mobility-assistance" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Mobility Assistance Program</a></li>
+                            <li><a href="/educational-content/res-accessibility-for-individuals-with-disabilities"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Rear
                                     Entertainment System Accessibility for
                                     Individuals with Disabilities</a></li>
-                            <li><a href="http://howtobuyacar.honda.com" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Buyer’s Guide</a></li>
-                            <li><a href="https://covid19.honda.com/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">COVID-19 Response</a></li>
+                            <li><a href="http://howtobuyacar.honda.com" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Buyer’s Guide</a></li>
+                            <li><a href="https://covid19.honda.com/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">COVID-19 Response</a></li>
                         </ul>
                     </div>
                 </div>
@@ -691,26 +1539,38 @@
                     <h3 class="desktop-header" data-utopia-id="linksheader">Owners</h3>
                     <div class="accordion">
                         <ul class="px-0">
-                            <li><a href="http://owners.honda.com/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Honda Owners Site</a></li>
-                            <li><a href="http://owners.honda.com/service-maintenance/scheduler" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Schedule
+                            <li><a href="http://owners.honda.com/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Honda Owners Site</a></li>
+                            <li><a href="http://owners.honda.com/service-maintenance/scheduler" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Schedule
                                     Service</a></li>
-                            <li><a href="http://owners.honda.com/parts-service/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Parts &amp; Service</a></li>
-                            <li><a href="http://collision.honda.com/locator" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Certified Body Shop
+                            <li><a href="http://owners.honda.com/parts-service/" target="_blank" aria-hidden="false"
+                                    tabindex="0" data-utopia-function="utopiaFooterLinks">Parts &amp; Service</a></li>
+                            <li><a href="http://collision.honda.com/locator" target="_blank" aria-hidden="false"
+                                    tabindex="0" data-utopia-function="utopiaFooterLinks">Certified Body Shop
                                     Locator</a>
                             </li>
-                            <li><a href="http://estore.honda.com/honda/customer-home.asp" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">eStore</a>
+                            <li><a href="http://estore.honda.com/honda/customer-home.asp" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">eStore</a>
                             </li>
-                            <li><a href="https://owners.honda.com/vehicles/roadside-assistance" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Roadside
+                            <li><a href="https://owners.honda.com/vehicles/roadside-assistance" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Roadside
                                     Assistance</a></li>
-                            <li><a href="http://www.hondafinancialservices.com/account-management/payment-options" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Pay My Bill</a></li>
-                            <li><a href="https://radio-navicode.honda.com/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Radio &amp; Navi Codes</a>
+                            <li><a href="http://www.hondafinancialservices.com/account-management/payment-options"
+                                    target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">Pay My Bill</a></li>
+                            <li><a href="https://radio-navicode.honda.com/" target="_blank" aria-hidden="false"
+                                    tabindex="0" data-utopia-function="utopiaFooterLinks">Radio &amp; Navi Codes</a>
                             </li>
-                            <li><a href="http://hondalink.honda.com/" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">HondaLink®</a></li>
-                            <li><a href="http://automobiles.honda.com/information/owner-resources.aspx" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Wi-Fi
+                            <li><a href="http://hondalink.honda.com/" target="_blank" aria-hidden="false" tabindex="0"
+                                    data-utopia-function="utopiaFooterLinks">HondaLink®</a></li>
+                            <li><a href="http://automobiles.honda.com/information/owner-resources.aspx" target="_blank"
+                                    aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Wi-Fi
                                     Hotspot
                                     Data
                                     Plans</a></li>
-                            <li><a href="http://owners.honda.com/recalls" target="_blank" aria-hidden="false" tabindex="0" data-utopia-function="utopiaFooterLinks">Safety Recall</a></li>
+                            <li><a href="http://owners.honda.com/recalls" target="_blank" aria-hidden="false"
+                                    tabindex="0" data-utopia-function="utopiaFooterLinks">Safety Recall</a></li>
                         </ul>
                     </div>
                 </div>
@@ -730,27 +1590,37 @@
                 <div class="row mx-auto copyright-row">
                     <div class="col-6 copyright-col">
                         <div class="rights">
-                            <a href="http://www.honda.com" target="_blank" data-utopia-function="utopiaFooterLinks">©2021
-                                American Honda Motor Co.</a>, Inc. All information contained herein applies to U.S. vehicles only. For non-U.S.-distributor information go to
-                            <a href="http://world.honda.com/link/" target="_blank" data-utopia-function="utopiaFooterLinks">world.honda.com</a>.</div>
+                            <a href="http://www.honda.com" target="_blank"
+                                data-utopia-function="utopiaFooterLinks">©2021
+                                American Honda Motor Co.</a>, Inc. All information contained herein applies to U.S.
+                            vehicles only. For non-U.S.-distributor information go to
+                            <a href="http://world.honda.com/link/" target="_blank"
+                                data-utopia-function="utopiaFooterLinks">world.honda.com</a>.
+                        </div>
                     </div>
                     <div class="col-6 copyright-col">
                         <div class="links">
-                            <a href="https://www.honda.com/privacy/privacy-policy.pdf" class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">Privacy Policy
+                            <a href="https://www.honda.com/privacy/privacy-policy.pdf" class="" target="_blank"
+                                data-utopia-id="" data-utopia-function="utopiaFooterLinks">Privacy Policy
                             </a>
-                            <a href="https://automobiles.honda.com/images/downloads/prop-65-consumer-website-statement.pdf" class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">Prop
+                            <a href="https://automobiles.honda.com/images/downloads/prop-65-consumer-website-statement.pdf"
+                                class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">Prop
                                 65 Info
                             </a>
-                            <a href="https://www.honda.com/privacy/connected-product-privacy-policy.pdf" class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
+                            <a href="https://www.honda.com/privacy/connected-product-privacy-policy.pdf" class=""
+                                target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
                                 Vehicle Data Privacy
                             </a>
-                            <a href="/-/media/Honda-Automobiles/Footer/AHM-SMS-Terms-and-Conditions.pdf" class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
+                            <a href="/-/media/Honda-Automobiles/Footer/AHM-SMS-Terms-and-Conditions.pdf" class=""
+                                target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
                                 SMS Terms
                             </a>
-                            <a href="/information/legal-terms" class="" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
+                            <a href="/information/legal-terms" class="" data-utopia-id=""
+                                data-utopia-function="utopiaFooterLinks">
                                 Terms &amp; Conditions
                             </a>
-                            <a href="https://crrs.secure.force.com/service/CCPA_Request_W2C?Subject=Do%20Not%20Sell" class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
+                            <a href="https://crrs.secure.force.com/service/CCPA_Request_W2C?Subject=Do%20Not%20Sell"
+                                class="" target="_blank" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
                                 Do Not Sell My Personal Information
                             </a>
                             <a href="/sitemap" class="" data-utopia-id="" data-utopia-function="utopiaFooterLinks">
@@ -770,8 +1640,12 @@
             <section class="brand py-4">
                 <div class="brand__content">
                     <div class="brand__item">
-                        <a href="http://automobiles.honda.com/" class="is-visible-mobile" aria-label="Honda Automobiles " target="_blank" data-utopia-id="aria-label=" honda="" automobiles="" ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="72px" viewBox="0 0 69 72" style="enable-background:new 0 0 69 72;" xml:space="preserve">
+                        <a href="http://automobiles.honda.com/" class="is-visible-mobile"
+                            aria-label="Honda Automobiles " target="_blank" data-utopia-id="aria-label=" honda=""
+                            automobiles="" ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="72px"
+                                viewBox="0 0 69 72" style="enable-background:new 0 0 69 72;" xml:space="preserve">
                                 <title>Honda</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-631.000000, -588.000000)">
@@ -830,8 +1704,11 @@
                         </a>
                     </div>
                     <div class="brand__item">
-                        <a href="http://hpd.honda.com" class="" aria-label="Honda Racing" target="_blank" data-utopia-id="aria-label=" honda="" racing ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="137px" height="72px" viewBox="0 0 137 72" style="enable-background:new 0 0 137 72;" xml:space="preserve">
+                        <a href="http://hpd.honda.com" class="" aria-label="Honda Racing" target="_blank"
+                            data-utopia-id="aria-label=" honda="" racing ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="137px" height="72px"
+                                viewBox="0 0 137 72" style="enable-background:new 0 0 137 72;" xml:space="preserve">
                                 <title>Honda Racing</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-1229.000000, -1499.000000)">
@@ -901,8 +1778,11 @@
                         </a>
                     </div>
                     <div class="brand__item">
-                        <a href="http://www.acura.com/" class="" aria-label="Acura" target="_blank" data-utopia-id="aria-label=" acura ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="89px" height="72px" viewBox="0 0 89 72" style="enable-background:new 0 0 89 72;" xml:space="preserve">
+                        <a href="http://www.acura.com/" class="" aria-label="Acura" target="_blank"
+                            data-utopia-id="aria-label=" acura ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="89px" height="72px"
+                                viewBox="0 0 89 72" style="enable-background:new 0 0 89 72;" xml:space="preserve">
                                 <title>Acura</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-176.000000, -1471.000000)">
@@ -935,8 +1815,12 @@
                         </a>
                     </div>
                     <div class="brand__item">
-                        <a href="http://powersports.honda.com" class="" aria-label="Honda Power Sports" target="_blank" data-utopia-id="aria-label=" honda="" power="" sports ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91px" height="72px" viewBox="0 0 91 72" style="enable-background:new 0 0 91 72;" xml:space="preserve">
+                        <a href="http://powersports.honda.com" class="" aria-label="Honda Power Sports" target="_blank"
+                            data-utopia-id="aria-label=" honda="" power="" sports ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91px" height="72px"
+                                viewBox="0 0 91 72" style="enable-background:new 0 0 91 72;" xml:space="preserve">
                                 <title>Honda Powersports</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-340.000000, -1447.000000)">
@@ -984,8 +1868,12 @@
 
                     </div>
                     <div class="brand__item">
-                        <a href="http://powerequipment.honda.com" class="" aria-label="Honda Power Equipment" target="_blank" data-utopia-id="aria-label=" honda="" power="" equipment ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="143.3px" height="72px" viewBox="0 0 143.3 72" style="enable-background:new 0 0 143.3 72;" xml:space="preserve">
+                        <a href="http://powerequipment.honda.com" class="" aria-label="Honda Power Equipment"
+                            target="_blank" data-utopia-id="aria-label=" honda="" power="" equipment ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="143.3px" height="72px"
+                                viewBox="0 0 143.3 72" style="enable-background:new 0 0 143.3 72;" xml:space="preserve">
                                 <title>Honda Power Equipment</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-684.000000, -1483.000000)">
@@ -1076,8 +1964,11 @@
 
                     </div>
                     <div class="brand__item">
-                        <a href="http://www.hondajet.com" class="" aria-label="Honda Jet" target="_blank" data-utopia-id="aria-label=" honda="" jet ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="72px" viewBox="0 0 85 72" style="enable-background:new 0 0 85 72;" xml:space="preserve">
+                        <a href="http://www.hondajet.com" class="" aria-label="Honda Jet" target="_blank"
+                            data-utopia-id="aria-label=" honda="" jet ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85px" height="72px"
+                                viewBox="0 0 85 72" style="enable-background:new 0 0 85 72;" xml:space="preserve">
                                 <title>Honda Jet</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-888.000000, -1463.000000)">
@@ -1135,8 +2026,12 @@
                         </a>
                     </div>
                     <div class="brand__item">
-                        <a href="http://engines.honda.com" class="" aria-label="Honda Engines" target="_blank" data-utopia-id="aria-label=" honda="" engines ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="103px" height="72px" viewBox="0 0 103 72" style="enable-background:new 0 0 103 72;" xml:space="preserve">
+                        <a href="http://engines.honda.com" class="" aria-label="Honda Engines" target="_blank"
+                            data-utopia-id="aria-label=" honda="" engines ""=""
+                            data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="103px" height="72px"
+                                viewBox="0 0 103 72" style="enable-background:new 0 0 103 72;" xml:space="preserve">
                                 <title>Honda Engines</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-505.000000, -1483.000000)">
@@ -1205,8 +2100,11 @@
 
                     </div>
                     <div class="brand__item">
-                        <a href="http://marine.honda.com" class="" aria-label="Honda Marine" target="_blank" data-utopia-id="aria-label=" honda="" marine ""="" data-utopia-function="utopiaFooterLinks">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="107px" height="72px" viewBox="0 0 107 72" style="enable-background:new 0 0 107 72;" xml:space="preserve">
+                        <a href="http://marine.honda.com" class="" aria-label="Honda Marine" target="_blank"
+                            data-utopia-id="aria-label=" honda="" marine ""="" data-utopia-function="utopiaFooterLinks">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="107px" height="72px"
+                                viewBox="0 0 107 72" style="enable-background:new 0 0 107 72;" xml:space="preserve">
                                 <title>Honda Marine</title>
                                 <g id="Footer">
                                     <g id="Footer_Large_1400px" transform="translate(-1047.000000, -1486.000000)">
@@ -1250,8 +2148,12 @@
             </section>
             <section class="cookies py-3">
                 <div class="cookies__content">
-                    We use cookies to improve your experience on this site and show you personalized advertising. To find out more, read our <a href="https://www.honda.com/privacy/privacy-policy.pdf" target="_blank" data-utopia-function="utopiaFooterLinks">Cookie Policy</a>.
+                    We use cookies to improve your experience on this site and show you personalized advertising. To
+                    find out more, read our <a href="https://www.honda.com/privacy/privacy-policy.pdf" target="_blank"
+                        data-utopia-function="utopiaFooterLinks">Cookie Policy</a>.
                 </div>
+
+
             </section>
         </section>
 
@@ -1262,33 +2164,42 @@
     <button class="back-to-top cd-top text-replace js-cd-top">
         <i class="fas fa-arrow-up"></i> </button>
     <!-- MODAL CONDITION APPLY -->
-    <div class="disclaimers hide-disclaimer modal-dialog modal-xl mx-auto" role="region" aria-label="Disclaimer dialog" aria-hidden="false">
+    <div class="disclaimers hide-disclaimer modal-dialog modal-xl mx-auto" role="region" aria-label="Disclaimer dialog"
+        aria-hidden="false">
         <i class="fa fa-times close-condition-apply" onclick="close()"></i>
         <div class="disclaimers-content">
             <p style="overflow: hidden;">
-                <b>Powertrain Coverage:</b> 7-year/100,000-mile powertrain coverage measured from the original in-service date.
+                <b>Powertrain Coverage:</b> 7-year/100,000-mile powertrain coverage measured from the original
+                in-service date.
                 <br>
                 <br>
-                <b>Complimentary 24/7 Roadside Assistance:</b> For the duration of the Certified Pre-Owned Limited Warranty.
+                <b>Complimentary 24/7 Roadside Assistance:</b> For the duration of the Certified Pre-Owned Limited
+                Warranty.
                 <br>
                 <br>
-                <b>Complimentary Oil Changes:</b> Within the first 12 months/12,000 miles from the vehicle delivery date (whichever occurs first).</p>
+                <b>Complimentary Oil Changes:</b> Within the first 12 months/12,000 miles from the vehicle delivery date
+                (whichever occurs first).
+            </p>
         </div>
     </div>
 
     <!-- JAVASCRPIT -->
 
     <!-- JQUERY 3.0.6 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
     </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous ">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous ">
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+        </script>
     <!-- BACK TOP TOP -->
     <script src="./javascript/back-to-top/main.js "></script>
     <script src="./javascript/back-to-top/util.js "></script>
@@ -1340,6 +2251,7 @@
     </script>
 
     <!-- END JAVASCRPIT -->
+    <script src="./javascript/navbar-collapse.js"></script>
 
 </body>
 

@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+hr{
+    margin: 0;    
+}
+html,body{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+    /* background-color: aqua; */
+}
+html.submenu-opened{
+    overflow-y: hidden;
+}
+.row{
+    margin: 0;
+}
+/* nav bar  */
+.navbar{
+    background-color: #007cc0;
+    height: 48px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbaroverlay{
+    background-color: #007cc0;
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.nav__logo{
+    height: 33px;
+    width: 49px;
+    background: url('../images/HCPV_logo.png') 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1rem;
+    z-index: 2;
+}
+.nav__menu ul li a.nav-link{
+    color: white;
+    transition: color .25s;
+}
+.nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up, .nav__menu a i.fa-angle-right{
+    padding-left: 2px;
+    font-size: 23px;
+    vertical-align: middle;
+}
+.nav__menu a i.fa-angle-up{
+    display: none;
+}
+.nav__menu a i.fa-map-marker-alt{
+    padding-left: 8px;
+    font-size: 20px;
+}
+.nav__menu ul li.nav-item{
+    position: relative;
+    padding: .25rem 10px;
+    /* border-left: .5px solid white; */
+}
+.nav__menu li.nav__main{
+    border-left: .5px solid white;
+}
+.nav__menu a.nav-link::after{
+    display: none;
+}
+.nav__menu li.nav-item::before{
+    content: '';
+    background-color: white;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height .25s;
+}
+.nav__menu li.nav-item:hover::before,
+.nav__menu li.is-active::before{
+    height: 100%;
+}
+.nav__menu ul li.nav-item:hover>a{
+    color: #007cc0;
+    position: relative;
+    z-index: 2;
+} 
+.nav__menu ul li.is-active>a{
+    color: #007cc0;
+    position: relative;
+    z-index: 5;
+}
+.nav__menu ul li.is-active i.fa-angle-down{
+    display: none;
+}
+.nav__menu ul li.is-active i.fa-angle-up{
+    display: inline-block;
+}
+
+.vehicleList{
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:100%;
+    height: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s;
+
+}
+.vehicleList-show{
+    padding-bottom:100px;
+    transition: all .5s;
+    z-index: 1;
+    height: 100vh;
+    /* overflow-y: auto; */
+    transition: all 1s;
+}
+.vehicleList__content{
+    width: 100%;
+    z-index: 1000;
+}
+.vehiclelist__type{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 0 30px;
+    border-bottom: 1px solid #dedede;
+    z-index: 10;
+}
+.vehiclelist__type ul{
+    list-style: none;
+    margin: auto;
+}
+.col-lg-12d4{
+    flex: 0 0 auto;
+    width: 22%;
+    max-width: 25%;
+}
+.col-lg-12d5{
+    flex: 0 0 auto;
+    width: 19%;
+    max-width: 50%;
+}
+.col-lg-12d7{
+    flex: 0 0 auto;
+    width: 14%;
+    max-width: 20%;
+}
+.col-lg-12d8{
+    flex: 0 0 auto;
+    width: 12%;
+    max-width: 20%;
+}
+.vehiclelist__type a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    padding: 20px 0;
+    position: relative;
+    width: auto;
+    display: inline-block;
+}
+.vehiclelist__type a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #007cc0;
+}
+.vehiclelist__type li a:hover{
+    text-decoration: none;
+}
+.vehicleList__carInfo{
+    /* margin-top:70px; */
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 150px;
+}
+.vehiclelist__item{
+    margin: auto;
+    width: 95%;
+}
+.row{
+    margin: 0;
+}
+.vehiclelist__title{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.vehiclelist__car{
+    /* display: flex;
+    margin: auto;
+    width: 100%;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.car__item{
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.car__item img{
+    max-width: 100%;
+}
+.car__item h6.title{
+    font-size: 14px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #00324F;
+}
+.car__item p{
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 600;
+    color: #00324F;
+}
+.car__item span{
+    font-size: 10px;
+    font-weight: 300;
+}
+.car__btnitem{
+    background-color: white;
+    color: #007cc0;
+    border: 2px solid #007cc0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 20px;
+    margin: 5px;
+    transition: background-color, color .5s;
+}
+.car__btnitem:hover{
+    text-decoration: none;
+    background-color: #007cc0;
+    color:white;
+}
+
+.car_futureImg{
+    width: 100%;
+    position: relative;
+}
+.car_futureImg img.car_ImgBackground{
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+.car_Imgtext{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+}
+.car_Imgtext img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 0 20px;
+}
+.car_Imgtext p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.car_Imgtext a{
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin: 10px;
+    border: 2px solid #007cc0;
+    border-radius: 20px;
+    color: white;
+    background-color: #007cc0;
+    transition: background-color,color .5s;
+}
+.car_Imgtext a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #007cc0;
+}
+.nav__colapseitem{
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .15s;
+}
+.nav__colapseitemContent{
+    width: 90%;
+    margin: 20px 0;
+}
+.tool__itemlist{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.tool__item{
+    padding: 10px 20px;
+    text-align: center;
+}
+.tool__item a{
+    color: #00324f;
+}
+.nav__colapseitem i{
+    font-size: 18px;
+}
+#tool .tool__item i.tool__icon{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.tool__item p{
+    font-size: 14px;
+    width: 130px;
+}
+.tool__service{
+    padding: 20px 0 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #007cc0;
+}
+.tool__service i{
+    padding-left: 5px;
+}
+.nav__ownerItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 3;
+}
+.nav__ownerItem a{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__ownerItem i{
+    line-height: 1;
+}
+.nav__itemLeft{
+    width: 60%;
+    padding: 0 20px;
+    border-right: 2px solid #c4c4c4;
+}
+.nav__itemRight{
+    width: 50%;
+    padding: 0 20px;
+}
+.nav__exploreItem{
+    padding: 0 20px;
+    width: 300px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 3;
+}
+.nav__exploreItem a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__colapseitem i{
+    font-size: 18px;
+}
+.nav__colapseitem a:hover{
+    text-decoration: none;
+    color: #007cc0;
+}
+.navdrop__show{
+    max-height: 500px;
+    /* padding: 20px 10px; */
+    transition: max-height .6s;
+}
+/* responsive button collapse */
+.hamburger{
+    display: flex;
+    margin-right: 1rem;
+    color: white;
+    justify-content: start;
+}
+.hamburger a i{
+    color: white;
+    margin-right: 20px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+.hamburger .hamburger__btn{
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    height: 100%;
+    padding: 0 20px;
+    background:none;
+    border: none;
+    padding: 17px;
+}
+.hamburger__btn p.hamburger__bar{
+    position: absolute;
+    margin-bottom: 0;
+    left: 0;
+    width: 100%;  
+    height: 3px;
+    background: #fff;
+    box-shadow: 0 0 7px rgba(0,0,0,.5);
+    transform: translateY(-50%);
+    transition: all .7s;
+}
+.hamburger__btn p.top{
+    top: 20%;
+}
+.hamburger__btn p.bottom{
+    top: 50%;
+}
+.hamburger__btn p.text{
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    box-shadow: none;
+    background: none;
+    top: 60%;
+}
+.hamburger__btnclick p.top{
+    top: 50%;
+    transform: rotate(-45deg) translateY(-30%);
+}
+.hamburger__btnclick p.bottom{
+    top: 50%;
+    transform: rotate(45deg) translateY(-30%);
+}
+.hamburger__btnclick p.text{
+    opacity: 0;
+}
+.navbar .secondary-nav{
+    transform: translateY(0);
+    overflow-x: hidden;
+}
+.language__content{
+    display: none;
+}
+@media screen and (max-width:992px){
+    .navbar .hamburger{
+        display: block;
+    }
+    .nav__menu{
+        background-color: #eee;
+        bottom: 0;
+        display: none;
+        left: 0;
+        overflow-y: auto;
+        position: fixed;
+        right: 0;
+        top: 48px;
+        transform: translateY(-200%);
+        z-index: -2;
+        transition: transform .9s;
+    }
+    .nav__menu ul li a.nav-link{
+        color: #00324f;
+        text-transform: uppercase;
+    }
+    .nav__menu li.nav-item:hover::before{
+        display: none;
+    }
+    .nav__menu ul li.nav-item:hover>a{
+        color: #00324f;
+    }
+    .navbar-nav{
+        max-width: 95%;
+        margin: auto;
+    }
+    .nav__menu ul li.nav-item{
+        border: none;
+    }
+    .language__content{
+        display: block;
+        display: flex;
+        max-width: 20%;
+        justify-content: space-between;
+    }
+    .nav__menu a i.fa-map-marker-alt, .nav__menu a i.fa-angle-up,.nav__menu a i.fa-angle-down{
+        display: none;
+    }
+    .responsive__view{
+        display: block;
+    }
+}
+@media screen and (min-width:992px){
+    .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right{
+        display: none;
+    }
+}
+@media screen and (min-width: 1053px ) and (max-width:1499px) {
+    .vehiclelist__type ul{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1500px ) {
+    .vehiclelist__type ul{
+        width: 55%;
+    }
+    .car_Imgtext{
+        width: 250px;
+    }
+}
