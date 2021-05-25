@@ -1,504 +1,782 @@
-*{
+/* GLOBAL */
+
+html,
+body {
     margin: 0;
     padding: 0;
+    /* giu nguyen kich thuoc cua the khi them padding */
     box-sizing: border-box;
-}
-h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-}
-hr{
-    margin: 0;    
-}
-html,body{
-    color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-y: auto;
-    /* background-color: aqua; */
-}
-html.submenu-opened{
-    overflow-y: hidden;
-}
-.row{
-    margin: 0;
-}
-/* nav bar  */
-.navbar{
-    background-color: #007cc0;
-    height: 48px;
-    padding: 0;
-    font-weight: bold;
-    font-size: 14px;
-    justify-content: space-between;
-    align-items: center;
-}
-#navbaroverlay{
-    background-color: #007cc0;
-    width: 100%;
-    height: 48px;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-.nav__logo{
-    height: 33px;
-    width: 49px;
-    background: url('../images/HCPV_logo.png') 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 1rem;
-    z-index: 2;
-}
-.nav__menu ul li a.nav-link{
-    color: white;
-    transition: color .25s;
-}
-.nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up{
-    padding-left: 2px;
-    font-size: 23px;
-    vertical-align: middle;
-}
-.nav__menu a i.fa-angle-up{
-    display: none;
-}
-.nav__menu a i.fa-map-marker-alt{
-    padding-left: 8px;
-    font-size: 20px;
-}
-.nav__menu ul li.nav-item{
-    position: relative;
-    padding: .25rem 10px;
-    /* border-left: .5px solid white; */
-}
-.nav__menu li.nav__main{
-    border-left: .5px solid white;
-}
-.nav__menu a.nav-link::after{
-    display: none;
-}
-.nav__menu li.nav-item::before{
-    content: '';
-    background-color: white;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    transition: height .25s;
-}
-.nav__menu li.nav-item:hover::before,
-.nav__menu li.is-active::before{
-    height: 100%;
-}
-.nav__menu ul li.nav-item:hover>a{
-    color: #007cc0;
-    position: relative;
-    z-index: 2;
-} 
-.nav__menu ul li.is-active>a{
-    color: #007cc0;
-    position: relative;
-    z-index: 5;
-}
-.nav__menu ul li.is-active i.fa-angle-down{
-    display: none;
-}
-.nav__menu ul li.is-active i.fa-angle-up{
-    display: inline-block;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    /* ken trinh duyet */
+    /* scroll-behavior: smooth; */
 }
 
-.vehicleList{
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width:100%;
-    height: 0;
-    z-index: 1;
-    overflow: hidden;
-    transition: all .3s;
+.clear {
+    clear: both;
+}
 
-}
-.vehicleList-show{
-    padding-bottom:100px;
-    transition: all .5s;
-    z-index: 1;
-    height: 100vh;
-    /* overflow-y: auto; */
-    transition: all 1s;
-}
-.vehicleList__content{
-    width: 100%;
-    z-index: 1000;
-}
-.vehiclelist__type{
-    background-color: #FFFFFF;
-    width: 100%;
-    padding: 0 30px;
-    border-bottom: 1px solid #dedede;
-    z-index: 10;
-}
-.vehiclelist__type ul{
+li {
     list-style: none;
-    margin: auto;
-}
-.col-lg-12d4{
-    flex: 0 0 auto;
-    width: 22%;
-    max-width: 25%;
-}
-.col-lg-12d5{
-    flex: 0 0 auto;
-    width: 19%;
-    max-width: 50%;
-}
-.col-lg-12d7{
-    flex: 0 0 auto;
-    width: 14%;
-    max-width: 20%;
-}
-.col-lg-12d8{
-    flex: 0 0 auto;
-    width: 12%;
-    max-width: 20%;
-}
-.vehiclelist__type a{
-    text-decoration: none;
-    font-size: 14px;
-    color: black;
-    padding: 20px 0;
-    position: relative;
-    width: auto;
-    display: inline-block;
-}
-.vehiclelist__type a::after{
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #007cc0;
-}
-.vehiclelist__type li a:hover{
-    text-decoration: none;
-}
-.vehicleList__carInfo{
-    /* margin-top:70px; */
-    overflow-y: auto;
-    height: 100vh;
-    padding-bottom: 150px;
-}
-.vehiclelist__item{
-    margin: auto;
-    width: 95%;
-}
-.row{
-    margin: 0;
-}
-.vehiclelist__title{
-    font-size: 14px;
-    font-weight: 600;
-    padding: 20px 0;
-}
-.vehiclelist__car{
-    /* display: flex;
-    margin: auto;
-    width: 100%;
-    /* justify-content: flex-start; */
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.car__item{
-    padding: 10px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-}
-.car__item img{
-    max-width: 100%;
-}
-.car__item h6.title{
-    font-size: 14px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    color: #00324F;
-}
-.car__item p{
-    font-size: 14px;
-    margin: 0;
-    padding: 5px 0;
-    font-weight: 600;
-    color: #00324F;
-}
-.car__item span{
-    font-size: 10px;
-    font-weight: 300;
-}
-.car__btnitem{
-    background-color: white;
-    color: #007cc0;
-    border: 2px solid #007cc0;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 2px 20px;
-    margin: 5px;
-    transition: background-color, color .5s;
-}
-.car__btnitem:hover{
-    text-decoration: none;
-    background-color: #007cc0;
-    color:white;
 }
 
-.car_futureImg{
-    width: 100%;
-    position: relative;
+input,
+button {
+    border: none;
 }
-.car_futureImg img.car_ImgBackground{
-    height: 220px;
-    object-fit: cover;
-    width: 100%;
-    object-position: center;
-}
-.car_Imgtext{
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%,-50%);
-    width: 20%;
-}
-.car_Imgtext img{
-    max-width: 100%;
-    max-height: 100%;
-    padding: 0 0 20px;
-}
-.car_Imgtext p{
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-.car_Imgtext a{
-    display: inline-block;
-    font-size: 14px;
-    padding: 5px 20px;
-    margin: 10px;
-    border: 2px solid #007cc0;
-    border-radius: 20px;
-    color: white;
-    background-color: #007cc0;
-    transition: background-color,color .5s;
-}
-.car_Imgtext a:hover{
+
+a {
     text-decoration: none;
-    background-color: white;
-    color: #007cc0;
 }
-.nav__colapseitem{
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .15s;
+
+a:hover {
+    text-decoration: none;
 }
-.nav__colapseitemContent{
-    width: 90%;
-    margin: 20px 0;
+
+
+/* HEADER */
+
+
+/* TOUTS */
+
+
+/* touts */
+
+.touts {
+    background-color: #f5f5f5;
+    /* border: 1px solid rgb(255, 60, 0); */
 }
-.tool__itemlist{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    margin: auto;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-.tool__item{
-    padding: 10px 20px;
+
+
+/* touts content */
+
+.touts__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 97%;
+    padding: 15px 10px;
+    margin: 0 auto;
+    /* border: 1px solid rgb(17, 17, 16); */
     text-align: center;
 }
-.tool__item a{
+
+
+/* tout item */
+
+.touts__item {
+    /* border: 2px solid green; */
+    padding: 15px;
+    padding: 35px 25px;
+    background-color: #fff;
+    height: 291px;
+    height: 273px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.touts__item h3 {
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    margin: 25px 0;
+    color: #00324f;
+    font-weight: 700;
+}
+
+.touts__item i {
+    font-size: 60px;
     color: #00324f;
 }
-.nav__colapseitem i{
-    font-size: 18px;
-}
-#tool .tool__item i.tool__icon{
-    font-size: 60px;
-    padding-bottom: 20px;
-}
-.tool__item p{
-    font-size: 14px;
-    width: 130px;
-}
-.tool__service{
-    padding: 20px 0 0;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 14px;
+
+.touts__item:hover>button {
     color: #007cc0;
-}
-.tool__service i{
-    padding-left: 5px;
-}
-.nav__ownerItem{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 500px;
-    margin: 20px 0;
-    font-size: 14px;
-    line-height: 3;
-}
-.nav__ownerItem a{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav__ownerItem i{
-    line-height: 1;
-}
-.nav__itemLeft{
-    width: 60%;
-    padding: 0 20px;
-    border-right: 2px solid #c4c4c4;
-}
-.nav__itemRight{
-    width: 50%;
-    padding: 0 20px;
-}
-.nav__exploreItem{
-    padding: 0 20px;
-    width: 300px;
-    margin: 20px 0;
-    font-size: 14px;
-    line-height: 3;
-}
-.nav__exploreItem a{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav__colapseitem i{
-    font-size: 18px;
-}
-.nav__colapseitem a:hover{
-    text-decoration: none;
-    color: #007cc0;
-}
-.navdrop__show{
-    max-height: 500px;
-    /* padding: 20px 10px; */
-    transition: max-height .6s;
-}
-/* responsive button collapse */
-.hamburger{
-    display: flex;
-    margin-right: 1rem;
-    color: white;
-    justify-content: start;
-}
-.hamburger a i{
-    color: white;
-    margin-right: 20px;
-    font-size: 22px;
-    vertical-align: middle;
-}
-.hamburger .hamburger__btn{
-    position: relative;
-    vertical-align: middle;
-    z-index: 1;
-    height: 100%;
-    padding: 0 20px;
-    background:none;
-    border: none;
-    padding: 17px;
-}
-.hamburger__btn p.hamburger__bar{
-    position: absolute;
-    margin-bottom: 0;
-    left: 0;
-    width: 100%;  
-    height: 3px;
-    background: #fff;
-    box-shadow: 0 0 7px rgba(0,0,0,.5);
-    transform: translateY(-50%);
-    transition: all .7s;
-}
-.hamburger__btn p.top{
-    top: 30%;
-}
-.hamburger__btn p.bottom{
-    top: 50%;
-}
-.hamburger__btn p.text{
-    font-weight: bold;
-    font-size: 12px;
-    color: white;
-    box-shadow: none;
-    background: none;
-    top: 55%;
-}
-.hamburger__btnclick p.top{
-    top: 50%;
-    transform: rotate(-45deg) translateY(-30%);
-}
-.hamburger__btnclick p.bottom{
-    top: 50%;
-    transform: rotate(45deg) translateY(-30%);
-}
-.hamburger__btnclick p.text{
-    opacity: 0;
-}
-.navbar .secondary-nav{
-    transform: translateY(0);
-    overflow-x: hidden;
+    border: 2px solid #007cc0;
+    background-color: #fff;
+    transition: all .6s;
 }
 
-@media screen and (max-width:992px){
-    .navbar .hamburger{
-        display: block;
-    }
-    .nav__menu{
-        background-color: #eee;
-        bottom: 0;
-        display: none;
-        left: 0;
-        overflow-y: auto;
-        position: fixed;
-        right: 0;
-        top: 48px;
-        transform: translateY(-200%);
-        z-index: -2;
-        transition: transform 1.2s;
-    }
+.touts__item button {
+    border-radius: 1.95rem;
+    padding: 5px 40px;
+    background-color: #007cc0;
+    color: #fff;
+    border: 2px solid #007cc0;
+    font-size: 15px;
+    font-weight: 600;
 }
-@media screen and (min-width:992px){
-    .navbar .hamburger{
-        display: none;
-    }
+
+
+/* .touts__item button:hover {} */
+
+
+/* END TOUTS */
+
+
+/* EXPLORE */
+
+
+/* explore */
+
+.explore {
+    background-color: #f5f5f5;
+    height: 450px;
+    /* border: 2px solid blue; */
 }
-@media screen and (min-width: 1053px ) and (max-width:1499px) {
-    .vehiclelist__type ul{
-        width: 80%;
-    }
+
+
+/* explore content */
+
+.explore__content {
+    /* border: 4px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    height: 100%;
 }
-@media screen and (min-width: 1500px ) {
-    .vehiclelist__type ul{
-        width: 55%;
-    }
-    .car_Imgtext{
-        width: 250px;
-    }
+
+.explore__content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+
+/* explore__left */
+
+.explore__left {
+    position: relative;
+}
+
+.explore__left:hover>.explore__certified>button {
+    transition: all .6s;
+    color: #007cc0;
+    border: 2px solid #007cc0;
+    background-color: rgba(255, 255, 255, .0);
+}
+
+.explore__howtovideo {
+    color: white;
+    height: auto;
+    width: 90%;
+    font-size: 12px;
+    position: absolute;
+    /* border: 1px solid #fff; */
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.explore__howtovideo button {
+    border-radius: 1.95rem;
+    background-color: #007cc0;
+    color: #fff;
+    border: 2px solid #007cc0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+
+/* explore right */
+
+.explore__right {
+    position: relative;
+}
+
+.explore__right:hover>.explore__howtovideo>button {
+    transition: all .6s;
+    color: #007cc0;
+    border: 2px solid #007cc0;
+    background-color: rgba(255, 255, 255, .0);
+}
+
+
+/* explore__certified */
+
+.explore__certified {
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.explore__certified button {
+    border-radius: 1.95rem;
+    background-color: #007cc0;
+    color: #fff;
+    border: 2px solid #007cc0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.explore__certified p {
+    color: rgba(0, 50, 79, .9);
+    padding-top: 9px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* condition-apply */
+
+.condition-apply {
+    /* border: 1px solid white; */
+    color: rgba(0, 50, 79, .9);
+}
+
+.explore__left .explore__certified .condition-apply:hover {
+    opacity: 1;
+    color: #2198dc;
+}
+
+
+/* explore modal */
+
+.explore-modal {
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid black;
+}
+
+
+/* DISCOVER */
+
+
+/* discover */
+
+
+/* .discover {
+border: 1px solid red;
+} */
+
+
+/* discover title */
+
+.discover__title {
+    text-align: center;
+    /* border: 1px solid green; */
+    color: #00324f;
+}
+
+.discover__title h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    color: #00324f;
+}
+
+.discover__title p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+
+/* discover  content */
+
+.discover__content {
+    height: fit-content;
+    width: 85%;
+    /* border: 1px solid rgb(245, 8, 245); */
+}
+
+.discover-row {
+    /* border: 1px solid black; */
+}
+
+.discover-col {
+    /* border: 2px solid rgb(8, 245, 79); */
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.discover__img {
+    /* border: 1px solid blue; */
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+
+
+/* DISCOVER BUTTON PLAYER */
+
+.discover__img a {
+    position: absolute;
+    z-index: 100;
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 32%;
+    left: 41%;
+    /* transform: translateX(-50%, -50%); */
+}
+
+.discover__img i {
+    font-size: 25px;
+    color: #007cc0;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+
+.discover__img a:hover {
+    background-color: #007cc0;
+}
+
+.discover__img a:hover>i {
+    color: #fff;
+}
+
+.discover__img img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.discover__text {
+    width: 100%;
+    height: 52%;
+    /* border: 1px solid blue; */
+}
+
+.discover__text h5 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.discover__text p {
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 15px;
+}
+
+.discover__learnmore {
+    height: 8%;
+    padding: 0 25px;
+    border-radius: 1.95rem;
+    background-color: #007cc0;
+    color: #fff;
+    border: 2px solid #007cc0;
+    font-size: 13px;
+    font-weight: 600;
+    /* border: 1px solid rgb(255, 60, 0); */
+}
+
+.discover__learnmore:hover {
+    color: #007cc0;
+    border: 2px solid #007cc0;
+    background-color: #fff;
+    transition: all .6s;
+}
+
+
+/* NUT BUTTON MORE AND NEW EVENTS */
+
+.discover__morenew {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.discover__morenew button {
+    height: 8%;
+    padding: 9px 25px;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #e42525;
+}
+
+.discover__morenew button:hover {
+    background-color: #fff;
+    border: 1px solid #e42525;
+    color: #e42525;
+    transition: all .4s;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+
+/* HONDA LOGO */
+
+.honda__logo {
+    width: 97%;
+    border-top: 5px solid #007cc0;
+    border-bottom: #007cc0 1px solid;
+    text-align: center;
+    background-color: #eeeeee;
+    /* border: 1px solid red; */
+}
+
+.honda__logo svg {
+    height: 90px;
+    width: 145px;
+    fill: #007cc0;
+    cursor: pointer;
+}
+
+
+/* HONDA CONTACT */
+
+.honda__contact {
+    width: 97%;
+    /* border: 1px solid blue; */
+    border-bottom: #007cc0 1px solid;
+}
+
+.honda__contact p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.honda-stay-in-touch {
+    /* border: 1px solid blue; */
+    text-align: left;
+}
+
+.honda-stay-in-touch svg {
+    fill: #2198dc;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.honda-stay-in-touch a {
+    /* display: inline-block; */
+    margin: 0 5px;
+}
+
+
+/* .honda-search {
+border: 1px solid blue;
+}
+
+.honda-stay-informed {
+border: 1px solid blue;
+}
+*/
+
+
+/*  honda search*/
+
+.honda-search form {
+    max-width: 535px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.honda-search input {
+    border: 0;
+    border-radius: 34.5px;
+    box-shadow: inset 2px 2px 5px 0 rgb(0 0 0 / 15%);
+    color: #00324f;
+    font-size: 14px;
+    letter-spacing: 0;
+    height: 40px;
+    padding: 11px 0 9px 45px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.honda-search i {
+    color: #007cc0;
+    display: block;
+    left: 30px;
+    position: absolute;
+    top: 40px;
+    font-size: 16px;
+}
+
+
+/* stay informed */
+
+.honda-stay-informed button {
+    border-radius: 34.5px;
+    background-color: #fff;
+    color: #007cc0;
+    border: 2px solid #007cc0;
+    font-size: 13px;
+    font-weight: 600;
+    /* height: 40px; */
+    padding: 8px 45px;
+    margin-top: -10px;
+    float: right;
+}
+
+.honda-stay-informed button:hover {
+    color: #fff;
+    background-color: #007cc0;
+    transition: all .5s;
+}
+
+.honda-stay-informed p {
+    text-align: right;
+}
+
+
+/* HONDA LINK */
+
+.honda__link {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 3rem 25px 7rem; */
+    width: 97%;
+    /* border: 2px solid red; */
+    /* border-top: 1px solid #007cc0; */
+}
+
+.honda-link-col h3 {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #00446b;
+    padding: 10px 0;
+}
+
+
+/* .honda__link .row {
+border: 4px solid rgb(12, 119, 30);
+} */
+
+
+/* 
+.honda-link-col {
+border: 1px solid yellow;
+} */
+
+.honda-link-col ul li {}
+
+.honda-link-col ul li a {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #00446b;
+    line-height: 1.5rem;
+    line-break: initial;
+    /* text-overflow: ; */
+}
+
+.honda-link-col ul li a:hover {
+    text-decoration: underline;
+    transition: all .5s;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #007cc0;
+}
+
+
+/* footer content */
+
+.footer__content {
+    width: 97%;
+    /* border: 4px solid goldenrod; */
+}
+
+
+/* copyright */
+
+.copyright {
+    /* border: 1px solid rgb(187, 187, 187); */
+    color: #fff;
+}
+
+
+/* .copyright-row {
+border: 1px solid red;
+} */
+
+
+/* .copyright-col {
+border: 1px solid blue;
+} */
+
+
+/* rights */
+
+.rights {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.rights a {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rights a:hover {
+    text-decoration: underline;
+}
+
+
+/* link */
+
+.links {
+    text-align: right;
+}
+
+.links a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 5px 0;
+    display: inline-block;
+    padding-right: 9px;
+    padding-left: 4px;
+    border-right: 1px solid #fff;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* footer brands */
+
+.brand {
+    /* border: 1px solid #e49125; */
+}
+
+.brand svg {
+    fill: #fff;
+    width: 70%;
+}
+
+.brand__content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 25px;
+}
+
+.brand__item {
+    /* border: 1px solid #fff; */
+}
+
+
+/* footer cookies */
+
+.cookies {
+    width: 100%;
+}
+
+.cookies__content {
+    width: 50%;
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.cookies__content a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.cookies__content a:hover {
+    text-decoration: underline;
+}
+
+
+/* BACK TOP TOP */
+
+.back-to-top {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+    /* position: absolute; */
+    height: 60px;
+    width: 60px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(0, 124, 192);
+    border-radius: 30% 0 0 30%;
+    bottom: 100px;
+    right: 0;
+    padding: 5px;
+    position: fixed;
+    /* z-index: 9997; */
+    text-align: center;
+}
+
+.back-to-top i {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.cd-top--fade-out {
+    transition: all .8s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+/* MODAL CONDITION APPLY */
+
+.disclaimers {
+    background-color: rgba(0, 68, 107, .7);
+    bottom: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    left: 5.5%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: fixed;
+    width: 95%;
+    z-index: 20000;
+    font-size: 12px;
+    height: auto;
+    color: #fff;
+    font-weight: 300;
+    padding: 20px;
+    /* position: relative; */
+    visibility: hidden;
+}
+
+.disclaimers i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    background-color: red;
 }
