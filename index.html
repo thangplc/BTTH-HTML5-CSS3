@@ -1,605 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Official Honda Autos USA | Honda</title>
-
-
-    <!-- GOOGLE FONT  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-    <!-- Responsive Youtube & Vimeo Video Lightbox Plugin - YouTubePopUp -->
-    <link rel="stylesheet" href="./javascript/Responsive-Youtube-Vimeo-Video-Lightbox-Plugin-YouTubePopUp/YouTubePopUp.css">
-    <!-- MAIN CSS -->
-
-
-    <!-- bootraps4.6 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <!-- font-aewsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <!-- main css -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg fixed-top justify-content-between">
-        <div id="navbaroverlay" style="visibility: visible"></div>
-        <a class="navbar-brand" href="#">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Official Honda Autos USA | Honda</title>
+      <!-- GOOGLE FONT  -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+         rel="stylesheet">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+      <!-- Responsive Youtube & Vimeo Video Lightbox Plugin - YouTubePopUp -->
+      <link rel="stylesheet"
+         href="./javascript/Responsive-Youtube-Vimeo-Video-Lightbox-Plugin-YouTubePopUp/YouTubePopUp.css">
+      <!-- MAIN CSS -->
+      <!-- bootraps4.6 -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+      <!-- font-aewsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+         crossorigin="anonymous" />
+      <!-- main css -->
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/header.css" />
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg fixed-top justify-content-between">
+         <div id="navbaroverlay" style="visibility: visible"></div>
+         <a class="navbar-brand" href="#">
             <div class="nav__logo"></div>
-        </a>
-        <div class="hamburger">
+         </a>
+         <div class="hamburger">
             <a href=""><i class="fa fa-map-marker-alt"></i></a>
             <button id="navbarbtn" class="hamburger__btn" data-target="#navbarMenu">
-                <p class="hamburger__bar top"></p>
-                <p class="hamburger__bar bottom"></p>
-                <p class="hamburger__bar text">Menu</p>
+               <p class="hamburger__bar top"></p>
+               <p class="hamburger__bar bottom"></p>
+               <p class="hamburger__bar text">Menu</p>
             </button>
-        </div>
-
-        <div class="nav__menu" id="navbarMenu">
+         </div>
+         <div class="nav__menu" id="navbarMenu">
             <ul class="navbar-nav ml-auto" id="menuList">
-                <li class="nav-item nav__main" id="vehicle">
-                    <a href="#" class="nav-link" data-target="#navVehicle">
-                        <!-- data-toggle="collapse" -->
-                        VEHICLES
-                        <i class="fa fa-angle-down"></i>
-                        <i class="fa fa-angle-up"></i>
-                    </a>
-                    <i class="fa fa-angle-right"></i>
-                </li>
-                <hr class="responsive__view">
-                <div class="vehicleList" id="navVehicle">
-                    <div class="vehicleList__content">
-                        <div class="vehiclelist__type">
-                            <ul class="text-center row justify-content-center">
-                                <li class="col-lg-12d4">
-                                    <a href="#suvscross">SUVS & SCROSSOVERS</a>
-                                </li>
-                                <li class="col-lg-12d8"><a href="#cars">CARS</a></li>
-                                <li class="col-lg-12d5">
-                                    <a href="#minivantruck">MINIVAN & TRUCK</a>
-                                </li>
-                                <li class="col-lg-12d7">
-                                    <a href="#electrified">ELECTRIFIED</a>
-                                </li>
-                                <li class="col-lg-12d7"><a href="#future">FUTURE</a></li>
-                                <li class="col-lg-12d7"><a href="#preowned">PRE-OWNED</a></li>
-                            </ul>
+               <li class="nav-item nav__main" id="vehicle">
+                  <a href="#" class="nav-link" data-target="#navVehicle">
+                     <!-- data-toggle="collapse" -->
+                     VEHICLES
+                     <i class="fa fa-angle-down"></i>
+                     <i class="fa fa-angle-up"></i>
+                  </a>
+                  <i class="fa fa-angle-right"></i>
+               </li>
+               <hr class="responsive__view">
+               <div class="vehicleList" id="navVehicle">
+                  <div class="vehicleList__content">
+                     <a id="headerVehicleID" class="subMenu__header" href="#">
+                     <i class="fa fa-angle-left"></i>
+                     VEHICLES
+                     </a>
+                     <div class="vehiclelist__type">
+                        <ul class="text-center row justify-content-center">
+                           <li class="col-md-12 col-lg-12d4">
+                              <a href="#suvscross" class="subMenu__item">SUVS & SCROSSOVERS
+                              <i class="fa fa-angle-right"></i>
+                              </a>
+                              <hr class="responsive__view">
+                           </li>
+                           <li class="col-md-12 col-lg-12d8">
+                              <a href="#cars" class="subMenu__item">CARS
+                              <i class="fa fa-angle-right"></i>
+                              </a>
+                              <hr class="responsive__view">
+                           </li>
+                           <li class="col-md-12 col-lg-12d5">
+                              <a href="#minivantruck" class="subMenu__item">MINIVAN & TRUCK
+                              <i class="fa fa-angle-right"></i>
+                              </a>
+                              <hr class="responsive__view">
+                           </li>
+                           <li class="col-md-12 col-lg-12d7">
+                              <a href="#electrified" class="subMenu__item">ELECTRIFIED
+                              <i class="fa fa-angle-right"></i>
+                              </a>
+                              <hr class="responsive__view">
+                           </li>
+                           <li class="col-md-12 col-lg-12d7">
+                              <a href="#future" class="subMenu__item">FUTURE</a>
+                              <hr class="responsive__view">
+                           </li>
+                           <li class="col-md-12 col-lg-12d7">
+                              <a href="#preowned" class="subMenu__item">PRE-OWNED
+                              <i class="fa fa-external-link-alt"></i>
+                              </a>
+                              <hr class="responsive__view">
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="vehicleList__carInfo">
+                     <div class="vehiclelist__item">
+                        <h6 id="suvscross" class="vehiclelist__title">
+                           SUVS & SCROSSOVERS
+                        </h6>
+                        <div class="vehiclelist__car row justify-content-between">
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img src="./images/MY21-hr-v-nav.png" alt="" />
+                              <h6 class="title">HR-V</h6>
+                              <hr />
+                              <p>
+                                 $21,220 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 28/34 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-CR-V-non-VLP-nav-NH-830M-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">CR-V</h6>
+                              <hr />
+                              <p>
+                                 $25,350 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 28/34 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">CR-V Hybrid</h6>
+                              <hr />
+                              <p>
+                                 $30,560 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 40/35 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-2021-Pilot-side-profile-992x428.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Pilot</h6>
+                              <hr />
+                              <p>
+                                 $32,550 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 20/27 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-passport-nav-jelly-sport-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Passport</h6>
+                              <hr />
+                              <p>
+                                 $32,790 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 20/25 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="vehicleList__carInfo">
-                        <div class="vehiclelist__item">
-                            <h6 id="suvscross" class="vehiclelist__title">
-                                SUVS & SCROSSOVERS
-                            </h6>
-                            <div class="vehiclelist__car row justify-content-between">
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-hr-v-nav.png" alt="" />
-                                    <h6 class="title">HR-V</h6>
-                                    <hr />
-                                    <p>
-                                        $21,220 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        28/34 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-CR-V-non-VLP-nav-NH-830M-2x.png" alt="" />
-                                    <h6 class="title">CR-V</h6>
-                                    <hr />
-                                    <p>
-                                        $25,350 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        28/34 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png" alt="" />
-                                    <h6 class="title">CR-V Hybrid</h6>
-                                    <hr />
-                                    <p>
-                                        $30,560 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        40/35 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-2021-Pilot-side-profile-992x428.png" alt="" />
-                                    <h6 class="title">Pilot</h6>
-                                    <hr />
-                                    <p>
-                                        $32,550 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        20/27 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-passport-nav-jelly-sport-2x.png" alt="" />
-                                    <h6 class="title">Passport</h6>
-                                    <hr />
-                                    <p>
-                                        $32,790 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        20/25 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="vehiclelist__item">
+                        <h6 id="cars" class="vehiclelist__title">CARS - Sedans</h6>
+                        <div class="vehiclelist__car row justify-content-between">
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-MY20-Civic-Sedan-non-VLP-nav-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Civic Sedan</h6>
+                              <hr />
+                              <p>
+                                 $21,250 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 30/38 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-MY19-insight-nonVLP-global-nav-992x428.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Insight</h6>
+                              <hr />
+                              <p>
+                                 $23,130 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 55/49 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img src="./images/MY21-accord-nav-main.png" alt="" />
+                              <h6 class="title">Accord</h6>
+                              <hr />
+                              <p>
+                                 $24,970 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 30/38 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-accord-hybrid-nav-main.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Accord Hybrid</h6>
+                              <hr />
+                              <p>
+                                 $26,570 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 48/48 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-MY20-clarity-phev-nonVLP-global-nav.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Clarity Plug-In Hybrid</h6>
+                              <hr />
+                              <p>
+                                 $33,400 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 47/340 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-MY20-clarity-fuel-cell-global-nav.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Clarity Fuel Cell</h6>
+                              <hr />
+                              <p>
+                                 Lease Only <span>AVAILABLE<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 360 <span>MILE RNG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vehiclelist__item">
-                            <h6 id="cars" class="vehiclelist__title">CARS - Sedans</h6>
-                            <div class="vehiclelist__car row justify-content-between">
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-MY20-Civic-Sedan-non-VLP-nav-2x.png" alt="" />
-                                    <h6 class="title">Civic Sedan</h6>
-                                    <hr />
-                                    <p>
-                                        $21,250 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        30/38 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-MY19-insight-nonVLP-global-nav-992x428.png" alt="" />
-                                    <h6 class="title">Insight</h6>
-                                    <hr />
-                                    <p>
-                                        $23,130 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        55/49 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-accord-nav-main.png" alt="" />
-                                    <h6 class="title">Accord</h6>
-                                    <hr />
-                                    <p>
-                                        $24,970 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        30/38 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-accord-hybrid-nav-main.png" alt="" />
-                                    <h6 class="title">Accord Hybrid</h6>
-                                    <hr />
-                                    <p>
-                                        $26,570 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        48/48 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-MY20-clarity-phev-nonVLP-global-nav.png" alt="" />
-                                    <h6 class="title">Clarity Plug-In Hybrid</h6>
-                                    <hr />
-                                    <p>
-                                        $33,400 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        47/340 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-MY20-clarity-fuel-cell-global-nav.png" alt="" />
-                                    <h6 class="title">Clarity Fuel Cell</h6>
-                                    <hr />
-                                    <p>
-                                        Lease Only <span>AVAILABLE<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        360 <span>MILE RNG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="vehiclelist__item">
+                        <h6 id="minivantruck" class="vehiclelist__title">
+                           CARS - Hatchbacks
+                        </h6>
+                        <div class="vehiclelist__car row justify-content-start">
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-civic-hatch-nav-jelly-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Civic Hatchback</h6>
+                              <hr />
+                              <p>
+                                 $22,200 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 31/40 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-civic-type-r-nav-jelly-trim-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Civic Type R</h6>
+                              <hr />
+                              <p>
+                                 $37,895 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 22/28 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vehiclelist__item">
-                            <h6 id="minivantruck" class="vehiclelist__title">
-                                CARS - Hatchbacks
-                            </h6>
-                            <div class="vehiclelist__car row justify-content-start">
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-civic-hatch-nav-jelly-2x.png" alt="" />
-                                    <h6 class="title">Civic Hatchback</h6>
-                                    <hr />
-                                    <p>
-                                        $22,200 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        31/40 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-civic-type-r-nav-jelly-trim-2x.png" alt="" />
-                                    <h6 class="title">Civic Type R</h6>
-                                    <hr />
-                                    <p>
-                                        $37,895 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        22/28 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="vehiclelist__item">
+                        <h6 id="" class="vehiclelist__title">MINIVAN & TRUCK</h6>
+                        <div class="vehiclelist__car row justify-content-start">
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img src="./images/GMC-MY21-odyssey-657x283.png" alt="" />
+                              <h6 class="title">Odyssey</h6>
+                              <hr />
+                              <p>
+                                 $32,090 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 19/28 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img src="./images/MY21-ridgeline-nav-main.png" alt="" />
+                              <h6 class="title">Ridgeline</h6>
+                              <hr />
+                              <p>
+                                 $36,490 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 18/24 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vehiclelist__item">
-                            <h6 id="" class="vehiclelist__title">MINIVAN & TRUCK</h6>
-                            <div class="vehiclelist__car row justify-content-start">
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-MY21-odyssey-657x283.png" alt="" />
-                                    <h6 class="title">Odyssey</h6>
-                                    <hr />
-                                    <p>
-                                        $32,090 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        19/28 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-ridgeline-nav-main.png" alt="" />
-                                    <h6 class="title">Ridgeline</h6>
-                                    <hr />
-                                    <p>
-                                        $36,490 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        18/24 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="vehiclelist__item">
+                        <h6 id="electrified" class="vehiclelist__title">ELECTRIFIED</h6>
+                        <div class="vehiclelist__car row justify-content-between">
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-MY19-insight-nonVLP-global-nav-992x428.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Insight</h6>
+                              <hr />
+                              <p>
+                                 $23,130 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 55/49 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-accord-hybrid-nav-main.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Accord Hybrid</h6>
+                              <hr />
+                              <p>
+                                 $26,570 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 48/48 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">CR-V Hybrid</h6>
+                              <hr />
+                              <p>
+                                 $30,560 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 40/35 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/GMC-2021-Pilot-side-profile-992x428.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Pilot</h6>
+                              <hr />
+                              <p>
+                                 $32,550 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 20/27 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
+                           <div class="car__item col-lg-12d5 m-1">
+                              <img
+                                 src="./images/MY21-passport-nav-jelly-sport-2x.png"
+                                 alt=""
+                                 />
+                              <h6 class="title">Passport</h6>
+                              <hr />
+                              <p>
+                                 $32,790 <span>STARTING MSRP<a href="">*</a></span>
+                              </p>
+                              <p>
+                                 20/25 <span>CITY/HWY MPG RTG<a href="">*</a></span>
+                              </p>
+                              <div class="car__btn row justify-content-xl-center mx-auto">
+                                 <a href="#" class="car__btnitem">EXPLORE</a>
+                                 <a href="#" class="car__btnitem">BUILD</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vehiclelist__item">
-                            <h6 id="electrified" class="vehiclelist__title">ELECTRIFIED</h6>
-                            <div class="vehiclelist__car row justify-content-between">
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-MY19-insight-nonVLP-global-nav-992x428.png" alt="" />
-                                    <h6 class="title">Insight</h6>
-                                    <hr />
-                                    <p>
-                                        $23,130 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        55/49 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-accord-hybrid-nav-main.png" alt="" />
-                                    <h6 class="title">Accord Hybrid</h6>
-                                    <hr />
-                                    <p>
-                                        $26,570 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        48/48 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png" alt="" />
-                                    <h6 class="title">CR-V Hybrid</h6>
-                                    <hr />
-                                    <p>
-                                        $30,560 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        40/35 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/GMC-2021-Pilot-side-profile-992x428.png" alt="" />
-                                    <h6 class="title">Pilot</h6>
-                                    <hr />
-                                    <p>
-                                        $32,550 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        20/27 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                                <div class="car__item col-lg-12d5 m-1">
-                                    <img src="./images/MY21-passport-nav-jelly-sport-2x.png" alt="" />
-                                    <h6 class="title">Passport</h6>
-                                    <hr />
-                                    <p>
-                                        $32,790 <span>STARTING MSRP<a href="">*</a></span>
-                                    </p>
-                                    <p>
-                                        20/25 <span>CITY/HWY MPG RTG<a href="">*</a></span>
-                                    </p>
-                                    <div class="car__btn row justify-content-xl-center mx-auto">
-                                        <a href="#" class="car__btnitem">EXPLORE</a>
-                                        <a href="#" class="car__btnitem">BUILD</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="vehiclelist__item">
+                        <h6 id="future" class="vehiclelist__title">FUTURE</h6>
+                        <div class="vehiclelist__car car__future">
+                           <div class="car_futureImg m-auto">
+                              <picture class="carfurtureimg__background">
+                                 <img
+                                    class="car_ImgBackground"
+                                    src="./images/Global_Nav_Civic_Phase_3_Large.jpg"
+                                    alt=""
+                                    />
+                              </picture>
+                              <div class="car_Imgtext">
+                                 <img src="./images/MY22-Civic-Sedan-White.svg" alt="" />
+                                 <p>Arriving Summer 2021</p>
+                                 <a href="">LEARN MORE</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vehiclelist__item">
-                            <h6 id="future" class="vehiclelist__title">FUTURE</h6>
-                            <div class="vehiclelist__car car__future">
-                                <div class="car_futureImg m-auto">
-                                    <picture class="carfurtureimg__background">
-                                        <img class="car_ImgBackground" src="./images/Global_Nav_Civic_Phase_3_Large.jpg" alt="" />
-                                    </picture>
-
-                                    <div class="car_Imgtext">
-                                        <img src="./images/MY22-Civic-Sedan-White.svg" alt="" />
-                                        <p>Arriving Summer 2021</p>
-                                        <a href="">LEARN MORE</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="vehiclelist__item">
+                        <h6 id="preowned" class="vehiclelist__title">PRE-OWNED</h6>
+                        <div class="vehiclelist__car car__preOwned">
+                           <div class="car_futureImg m-auto">
+                              <picture class="carfurtureimg__background">
+                                 <img
+                                    class="car_ImgBackground"
+                                    src="./images/2020-CPO-global-nav-promo-banner-A-L.jpg"
+                                    alt=""
+                                    />
+                              </picture>
+                              <div class="car_Imgtext">
+                                 <img src="./images/HCPV_logo.png" alt="" />
+                                 <a href="">SHOP CERTIFIED</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vehiclelist__item">
-                            <h6 id="preowned" class="vehiclelist__title">PRE-OWNED</h6>
-                            <div class="vehiclelist__car car__preOwned">
-                                <div class="car_futureImg m-auto">
-                                    <picture class="carfurtureimg__background">
-                                        <img class="car_ImgBackground" src="./images/2020-CPO-global-nav-promo-banner-A-L.jpg" alt="" />
-                                    </picture>
-                                    <div class="car_Imgtext">
-                                        <img src="./images/HCPV_logo.png" alt="" />
-                                        <a href="">SHOP CERTIFIED</a>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+               </div>
+               <li class="nav-item nav__main" id="tool">
+                  <a class="nav-link" href="#" data-target="#navtool">
+                  SHOPPING TOOLS
+                  <i class="fa fa-angle-down"></i>
+                  <i class="fa fa-angle-up"></i>
+                  </a>
+                  <i class="fa fa-angle-right"></i>
+                  <div class="nav__colapseitem" id="navtool">
+                     <div class="nav__colapseitemContent">
+                        <div class="tool__itemlist">
+                           <div class="tool__item">
+                              <a href="#">
+                                 <i class="fa fa-tools tool__icon"></i>
+                                 <p>Build & Price</p>
+                              </a>
+                           </div>
+                           <div class="tool__item">
+                              <a href="#">
+                                 <i class="fa fa-tag tool__icon"></i>
+                                 <p>See Offers</p>
+                              </a>
+                           </div>
+                           <div class="tool__item">
+                              <a href="#">
+                                 <i class="fa fa-search tool__icon"></i>
+                                 <p>Searcch Inventory</p>
+                              </a>
+                           </div>
+                           <div class="tool__item">
+                              <a href="#">
+                                 <i class="fa fa-calculator tool__icon"></i>
+                                 <p>Estimate Payments</p>
+                              </a>
+                           </div>
+                           <div class="tool__item">
+                              <a href="#">
+                                 <i class="fa fa-pager tool__icon"></i>
+                                 <p>Buy Online</p>
+                              </a>
+                           </div>
                         </div>
-                    </div>
-                </div>
-                <li class="nav-item nav__main" id="tool">
-                    <a class="nav-link" href="#" data-target="#navtool">
-                        SHOPPING TOOLS
-                        <i class="fa fa-angle-down"></i>
-                        <i class="fa fa-angle-up"></i>
-                    </a>
-                    <i class="fa fa-angle-right"></i>
-                    <div class="nav__colapseitem" id="navtool">
-                        <div class="nav__colapseitemContent">
-                            <div class="tool__itemlist">
-                                <div class="tool__item">
-                                    <a href="#">
-                                        <i class="fa fa-tools tool__icon"></i>
-                                        <p>Build & Price</p>
-                                    </a>
-                                </div>
-                                <div class="tool__item">
-                                    <a href="#">
-                                        <i class="fa fa-tag tool__icon"></i>
-                                        <p>See Offers</p>
-                                    </a>
-                                </div>
-                                <div class="tool__item">
-                                    <a href="#">
-                                        <i class="fa fa-search tool__icon"></i>
-                                        <p>Searcch Inventory</p>
-                                    </a>
-                                </div>
-                                <div class="tool__item">
-                                    <a href="#">
-                                        <i class="fa fa-calculator tool__icon"></i>
-                                        <p>Estimate Payments</p>
-                                    </a>
-                                </div>
-                                <div class="tool__item">
-                                    <a href="#">
-                                        <i class="fa fa-pager tool__icon"></i>
-                                        <p>Buy Online</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="tool__service">
-                                <a href="#">Trade-In Value <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#">Honda Financial Services
-                                    <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#">Buyer’s Guide <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#">For Financing <i class="fa fa-external-link-alt"></i></a>
-                            </div>
+                        <hr />
+                        <div class="tool__service">
+                           <a href="#"
+                              >Trade-In Value <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              >Honda Financial Services
+                           <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              >Buyer’s Guide <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              >For Financing <i class="fa fa-external-link-alt"></i
+                              ></a>
                         </div>
-                    </div>
-                </li>
-                <hr class="responsive__view">
-                <li class="nav-item nav__main" id="owner">
-                    <a class="nav-link" href="#" data-target="#navowners">
-                        Owners
-                        <i class="fa fa-angle-down"></i>
-                        <i class="fa fa-angle-up"></i>
-                    </a>
-                    <i class="fa fa-angle-right"></i>
-                    <div class="nav__colapseitem" id="navowners">
-                        <div class="nav__ownerItem">
-                            <div class="nav__itemLeft">
-                                <a href="#"><span>Owners Site</span>
-                                    <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Owner's Manual & Warranties </span><i
-                                        class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Schedule Service</span>
-                                    <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Shop parts & Accessories</span>
-                                    <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Certified Body Shop Locator</span>
-                                    <i class="fa fa-external-link-alt"></i></a>
-                            </div>
-                            <div class="nav__itemRight">
-                                <a href="#"><span>Roadside Assistance</span>
-                                    <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Pay My Bill</span><i class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Recalls</span> <i class="fa fa-external-link-alt"></i></a>
-                                <a href="#"><span>Customer Service</span></a>
-                            </div>
+                     </div>
+                  </div>
+               </li>
+               <hr class="responsive__view">
+               <li class="nav-item nav__main" id="owner">
+                  <a class="nav-link" href="#" data-target="#navowners">
+                  Owners
+                  <i class="fa fa-angle-down"></i>
+                  <i class="fa fa-angle-up"></i>
+                  </a>
+                  <i class="fa fa-angle-right"></i>
+                  <div class="nav__colapseitem" id="navowners">
+                     <div class="nav__ownerItem">
+                        <div class="nav__itemLeft">
+                           <a href="#"
+                              ><span>Owners Site</span>
+                           <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              ><span>Owner's Manual & Warranties </span
+                              ><i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              ><span>Schedule Service</span>
+                           <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              ><span>Shop parts & Accessories</span>
+                           <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              ><span>Certified Body Shop Locator</span>
+                           <i class="fa fa-external-link-alt"></i
+                              ></a>
                         </div>
-                    </div>
-                </li>
-                <hr class="responsive__view">
-                <li class="nav-item" id="explore">
-                    <a class="nav-link" href="#" data-target="#navExplore">
-                        Explore
-                        <i class="fa fa-angle-down"></i>
-                        <i class="fa fa-angle-up"></i>
-                    </a>
-                    <i class="fa fa-angle-right"></i>
-                    <div class="nav__colapseitem" id="navExplore">
-                        <div class="nav__exploreItem">
-                            <a href="#"><span>Honda Safety</span></a>
-                            <a href="#"><span>Honda Sensing<sup>@</sup></span></a>
-                            <a href="#"><span>Rugged Capability</span></a>
-                            <a href="#"><span>Electrified Vehicles</span></a>
-                            <a href="#"><span>News & Events</span></a>
-                            <a href="#"><span>Honda Racing</span>
-                                <i class="fa fa-external-link-alt"></i></a>
-                            <a href="#"><span>Honda in the Community</span>
-                                <i class="fa fa-external-link-alt"></i></a>
-                            <a href="#"><span>Honda on Inclusion and Diversity</span>
-                                <i class="fa fa-external-link-alt"></i></a>
+                        <div class="nav__itemRight">
+                           <a href="#"
+                              ><span>Roadside Assistance</span>
+                           <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              ><span>Pay My Bill</span
+                              ><i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"
+                              ><span>Recalls</span> <i class="fa fa-external-link-alt"></i
+                              ></a>
+                           <a href="#"><span>Customer Service</span></a>
                         </div>
-                    </div>
-                </li>
-                <hr class="responsive__view">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Find a Dealer</a>
-                </li>
-                <hr class="responsive__view">
-                <li class="nav-item" id="language">
-                    <a class="nav-link" id="languageId" href="#">Español</a>
-                    <div class="language__content">
-                        <a class="car__btnitem" href="#">English</a>
-                        <a class="car__btnitem" href="#">Español</a>
-                    </div>
-                </li>
-                <li class="nav-item nav__location">
-                    <a class="nav-link" href="#">
-                        Location<i class="fa fa-map-marker-alt"></i></a>
-                </li>
+                     </div>
+                  </div>
+               </li>
+               <hr class="responsive__view">
+               <li class="nav-item" id="explore">
+                  <a class="nav-link" href="#" data-target="#navExplore">
+                  Explore
+                  <i class="fa fa-angle-down"></i>
+                  <i class="fa fa-angle-up"></i>
+                  </a>
+                  <i class="fa fa-angle-right"></i>
+                  <div class="nav__colapseitem" id="navExplore">
+                     <div class="nav__exploreItem">
+                        <a href="#"><span>Honda Safety</span></a>
+                        <a href="#"
+                           ><span>Honda Sensing<sup>@</sup></span></a
+                           >
+                        <a href="#"><span>Rugged Capability</span></a>
+                        <a href="#"><span>Electrified Vehicles</span></a>
+                        <a href="#"><span>News & Events</span></a>
+                        <a href="#"
+                           ><span>Honda Racing</span>
+                        <i class="fa fa-external-link-alt"></i
+                           ></a>
+                        <a href="#"
+                           ><span>Honda in the Community</span>
+                        <i class="fa fa-external-link-alt"></i
+                           ></a>
+                        <a href="#"
+                           ><span>Honda on Inclusion and Diversity</span>
+                        <i class="fa fa-external-link-alt"></i
+                           ></a>
+                     </div>
+                  </div>
+               </li>
+               <hr class="responsive__view">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Find a Dealer</a>
+               </li>
+               <hr class="responsive__view">
+               <li class="nav-item" id="language">
+                  <a class="nav-link" id="languageId" href="#">Español</a>
+                  <div class="language__content">
+                     <a class="car__btnitem language__active" id="EN" href="#">English</a>
+                     <a class="car__btnitem" id="ES" href="#">Español</a>
+                  </div>
+               </li>
+               <li class="nav-item nav__location">
+                  <a class="nav-link" href="#">
+                  Location<i class="fa fa-map-marker-alt"></i
+                     ></a>
+               </li>
             </ul>
             <div class="col honda-search pb-4 honda-search__hide">
-                <form class="">
-                    <input class="mt-4" type="text" name="s" placeholder="Search for anything Honda">
-                    <div class="navbar__find navbar__findDis">
-                        <i class="fa fa-search"></i>
-                    </div>
-
-                </form>
+               <form class="">
+                  <input class="mt-4" type="text" name="s" placeholder="Search for anything Honda">
+                  <i class="fa fa-search"></i>
+               </form>
             </div>
-        </div>
-    </nav>
-    <section class="carousel">
-    </section>
-
-
-
-    <!-- TOUTS -->
-    <section class="touts">
-        <div class="touts__content">
+         </div>
+      </nav>
+      <section class="carousel">
+      </section>
+      <!-- TOUTS -->
+      <section class="touts">
+         <div class="touts__content">
             <a class="touts__item" href="https://automobiles.honda.com/tools/build-and-price">
-                <i class="fa fa-tools"></i>
-                <h3>Build and Price</h3>
-                <button>GO</button>
-
+               <i class="fa fa-tools"></i>
+               <h3>Build and Price</h3>
+               <button>GO</button>
             </a>
-
             <a class="touts__item" href="https://automobiles.honda.com/tools/current-offers">
-                <i class="fa fa-tag"></i>
-                <h3>See Offers</h3>
-                <button>GO</button>
+               <i class="fa fa-tag"></i>
+               <h3>See Offers</h3>
+               <button>GO</button>
             </a>
             <a class="touts__item" href="https://automobiles.honda.com/tools/inventory-model">
-                <i class="fas fa-search"></i>
-                <h3>Search Inventory</h3>
-                <button>GO</button>
+               <i class="fas fa-search"></i>
+               <h3>Search Inventory</h3>
+               <button>GO</button>
             </a>
             <a class="touts__item" href="https://automobiles.honda.com/tools/payment-estimator-model-select">
-                <i class="fa fa-calculator"></i>
-                <h3>Estimate Payments</h3>
-                <button>GO</button>
+               <i class="fa fa-calculator"></i>
+               <h3>Estimate Payments</h3>
+               <button>GO</button>
             </a>
         </div>
 
@@ -639,21 +743,16 @@
 
                 </div>
             </a>
-        </div>
-
-    </section>
-    <!-- END EXPLORE -->
-
-
-
-    <!-- DISCOVER -->
-    <section class="discover pt-3">
-        <div class="discover__title">
+         </div>
+      </section>
+      <!-- END EXPLORE -->
+      <!-- DISCOVER -->
+      <section class="discover pt-3">
+         <div class="discover__title">
             <h2 class="">Discover Honda</h2>
             <p>Explore the world of Honda through our latest news, events and videos.</p>
-
-        </div>
-        <div class="discover__content container">
+         </div>
+         <div class="discover__content container">
             <div class="row discover-row">
                 <!-- 1 -->
                 <div class="col discover-col mx-3 mt-4 pb-4 px-0">
@@ -771,21 +870,17 @@
 
 
             </div>
-        </div>
-        <div class="discover__morenew py-5">
+         </div>
+         <div class="discover__morenew py-5">
             <a href="https://automobiles.honda.com/news-and-events">
-                <button>MORE NEW AND EVENTS</button>
-
+            <button>MORE NEW AND EVENTS</button>
             </a>
-        </div>
-    </section>
-    <!-- END DISCOVER -->
-
-
-
-    <!-- CONTACT -->
-    <section class="contact pt-5">
-        <div class="honda__logo mx-auto py-3">
+         </div>
+      </section>
+      <!-- END DISCOVER -->
+      <!-- CONTACT -->
+      <section class="contact pt-5">
+         <div class="honda__logo mx-auto py-3">
             <a href="" data-utopia-id="hondalogo" data-utopia-function="utopiaFooterLinks">
                 <svg version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92px" height="60px" viewBox="0 0 92 60" style="enable-background:new 0 0 92 60;" xml:space="preserve">
                     <title>Visit Honda Automobiles homepage</title>
@@ -841,9 +936,9 @@
                                 </g>
                             </g>
                         </g>
-                    </g>
-                </svg>
-
+                     </g>
+                  </g>
+               </svg>
             </a>
             <!-- <a href="#">
             <img src="./images/honda_loading.gif" alt="" srcset="">
@@ -1337,9 +1432,6 @@
 
             </section>
             <!-- end copyright -->
-
-
-
             <!-- brands -->
             <section class="footer__brand py-4">
                 <div class="footer__brandContent">
