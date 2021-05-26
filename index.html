@@ -61,20 +61,44 @@
             <hr class="responsive__view">
             <div class="vehicleList" id="navVehicle">
               <div class="vehicleList__content">
+                <a id="headerVehicleID" class="subMenu__header" href="#">
+                  <i class="fa fa-angle-left"></i>
+                  VEHICLES
+                </a>
                 <div class="vehiclelist__type">
                   <ul class="text-center row justify-content-center">
-                    <li class="col-lg-12d4">
-                      <a href="#suvscross">SUVS & SCROSSOVERS</a>
+                    <li class="col-md-12 col-lg-12d4">
+                      <a href="#suvscross" class="subMenu__item">SUVS & SCROSSOVERS
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                      <hr class="responsive__view">
                     </li>
-                    <li class="col-lg-12d8"><a href="#cars">CARS</a></li>
-                    <li class="col-lg-12d5">
-                      <a href="#minivantruck">MINIVAN & TRUCK</a>
+                    
+                    <li class="col-md-12 col-lg-12d8"><a href="#cars" class="subMenu__item">CARS
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                    <hr class="responsive__view">
+                  </li>
+                    <li class="col-md-12 col-lg-12d5">
+                      <a href="#minivantruck" class="subMenu__item">MINIVAN & TRUCK
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                      <hr class="responsive__view">
                     </li>
-                    <li class="col-lg-12d7">
-                      <a href="#electrified">ELECTRIFIED</a>
+                    <li class="col-md-12 col-lg-12d7">
+                      <a href="#electrified" class="subMenu__item">ELECTRIFIED
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                      <hr class="responsive__view">
                     </li>
-                    <li class="col-lg-12d7"><a href="#future">FUTURE</a></li>
-                    <li class="col-lg-12d7"><a href="#preowned">PRE-OWNED</a></li>
+                    <li class="col-md-12 col-lg-12d7"><a href="#future" class="subMenu__item">FUTURE</a>
+                      <hr class="responsive__view">
+                    </li>
+                    <li class="col-md-12 col-lg-12d7"><a href="#preowned" class="subMenu__item">PRE-OWNED
+                      <i class="fa fa-external-link-alt"></i>
+                    </a>
+                      <hr class="responsive__view">
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -644,8 +668,8 @@
             <li class="nav-item" id="language">
               <a class="nav-link" id="languageId" href="#">Español</a>
               <div class="language__content">
-                <a class="car__btnitem" href="#">English</a>
-                <a class="car__btnitem" href="#">Español</a>
+                <a class="car__btnitem language__active" id="EN" href="#">English</a>
+                <a class="car__btnitem" id="ES" href="#">Español</a>
               </div>
             </li>
             <li class="nav-item nav__location">
@@ -657,17 +681,13 @@
           <div class="col honda-search pb-4 honda-search__hide">
             <form class="">
                 <input class="mt-4" type="text" name="s" placeholder="Search for anything Honda">
-                <div class="navbar__find navbar__findDis">
-                  <i class="fa fa-search"></i>
-                </div>
-                
+                <i class="fa fa-search"></i>
             </form>
         </div>
         </div>
       </nav>
       <section class="carousel">
       </section>
-
 
 
     <!-- TOUTS -->

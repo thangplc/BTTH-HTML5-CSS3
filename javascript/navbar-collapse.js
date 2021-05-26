@@ -20,6 +20,7 @@ function getidButton(clicked) {
         document.getElementById("navVehicle").classList.toggle("vehicleList-show");
         if (document.getElementById("navVehicle").classList.contains("vehicleList-show")) {
             document.getElementById(idBtn).classList.toggle("is-active");
+            document.getElementsByClassName("vehicleList__content")[0].classList.add("vehicleList__content-showed");
             // document.getElementsByClassName("vehicleList__content")[0].style.position="fixed";
         }
         else {
@@ -67,33 +68,52 @@ function getidButton(clicked) {
 // mobile-first
 function getidMobileBtn(clicked) {
     document.getElementById("navbarbtn").classList.toggle("hamburger__btnclick");
-    document.getElementById("vehicle").classList.toggle("row");
-    document.getElementById("vehicle").classList.toggle("justify-content-between");
-    document.getElementById("vehicle").classList.toggle("align-items-center");
-    document.getElementById("tool").classList.toggle("row");
-    document.getElementById("tool").classList.toggle("justify-content-between");
-    document.getElementById("tool").classList.toggle("align-items-center");
-    document.getElementById("owner").classList.toggle("row");
-    document.getElementById("owner").classList.toggle("justify-content-between");
-    document.getElementById("owner").classList.toggle("align-items-center");
-    document.getElementById("explore").classList.toggle("row");
-    document.getElementById("explore").classList.toggle("justify-content-between");
-    document.getElementById("explore").classList.toggle("align-items-center");
-    document.getElementById("language").classList.toggle("row");
-    document.getElementById("language").classList.toggle("justify-content-between");
-    document.getElementById("language").classList.toggle("align-items-center");
-    document.getElementById("languageId").innerHTML="Language";
-
-    if(document.getElementById("navbarMenu").style.display==="block"){
-        setTimeout(function() {
-            document.getElementById("navbarMenu").style.display="none";
+    document.getElementById("languageId").innerHTML = "Language";
+    var element = document.getElementsByTagName("html");
+    element[0].classList.toggle("submenu-opened")
+    if (document.getElementById("navbarMenu").style.display === "block") {
+        setTimeout(function () {
+            document.getElementById("navbarMenu").style.display = "none";
         }, 1000);
     }
-    else{
-        document.getElementById("navbarMenu").style.display="block";
+    else {
+        document.getElementById("navbarMenu").style.display = "block";
     }
-    setTimeout(function(){
+    setTimeout(function () {
         document.getElementById("navbarMenu").classList.toggle("secondary-nav");
     }, 300);
     // document.getElementById("menuList").classList.toggle("secondary-nav__opened")
+}
+
+document.getElementById("EN").onclick=changeL;
+document.getElementById("ES").onclick=changeL;
+function changeL(clicked) {
+    var enID = document.getElementById("EN");
+    var esID = document.getElementById("ES");
+    if (this.id==enID.id){
+        if (!enID.classList.contains("language__active")){
+            enID.classList.add("language__active");
+            esID.classList.remove("language__active");
+        }
+    }
+    if(this.id==esID.id){
+        if (!esID.classList.contains("language__active")){
+            esID.classList.add("language__active");
+            enID.classList.remove("language__active");
+        }
+    }
+}
+
+document.getElementById("headerVehicleID").onclick=closeSubMenu;
+function closeSubMenu(clicked){
+    switch(this.id){
+        case "headerVehicleID":
+            document.getElementById("navVehicle").classList.remove("vehicleList-show");
+            setTimeout(function(){
+                document.getElementsByClassName("vehicleList__content")[0].classList.remove("vehicleList__content-showed");
+            }, 300);
+            
+            break;
+    }
+    
 }
