@@ -570,8 +570,8 @@ border: 1px solid blue;
 }
 
 .honda__linkitem a {
-    line-height: 15px;
-    font-size: 13px;
+    line-height: 6px;
+    font-size: 12px;
     font-weight: 400;
     color: #00446b;
 }
@@ -579,6 +579,8 @@ border: 1px solid blue;
 .honda__linkitem a:hover {
     text-decoration: underline;
 }
+
+.honda__linkitem li {}
 
 
 /* FOOTER */
@@ -598,25 +600,15 @@ footer {
 
 /* copyright */
 
-.copyright {
+.footer__copyright {
     /* border: 1px solid rgb(187, 187, 187); */
     color: #fff;
 }
 
 
-/* .copyright-row {
-border: 1px solid red;
-} */
-
-
-/* .copyright-col {
-border: 1px solid blue;
-} */
-
-
 /* rights */
 
-.rights {
+.footer__copyrightContent {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -624,13 +616,13 @@ border: 1px solid blue;
     margin: 5px 0;
 }
 
-.rights a {
+.footer__copyrightContent a {
     color: #fff;
     cursor: pointer;
     font-weight: 600;
 }
 
-.rights a:hover {
+.rifooter__copyrightContent a:hover {
     text-decoration: underline;
 }
 
@@ -662,33 +654,33 @@ border: 1px solid blue;
 
 /* footer brands */
 
-.brand {
+.footer__brand {
     /* border: 1px solid #e49125; */
 }
 
-.brand svg {
+.footer__brand svg {
     fill: #fff;
     width: 70%;
 }
 
-.brand__content {
+.footer__brandContent {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 25px;
 }
 
-.brand__item {
+.footer__brandItem {
     /* border: 1px solid #fff; */
 }
 
 
 /* footer cookies */
 
-.cookies {
+.footer__cookies {
     width: 100%;
 }
 
-.cookies__content {
+.footer__cookiesContent {
     width: 50%;
     text-align: left;
     font-size: 12px;
@@ -698,12 +690,12 @@ border: 1px solid blue;
     margin: 5px 0;
 }
 
-.cookies__content a {
+.footer__cookiesContent a {
     color: #fff;
     font-weight: 600;
 }
 
-.cookies__content a:hover {
+.footer__cookiesContent a:hover {
     text-decoration: underline;
 }
 
