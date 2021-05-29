@@ -129,11 +129,28 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
 .YouTubePopUp-Close:hover{
     opacity:0.5;
 }
+@media all and (max-width: 1024px){
+	.YouTubePopUp-Content{
+		height: auto
+        width:80%;
+		
+    }
+	.YouTubePopUp-Close{
+        bottom:282x;
+	}
+	
+}
 
-@media all and (max-width: 768px) and (min-width: 10px){
+@media all and (max-width: 736px) and (min-width: 10px){
     .YouTubePopUp-Content{
         max-width:90%;
+		top: -180px;
+		
     }
+		
+    .YouTubePopUp-Close{
+        bottom:282x;
+	}
 }
 
 @media all and (max-width: 600px) and (min-width: 10px){
