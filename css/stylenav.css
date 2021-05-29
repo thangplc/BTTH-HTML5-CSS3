@@ -17,102 +17,113 @@
   background-size: cover;
   height: 570px;
 }
+.carousel h2 {
+  font-size: 90px;
+  text-align: center;
+  color: #06456a;
+}
 
 .car1 {
-  background-image: url(/image/MY21-accord-full-line-1400-2x.jpg);
+  background-image: url(../image/MY21-accord-full-line-1400-2x.jpg);
 }
 .car2 {
-  background-image: url(/image/MY21-accord-hybrid-full-line-1400-2x.jpg);
+  background-image: url(../image/MY21-accord-hybrid-full-line-1400-2x.jpg);
 }
 .car3 {
-  background-image: url(/image/MY21-Civic-Sedan-homepage-full-line-1400-2x.webp);
+  background-image: url(../image/MY21-Civic-Sedan-homepage-full-line-1400-2x.png);
 }
 .car4 {
-  background-image: url(/image/MY21-Civic-Hatch-non-VLP-full-line-1400-2x.webp);
+  background-image: url(../image/MY21-Civic-Hatch-non-VLP-full-line-1400-2x.webp);
 }
 .car5 {
-  background-image: url(/image/MY21-Civic-Type-R-non-VLP-full-line-1400-2x.jpg);
+  background-image: url(../image/MY21-Civic-Type-R-non-VLP-full-line-1400-2x.jpg);
 }
 .car6 {
-  background-image: url(/image/MY22-insight-nonVLP-full-line-1920-2x.webp);
+  background-image: url(../image/MY22-insight-nonVLP-full-line-1920-2x.webp);
 }
 .car7 {
-  background-image: url(/image/MY21-clarity-phev-nonVLP-full-line-1400.jpg);
+  background-image: url(../image/MY21-clarity-phev-nonVLP-full-line-1400.jpg);
 }
 .car8 {
-  background-image: url(/image/my20-clarity-cfc-fullline-1400-2x.webp);
+  background-image: url(../image/my20-clarity-cfc-fullline-1400-2x.webp);
 }
 
 .suvs1 {
-  background-image: url(/image/MY21-Passport-non-VLP-full-line-YEAR-1400-2x.webp);
+  background-image: url(../image/MY21-Passport-non-VLP-full-line-YEAR-1400-2x.webp);
 }
 
 .suvs2 {
-  background-image: url(/image/MY21-hr-v-full-line-1400-2x.jpg);
+  background-image: url(../image/MY21-hr-v-full-line-1400-2x.jpg);
 }
 
 .suvs3 {
-  background-image: url(/image/MY21-CR-V-non-VLP-full-line-A-1400-2x.jpg);
+  background-image: url(../image/MY21-CR-V-non-VLP-full-line-A-1400-2x.jpg);
 }
 
 .suvs4 {
-  background-image: url(/image/MY21-CR-V-HYBRID-non-VLP-full-line-A--1400-2x.webp);
+  background-image: url(../image/MY21-CR-V-HYBRID-non-VLP-full-line-A--1400-2x.webp);
 }
 
 .suvs5 {
-  background-image: url(/image/MY21-Pilot-non-VLP-full-line-1400-2x.webp);
+  background-image: url(../image/MY21-Pilot-non-VLP-full-line-1400-2x.webp);
 }
 
 .minivan1 {
-  background-image: url(/image/MY22-odyssey-non-VLP-full-line-1920-2x.jpg);
+  background-image: url(../image/MY22-odyssey-non-VLP-full-line-1920-2x.jpg);
 }
 
 .minivan2 {
-  background-image: url(/image/MY21-ridgeline-full-line-1400-2x.webp);
+  background-image: url(../image/MY21-ridgeline-full-line-1400-2x.webp);
 }
 
 .electrified1 {
-  background-image: url(/image/MY21-CR-V-HYBRID-non-VLP-full-line-A--1400-2x.webp);
+  background-image: url(../image/MY21-CR-V-HYBRID-non-VLP-full-line-A--1400-2x.webp);
 }
 
 .electrified2 {
-  background-image: url(/image/MY21-accord-hybrid-full-line-1400-2x.jpg);
+  background-image: url(../image/MY21-accord-hybrid-full-line-1400-2x.jpg);
 }
 
 .electrified3 {
-  background-image: url(/image/MY22-insight-nonVLP-full-line-1920-2x.webp);
+  background-image: url(../image/MY22-insight-nonVLP-full-line-1920-2x.webp);
 }
 
 .electrified4 {
-  background-image: url(/image/MY21-clarity-phev-nonVLP-full-line-1400.jpg);
+  background-image: url(../image/MY21-clarity-phev-nonVLP-full-line-1400.jpg);
 }
 
 .electrified5 {
-  background-image: url(/image/my20-clarity-cfc-fullline-1400-2x.webp);
+  background-image: url(../image/my20-clarity-cfc-fullline-1400-2x.webp);
 }
 
 .pre1 {
-  background-image: url(/image/2020-CPO-homepage-full-line-A-1400.jpg);
+  background-image: url(../image/2020-CPO-homepage-full-line-A-1400.jpg);
 }
 
 .future1 {
-  background-image: url(/image/MY22-ApolloFC-homepage-full-line-1400-2x.jpg);
+  background-image: url(../image/MY22-ApolloFC-homepage-full-line-1400-2x.jpg);
 }
 
 /* btn-bs */
 
 .carousel-control-prev {
-  height: 50px;
-  width: 5%;
-  top: 285px;
-  left: 20px;
+  height: 70px;
+  width: 3%;
+  top: 255px;
+  background-color: white;
+  opacity: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .carousel-control-next {
-  height: 50px;
-  width: 5%;
-  top: 255px;
-  right: 20px;
+  height: 70px;
+  width: 3%;
+  top: 250px;
+  background-color: white;
+  opacity: 1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 /* future */
@@ -206,10 +217,7 @@
   margin-top: 40px;
 }
 
-.
-
-
-1 .electrified svg {
+.electrified1 .electrified svg {
   width: 60%;
   margin: 60px 0 20px 30px;
 }
@@ -248,22 +256,6 @@
   font-weight: bold;
 }
 
-.btn-electrifiedBuild {
-  border-radius: 20px;
-  border: 1px solid #e5432f;
-  background-color: white;
-  height: 30px;
-  margin-bottom: 30px;
-}
-
-.btn-electrifiedBuild a {
-  padding: 0px 35px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #e5432f;
-  font-weight: bold;
-}
-
 .electrified2 .electrified {
   color: white;
   margin-top: 40px;
@@ -272,16 +264,6 @@
 .electrified2 .electrified svg {
   width: 100%;
   margin: 0px 0 20px 10px;
-}
-
-.family span {
-  color: white;
-  font-size: 15px;
-}
-
-.family img {
-  width: 40%;
-  height: 50px;
 }
 
 .electrified3 .electrified {
@@ -516,183 +498,385 @@
 
 /* CARS */
 
+.carExplore {
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #e5432f;
+  color: white;
+  padding: 8px 30px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.carBuild {
+  border-radius: 20px;
+  border: 2px solid #e5432f;
+  background-color: white;
+  color: #e5432f;
+  padding: 8px 40px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.car1 {
+  position: relative;
+}
+
 .car1 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car1 .car svg {
-  width: 100%;
+  width: 60%;
   margin: 60px 0 20px 0px;
 }
 
 .car-content {
-  font-size: 12px;
-  margin-bottom: 40px;
-  line-height: 20px;
+  padding: 0 200px 0 0px;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
-
-.car .col-6 span {
-  font-size: 35px;
-}
-
-.car .col-6 .price {
-  font-size: 12px;
-}
-
-.car .col-6 .rating {
-  font-size: 12px;
-}
-
-.btn-carExplore {
-  border-radius: 20px;
-  border: 1px solid white;
-  background-color: #e5432f;
-  height: 30px;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
-.btn-carExplore a {
-  padding: 0px 30px;
-  font-size: 14px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.btn-carBuild {
-  border-radius: 20px;
-  border: 1px solid #e5432f;
-  background-color: white;
-  height: 30px;
+.car .row {
   margin-bottom: 30px;
-  margin-top: 20px;
 }
 
-.btn-carBuild a {
-  padding: 0px 40px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #e5432f;
-  font-weight: bold;
+.family {
+  margin-top: 100px;
 }
 
-.car1 .col-6 .right {
-  font-size: 10px;
+.family span {
+  color: white;
+  font-size: 15px;
+}
+
+.family img {
+  width: 40%;
+  height: 50px;
+}
+
+.price {
+  margin-right: 20px;
+}
+
+.price span {
+  font-size: 30px;
+}
+
+.price p {
+  font-size: 15px;
+}
+
+.rating span {
+  font-size: 30px;
+}
+.price p {
+  font-size: 15px;
+}
+
+.car2 {
+  position: relative;
 }
 
 .car2 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car2 .car svg {
-  width: 80%;
-  margin: 20px 0 20px 0px;
+  width: 60%;
+  margin: 60px 0 20px 0px;
+}
+
+.car2 .family {
+  margin-top: 70px;
+}
+
+.car3 {
+  position: relative;
 }
 
 .car3 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car3 .car svg {
-  width: 80%;
-  margin: 20px 0 20px 0px;
+  width: 60%;
+  margin: 60px 0 20px 0px;
 }
 
-.car3 .family img {
-  margin-top: 35px;
+.car3 .family {
+  margin-top: 70px;
+}
+
+.car4 {
+  position: relative;
 }
 
 .car4 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car4 .car svg {
-  width: 80%;
-  margin: 20px 0 20px 0px;
+  width: 60%;
+  margin: 60px 0 20px 0px;
 }
 
-.car4 .family img {
-  margin-top: 35px;
+.car4 .family {
+  margin-top: 70px;
+}
+
+.car5 {
+  position: relative;
 }
 
 .car5 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car5 .car svg {
   width: 60%;
-  margin: 20px 0 20px 50px;
+  margin: 60px 0 20px 0px;
 }
 
-.car5 .col-6 .right {
-  font-size: 10px;
+.car5 .family {
+  margin-top: 50px;
+}
+
+.car6 {
+  position: relative;
 }
 
 .car6 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car6 .car svg {
-  width: 80%;
-  margin: 20px 0 20px 0px;
+  width: 60%;
+  margin: 60px 0 20px 0px;
 }
 
-.car6 .family img {
-  margin-top: 55px;
+.car6 .family {
+  margin-top: 90px;
+}
+
+.car7 {
+  position: relative;
 }
 
 .car7 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car7 .car svg {
-  width: 80%;
-  margin: 20px 0 20px 0px;
+  width: 60%;
+  margin: 60px 0 20px 0px;
 }
 
-.car7 .family img {
-  margin-top: 50px;
+.car7 .family {
+  margin-top: 70px;
+}
+
+.car8 {
+  position: relative;
 }
 
 .car8 .car {
   color: white;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .car8 .car svg {
-  width: 80%;
-  margin: 20px 0 20px 0px;
+  width: 60%;
+  margin: 60px 0 20px 0px;
 }
 
-.car8 .family img {
-  margin-top: 25px;
-}
-
-.car8 .col-6 .lease {
-  font-size: 23px;
-}
-
-.car8 .col-6 .price {
-  margin-top: 18px;
+.car8 .family {
+  margin-top: 70px;
 }
 
 #right {
+  position: absolute;
+  width: 50%;
   height: 570px;
+  left: 50%;
 }
 #left {
+  position: absolute;
+  width: 40%;
   height: 570px;
+  left: 80px;
+  top: 20px;
+}
+
+.fa-chevron-left {
+  font-size: 50px;
+  color: #00446b;
+}
+
+.fa-chevron-right {
+  font-size: 40px;
+  color: #00446b;
 }
 
 @media screen and (max-width: 768px) {
   .car1 {
-    background-image: url(/image/MY21-accord-full-line-320-2x.webp);
+    background-image: url(../image/MY21-accord-full-line-320-2x.webp);
+  }
+
+  .car2 {
+    background-image: url(../image/MY21-accord-hybrid-full-line-1400-2x.jpg);
+  }
+  .car3 {
+    background-image: url(../image/MY21-Civic-Sedan-homepage-full-line-1400-2x.webp);
+  }
+  .car4 {
+    background-image: url(../image/MY21-Civic-Hatch-non-VLP-full-line-1400-2x.webp);
+  }
+  .car5 {
+    background-image: url(../image/MY21-Civic-Type-R-non-VLP-full-line-1400-2x.jpg);
+  }
+  .car6 {
+    background-image: url(../image/MY22-insight-nonVLP-full-line-1920-2x.webp);
+  }
+  .car7 {
+    background-image: url(../image/MY21-clarity-phev-nonVLP-full-line-1400.jpg);
+  }
+  .car8 {
+    background-image: url(../image/my20-clarity-cfc-fullline-1400-2x.webp);
+  }
+  #left {
+    /* canh giữa */
+    margin: 0 auto;
+    /* vị trí tọa độ */
+    top: 36%;
+    /* độ rộng */
+    width: 60%;
+    left: 20%;
+  }
+  .car p:first-child {
+    text-align: center;
+  }
+  #left .car svg {
+    margin-left: 45px;
+    margin: 0;
+    width: 80%;
+  }
+  .car-content {
+    opacity: 0;
+  }
+  .car .row {
+    position: absolute;
+    top: 20%;
+  }
+  .car .price {
+    margin-right: 90px;
+  }
+  .price span {
+    font-size: 35px;
+  }
+  .price p {
+    font-size: 17px;
+  }
+  .rating {
+    text-align: right;
+  }
+  .rating span {
+    font-size: 35px;
+  }
+  .button .carExplore {
+    font-size: 20px;
+    margin-right: 60px;
+  }
+  .button .carBuild {
+    font-size: 20px;
+  }
+  .family {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .family img {
+    opacity: 0;
+  }
+  #right {
+    width: 70%;
+    left: 20%;
+    top: -63%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .car1 {
+    background-image: url(../image/MY21-accord-full-line-320-2x.webp);
+  }
+  #left {
+    /* canh giữa */
+    margin: 0 auto;
+    /* vị trí tọa độ */
+    top: 38%;
+    /* độ rộng */
+    width: 80%;
+    left: 10%;
+  }
+  .car p:first-child {
+    text-align: center;
+  }
+  #left .car svg {
+    width: 80%;
+    margin-left: 30px;
+  }
+  .car-content {
+    opacity: 0;
+  }
+  .car .row {
+    position: absolute;
+    top: 15%;
+  }
+  .row .price {
+    margin-right: 10px;
+  }
+  .price span {
+    font-size: 35px;
+  }
+  .price p {
+    font-size: 14px;
+  }
+  .rating {
+    text-align: right;
+  }
+  .rating p {
+    font-size: 14px;
+  }
+  .rating span {
+    font-size: 35px;
+  }
+  .button {
+    position: absolute;
+    top: 35%;
+  }
+
+  .button .carExplore {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .button .carBuild {
+    font-size: 15px;
+  }
+  .family {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .family img {
+    opacity: 0;
+  }
+  #right {
+    width: 70%;
+    left: 20%;
+    top: -63%;
   }
 }
