@@ -107,90 +107,6 @@ a:hover {
 }
 
 
-/* REPONSIVE TOUTS */
-
-
-/* reponsive tablet: ipad */
-
-@media screen and (max-width:1024px) {
-    .touts__content {
-        display: grid;
-        /* grid-template-columns: repeat(4, 1fr); */
-        gap: 10px;
-        width: 97%;
-        padding: 15px 10px;
-        margin: 0 auto;
-        grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
-        /* grid-template-rows: repeat(2, 175px); */
-        /* border: 1px solid rgb(17, 17, 16); */
-        text-align: center;
-    }
-    .touts__item h3 {
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        /* margin: 25px 0; */
-        color: #00324f;
-        font-weight: 700;
-        /* border: 1px solid red; */
-        width: 100%;
-    }
-    .touts__item {
-        /* border: 2px solid green; */
-        padding: 35px 25px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
-    }
-    .touts__item button {
-        margin-top: 25px;
-    }
-    .touts__item:last-of-type button {
-        margin-top: 9px;
-    }
-}
-
-
-/* reponsive moblie: touts */
-
-@media screen and (max-width:736px) {
-    .touts__content {
-        display: grid;
-        gap: 15px;
-        /* grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr); */
-        /* border: 1px solid rgb(17, 17, 16); */
-        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-        grid-template-rows: repeat(2, 175px);
-        text-align: center;
-    }
-    .touts__item {}
-    .touts__item h3 {
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        margin: 25px 0;
-        color: #00324f;
-        font-weight: 700;
-        /* border: 1px solid red; */
-        width: 100%;
-    }
-    .touts__item button {
-        /* margin-top: 25px; */
-        visibility: hidden;
-    }
-    .touts__item:last-of-type button {
-        /* margin-top: 10px; */
-    }
-}
-
-
-/* END REPONSIVE TOUTS */
-
-
-/* END TOUTS */
-
-
 /* EXPLORE */
 
 
@@ -322,60 +238,6 @@ a:hover {
     position: absolute;
     z-index: 9999;
     /* border: 1px solid black; */
-}
-
-
-/* RESPONSIVE EXPLORE */
-
-
-/* responsive table: explore */
-
-@media only screen and (max-width: 1024px) {
-    .explore {
-        height: 400px;
-        /* padding: 10px 0; */
-        /* border: 1px solid black; */
-    }
-    .explore__content {
-        width: 98%;
-        display: grid;
-        grid-gap: 15px;
-        /* border: 1px solid red; */
-        grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
-        /* grid-template-rows: repeat(1, 350px); */
-        height: 350px;
-    }
-    /* .explore__left {
-        border: 1px solid green;
-    } */
-    /* .explore__right {
-        border: 1px solid blue;
-    } */
-    .explore__howtovideo {
-        top: 217px;
-    }
-}
-
-
-/* responsive mobile: explore */
-
-@media only screen and (max-width: 736px) {
-    .explore__content {
-        width: 98%;
-        padding-bottom: 300px;
-    }
-    .explore__content a {
-        width: 100%;
-        height: 300px;
-    }
-    .explore__certified {
-        top: 85%;
-    }
-    .explore__certified span {}
-    .explore__certifie p {
-        font-size: 8px;
-        fill: #fff;
-    }
 }
 
 
@@ -554,74 +416,12 @@ a:hover {
 }
 
 
-/* RESPONSIVE DISCOVER */
-
-
-/* tablet */
-
-@media only screen and (max-width: 1024px) {
-    .discover {
-        /* border: 1px solid red; */
-    }
-    .discover-row {
-        display: grid;
-        padding: 0;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .discover-col {
-        margin-top: 10px;
-        margin-left: 0;
-        /* margin-right: 10px; */
-        height: auto;
-    }
-    .discover__title p {
-        padding: 0 25px;
-    }
-    /* class break line */
-    .discover-col-break {
-        /* visibility: hidden; */
-        display: none;
-    }
-}
-
-
-/* mobile */
-
-@media only screen and (max-width:736px) {
-    .discover {
-        margin-top: 300px;
-    }
-    .discover-col {
-        margin-left: 0;
-        /* height: 453px; */
-    }
-    .discover-row {
-        display: grid;
-        padding: 0;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .discover__title>h2 {
-        font-weight: 400;
-        font-size: 30px;
-    }
-    .discover-col>a>button {
-        padding: 5px 35px;
-    }
-    .w-100 {
-        width: 0 !important;
-    }
-    .discover-col-break {
-        visibility: hidden;
-    }
-}
-
-
 /* CONTACT */
 
 .contact {
     background-color: #eeeeee;
     width: 100%;
+    /* border: 1px solid #00324f; */
 }
 
 
@@ -630,10 +430,10 @@ a:hover {
 .honda__logo {
     width: 97%;
     border-top: 5px solid #007cc0;
-    border-bottom: #007cc0 1px solid;
+    border-bottom: 1px solid rgba(59, 59, 59, .2);
     text-align: center;
     background-color: #eeeeee;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .honda__logo svg {
@@ -644,29 +444,13 @@ a:hover {
 }
 
 
-/* RESPONSIVE CONTACT LOGO */
-
-
-/* logo tablet */
-
-@media only screen and (max-width: 1024px) {
-    .honda__logo svg {
-        height: 60px;
-        width: 92px;
-        fill: #007cc0;
-        cursor: pointer;
-    }
-}
-
-@media only screen and (max-width: 736px) {}
-
-
 /* HONDA CONTACT */
 
 .honda__contact {
     width: 97%;
-    border: 1px solid blue;
-    border-bottom: #007cc0 1px solid;
+    padding-top: 10px;
+    /* border: 1px solid blue; */
+    border-bottom: 1px solid rgba(59, 59, 59, .2);
 }
 
 .honda__contact p {
@@ -676,8 +460,8 @@ a:hover {
 }
 
 .honda-stay-in-touch {
-    border: 1px solid blue;
     text-align: left;
+    /* border: 1px solid blue; */
 }
 
 .honda-stay-in-touch svg {
@@ -696,23 +480,12 @@ a:hover {
 }
 
 
-/* .honda-search {
-border: 1px solid blue;
-}
-
-.honda-stay-informed {
-border: 1px solid blue;
-}
-*/
-
-@media only screen and (max-width: 1024px) {}
-
-
 /*  honda search*/
 
 .honda-search {
+    /* padding-top: 35px; */
     padding-bottom: 2rem;
-    border: 1px solid blue;
+    /* border: 1px solid red; */
 }
 
 .honda-search form {
@@ -720,9 +493,11 @@ border: 1px solid blue;
     position: relative;
     width: 100%;
     margin: 0 auto;
+    padding-top: 7px;
 }
 
 .honda-search input {
+    margin-top: 1rem;
     border: 0;
     border-radius: 34.5px;
     box-shadow: inset 2px 2px 5px 0 rgb(0 0 0 / 15%);
@@ -742,9 +517,9 @@ border: 1px solid blue;
 .honda-search i {
     color: #007cc0;
     display: block;
-    left: 25px;
+    left: 10px;
     position: absolute;
-    top: 40px;
+    top: 38px;
     font-size: 16px;
 }
 
@@ -752,7 +527,7 @@ border: 1px solid blue;
 /* stay informed */
 
 .honda-stay-informed {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .honda-stay-informed button {
@@ -859,7 +634,7 @@ footer {
     font-weight: 600;
 }
 
-.rifooter__copyrightContent a:hover {
+.footer__copyrightContent a:hover {
     text-decoration: underline;
 }
 
@@ -1006,4 +781,459 @@ footer {
     color: #fff;
     font-size: 20px;
     background-color: red;
+}
+
+
+/* RESPONSIVE WEB */
+
+
+/* TOUTS */
+
+
+/* tablet tout no change */
+
+
+/* iPad touts */
+
+@media only screen and (max-width: 1024px) {
+    .touts__item:last-of-type button {
+        /* margin-top: 10px; */
+    }
+    .touts__item:nth-of-type(1) h3 {
+        padding-bottom: 16px;
+    }
+    .touts__item:nth-of-type(2) h3 {
+        padding-bottom: 16px;
+    }
+}
+
+
+/*mobile touts*/
+
+@media only screen and (max-width:736px) {
+    .touts__content {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        grid-template-rows: repeat(2, 175px);
+        text-align: center;
+    }
+    .touts__item h3 {
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+        margin: 25px 0;
+        color: #00324f;
+        font-weight: 700;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    .touts__item button {
+        /* margin-top: 25px; */
+        visibility: hidden;
+    }
+    .touts__item:last-of-type button {
+        /* margin-top: 10px; */
+    }
+}
+
+
+/* EXPLORE */
+
+
+/*tablet explore*/
+
+@media only screen and (max-width: 1024px) {
+    .explore {
+        height: 400px;
+    }
+    .explore__content {
+        width: 98%;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
+        height: 350px;
+    }
+    .explore__howtovideo {
+        top: 217px;
+    }
+}
+
+
+/* mobile explore */
+
+@media only screen and (max-width: 736px) {
+    .explore__content {
+        width: 98%;
+        padding-bottom: 300px;
+    }
+    .explore__content a {
+        width: 100%;
+        height: 300px;
+    }
+    .explore__certified {
+        top: 85%;
+    }
+    .explore__certified p {
+        font-size: 8px;
+        fill: #fff;
+    }
+}
+
+
+/* RESPONSIVE DISCOVER */
+
+
+/* tablet discover */
+
+@media only screen and (max-width: 1024px) {
+    .discover {
+        /* border: 1px solid red; */
+    }
+    .discover-row {
+        display: grid;
+        padding: 0;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .discover-col {
+        margin-top: 10px;
+        margin-left: 0;
+        /* margin-right: 10px; */
+        height: auto;
+    }
+    .discover__title p {
+        padding: 0 25px;
+    }
+    /* class break line */
+    .discover-col-break {
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+
+
+/* mobile discover*/
+
+@media only screen and (max-width:736px) {
+    .discover {
+        margin-top: 300px;
+    }
+    .discover-col {
+        margin-left: 0;
+        /* height: 453px; */
+    }
+    .discover-row {
+        display: grid;
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .discover__title>h2 {
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .discover-col>a>button {
+        padding: 5px 35px;
+    }
+    .w-100 {
+        width: 0 !important;
+    }
+    .discover-col-break {
+        visibility: hidden;
+    }
+}
+
+
+/* RESPONSIVE CONTACT */
+
+
+/* iPad contact */
+
+@media only screen and (max-width: 1024px) {
+    /* honda logo */
+    .honda__logo svg {
+        height: 60px;
+        width: 92px;
+        fill: #007cc0;
+        cursor: pointer;
+    }
+    /* honda stay in touch*/
+    .honda-stay-in-touch {
+        order: 1;
+        padding-bottom: 15px;
+        width: 50%;
+        /* border-bottom: 1px solid rgba(59, 59, 59, .2); */
+    }
+    .honda-stay-in-touch svg {
+        fill: #2198dc;
+        height: 1.35rem;
+        width: 1.35rem;
+    }
+    /* honda search */
+    .honda-search {
+        order: 3;
+        padding-top: -45px;
+        padding-bottom: 20px;
+    }
+    .honda-search i {
+        font-size: 14px;
+        left: 13px;
+        top: 39px;
+    }
+    .honda-search input::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    /* honda-stay-informed */
+    .honda-stay-informed {
+        width: 50%;
+        order: 2;
+        padding-bottom: 15px;
+        /* border-bottom: 1px solid rgba(59, 59, 59, .2); */
+    }
+    .honda-stay-informed button {
+        border-radius: 34.5px;
+        background-color: #fff;
+        color: #007cc0;
+        border: 2px solid #007cc0;
+        font-size: 12px;
+        font-weight: 800;
+        /* height: 40px; */
+        padding: 5px 30px;
+        margin-top: 10px;
+        float: right;
+    }
+}
+
+
+/* contact mobile */
+
+@media only screen and (max-width: 736px) {
+    .honda__contact {
+        border: none;
+    }
+    .honda__logo {
+        border-top: 5px solid #007cc0 !important;
+        margin-top: -35px;
+        border: none;
+    }
+    /* honda logo no change */
+    /* honda stay in touch*/
+    .honda-stay-in-touch {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        padding: 0 25px;
+    }
+    .honda-stay-in-touch p {
+        display: none;
+    }
+    /* honda search */
+    .honda-search {
+        width: 100%;
+        order: 3;
+    }
+    /* honda-stay-informed */
+    .honda-stay-informed {
+        order: 1;
+        width: 70%;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .honda-stay-informed p {
+        float: none;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .honda-stay-informed button {
+        float: none;
+        padding: 5px 55px;
+    }
+}
+
+
+/* HONDA LINK */
+
+
+/* iPad honda link  */
+
+@media only screen and (max-width: 1024px) {
+    #honda__link {
+        display: block;
+        background-color: #fff;
+        width: 100%;
+    }
+    .honda__linkitem {
+        display: none;
+    }
+    .card {
+        position: none;
+        background-color: #eeeeee;
+        margin: 0 !important;
+        /* border: 1px solid blue; */
+        width: 750px;
+    }
+    .card-header {
+        width: 100%;
+        display: flex;
+        height: 40px;
+        position: relative;
+        padding: 10px 10px;
+        border-top: 1px solid rgba(238, 238, 238, .3);
+        border-bottom: 1px solid rgba(238, 238, 238, .3);
+    }
+    .card-header i {
+        padding: 6px;
+        right: 9px;
+        top: 4px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, .3);
+        border: 1px solid rgba(27, 27, 250, 0.7);
+    }
+    .card-header a {
+        display: flex;
+        font-size: 15px;
+        color: black;
+        font-weight: 700;
+        fill: black;
+    }
+    .card-body {
+        padding: 10px 35px;
+        background-color: #fff;
+    }
+    .card-body a {
+        font-size: 13px;
+        color: black;
+    }
+    .honda-linkCollapse {
+        margin-top: -5px !important;
+        width: 100%;
+        /* border: 1px solid red; */
+        margin-bottom: 20px;
+    }
+    .accordion .card-header:after {
+        font-family: 'FontAwesome';
+        content: "\f068";
+        float: right;
+    }
+    .accordion .card-header.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\f067";
+    }
+}
+
+
+/*  mobile honda link*/
+
+@media only screen and (max-width: 736px) {
+    .card {
+        position: none;
+        background-color: #eeeeee;
+        margin: 0 !important;
+        /* border: 1px solid blue; */
+        width: 404px;
+    }
+    .card-header i {
+        right: 9px;
+        top: 4px;
+    }
+}
+
+
+/* FOOTER */
+
+
+/* iPad Footer */
+
+@media only screen and (max-width: 1024px) {
+    .footer__brand {
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+        margin-right: 0;
+        border-top: rgb(255, 255, 255, .5) 1px solid;
+    }
+    .footer__brandContent {
+        /* border: 1px solid #fff; */
+        gap: 0;
+    }
+    .footer__brandItem {
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid red; */
+    }
+    .footer__brand svg {
+        padding: 10px 0;
+        width: 80px !important;
+    }
+    .footer__brandItem title {
+        font-size: 100px !important;
+    }
+    .footer__cookiesContent {
+        width: 85%;
+        /* border: 1px solid yellow; */
+        text-align: justify;
+    }
+    .copyright-col {
+        width: 50%;
+    }
+}
+
+
+/* mobile footer: ip8 plus */
+
+@media only screen and (max-width: 736px) {
+    .footer__copyright .copyright-row {
+        width: 100%;
+        display: block;
+        /* border: 1px solid yellow; */
+    }
+    .copyright-col {
+        text-align: center !important;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .copyright-col:last-of-type {
+        margin: 0 auto;
+        /* border: 1px solid rgb(255, 0, 200); */
+        width: 99%;
+        height: fit-content;
+    }
+    .links {
+        padding-top: 15px;
+        width: 100%;
+        /* border: 1px solid #fff; */
+        text-align: center;
+    }
+    /* all brand hidden except brand-honda */
+    .footer__brandItem {
+        display: none;
+        margin-top: -20px;
+        margin-bottom: -25px !important;
+    }
+    /* brand honda show  */
+    .brand-honda {
+        /* border: 1px solid red; */
+        display: block;
+        width: 100%;
+    }
+    .brand-honda svg {
+        width: 100px !important;
+        height: 100px !important;
+        margin-left: 145px;
+    }
+    .footer__cookies {
+        border-top: rgb(255, 255, 255, .5) 1px solid;
+    }
+    .footer__cookiesContent {
+        padding-top: 25px;
+        font-size: 11px;
+        margin: 0 auto;
+        width: 90%;
+        /* border: 1px solid yellow; */
+        text-align: center;
+    }
 }
