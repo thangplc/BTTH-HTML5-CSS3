@@ -47,8 +47,8 @@
                      VEHICLES
                      <i class="fa fa-angle-down"></i>
                      <i class="fa fa-angle-up"></i>
+                     <i class="fa fa-angle-right"></i>
                   </a>
-                  <i class="fa fa-angle-right"></i>
                </li>
                <hr class="responsive__view">
                <div class="vehicleList" id="navVehicle">
@@ -59,25 +59,25 @@
                      </a>
                      <div class="vehiclelist__type">
                         <ul class="text-center row justify-content-center">
-                           <li class="col-md-12 col-lg-12d4">
+                           <li class="col-md-12 col-lg-12d4" id="suvID">
                               <a href="#suvscross" class="subMenu__item">SUVS & SCROSSOVERS
                               <i class="fa fa-angle-right"></i>
                               </a>
                               <hr class="responsive__view">
                            </li>
-                           <li class="col-md-12 col-lg-12d8">
+                           <li class="col-md-12 col-lg-12d8" id="carsID">
                               <a href="#cars" class="subMenu__item">CARS
                               <i class="fa fa-angle-right"></i>
                               </a>
                               <hr class="responsive__view">
                            </li>
-                           <li class="col-md-12 col-lg-12d5">
+                           <li class="col-md-12 col-lg-12d5" id="van-truckID">
                               <a href="#minivantruck" class="subMenu__item">MINIVAN & TRUCK
                               <i class="fa fa-angle-right"></i>
                               </a>
                               <hr class="responsive__view">
                            </li>
-                           <li class="col-md-12 col-lg-12d7">
+                           <li class="col-md-12 col-lg-12d7" id="electricID">
                               <a href="#electrified" class="subMenu__item">ELECTRIFIED
                               <i class="fa fa-angle-right"></i>
                               </a>
@@ -97,12 +97,16 @@
                      </div>
                   </div>
                   <div class="vehicleList__carInfo">
-                     <div class="vehiclelist__item">
-                        <h6 id="suvscross" class="vehiclelist__title">
+                     <div id="suvscross" class="vehiclelist__item">
+                        <h6 class="vehiclelist__title">
                            SUVS & SCROSSOVERS
                         </h6>
+                        <a id="headersubID" class="subMenu__header" href="#">
+                            <i class="fa fa-angle-left"></i>
+                            SUVS & SCROSSOVERS
+                            </a>
                         <div class="vehiclelist__car row justify-content-between">
-                           <div class="car__item col-lg-12d5 m-1">
+                           <div class="car__item col-sm-6 col-md-3 col-lg-12d5 m-1">
                               <img src="./images/MY21-hr-v-nav.png" alt="" />
                               <h6 class="title">HR-V</h6>
                               <hr />
@@ -117,7 +121,7 @@
                                  <a href="#" class="car__btnitem">BUILD</a>
                               </div>
                            </div>
-                           <div class="car__item col-lg-12d5 m-1">
+                           <div class="car__item col-sm-6 col-md-3 col-lg-12d5 m-1">
                               <img
                                  src="./images/MY21-CR-V-non-VLP-nav-NH-830M-2x.png"
                                  alt=""
@@ -135,7 +139,7 @@
                                  <a href="#" class="car__btnitem">BUILD</a>
                               </div>
                            </div>
-                           <div class="car__item col-lg-12d5 m-1">
+                           <div class="car__item col-sm-6 col-md-3 col-lg-12d5 m-1">
                               <img
                                  src="./images/MY21-CR-V-HYBRID-non-VLP-nav-B-588P-2x.png"
                                  alt=""
@@ -153,7 +157,7 @@
                                  <a href="#" class="car__btnitem">BUILD</a>
                               </div>
                            </div>
-                           <div class="car__item col-lg-12d5 m-1">
+                           <div class="car__item col-sm-6 col-md-3 col-lg-12d5 m-1">
                               <img
                                  src="./images/GMC-2021-Pilot-side-profile-992x428.png"
                                  alt=""
@@ -171,7 +175,7 @@
                                  <a href="#" class="car__btnitem">BUILD</a>
                               </div>
                            </div>
-                           <div class="car__item col-lg-12d5 m-1">
+                           <div class="car__item col-sm-6 col-md-3 col-lg-12d5 m-1">
                               <img
                                  src="./images/MY21-passport-nav-jelly-sport-2x.png"
                                  alt=""
@@ -191,8 +195,8 @@
                            </div>
                         </div>
                      </div>
-                     <div class="vehiclelist__item">
-                        <h6 id="cars" class="vehiclelist__title">CARS - Sedans</h6>
+                     <div id="cars-sedan" class="vehiclelist__item">
+                        <h6 class="vehiclelist__title">CARS - Sedans</h6>
                         <div class="vehiclelist__car row justify-content-between">
                            <div class="car__item col-lg-12d5 m-1">
                               <img
@@ -301,8 +305,8 @@
                            </div>
                         </div>
                      </div>
-                     <div class="vehiclelist__item">
-                        <h6 id="minivantruck" class="vehiclelist__title">
+                     <div id="cars-hachback" class="vehiclelist__item">
+                        <h6 class="vehiclelist__title">
                            CARS - Hatchbacks
                         </h6>
                         <div class="vehiclelist__car row justify-content-start">
@@ -345,7 +349,7 @@
                         </div>
                      </div>
                      <div class="vehiclelist__item">
-                        <h6 id="" class="vehiclelist__title">MINIVAN & TRUCK</h6>
+                        <h6 id="minivan-truck" class="vehiclelist__title">MINIVAN & TRUCK</h6>
                         <div class="vehiclelist__car row justify-content-start">
                            <div class="car__item col-lg-12d5 m-1">
                               <img src="./images/GMC-MY21-odyssey-657x283.png" alt="" />
@@ -379,8 +383,8 @@
                            </div>
                         </div>
                      </div>
-                     <div class="vehiclelist__item">
-                        <h6 id="electrified" class="vehiclelist__title">ELECTRIFIED</h6>
+                     <div id="electrified" class="vehiclelist__item">
+                        <h6 class="vehiclelist__title">ELECTRIFIED</h6>
                         <div class="vehiclelist__car row justify-content-between">
                            <div class="car__item col-lg-12d5 m-1">
                               <img
@@ -514,13 +518,17 @@
                   </div>
                </div>
                <li class="nav-item nav__main" id="tool">
-                  <a class="nav-link" href="#" data-target="#navtool">
+                  <a class="nav-link" href="#" data-target="#navtool" id="toolID">
                   SHOPPING TOOLS
                   <i class="fa fa-angle-down"></i>
                   <i class="fa fa-angle-up"></i>
-                  </a>
                   <i class="fa fa-angle-right"></i>
+                  </a>
                   <div class="nav__colapseitem" id="navtool">
+                    <a id="headerToolID" class="subMenu__header" href="#">
+                        <i class="fa fa-angle-left"></i>
+                    SHOPPING TOOLS
+                    </a>
                      <div class="nav__colapseitemContent">
                         <div class="tool__itemlist">
                            <div class="tool__item">
@@ -529,128 +537,176 @@
                                  <p>Build & Price</p>
                               </a>
                            </div>
+                           <hr class="responsive__view">
                            <div class="tool__item">
                               <a href="#">
                                  <i class="fa fa-tag tool__icon"></i>
                                  <p>See Offers</p>
                               </a>
                            </div>
+                           <hr class="responsive__view">
                            <div class="tool__item">
                               <a href="#">
                                  <i class="fa fa-search tool__icon"></i>
                                  <p>Searcch Inventory</p>
                               </a>
                            </div>
+                           <hr class="responsive__view">
                            <div class="tool__item">
                               <a href="#">
                                  <i class="fa fa-calculator tool__icon"></i>
                                  <p>Estimate Payments</p>
                               </a>
                            </div>
+                           <hr class="responsive__view">
                            <div class="tool__item">
                               <a href="#">
                                  <i class="fa fa-pager tool__icon"></i>
                                  <p>Buy Online</p>
                               </a>
                            </div>
+                           <hr class="responsive__view">
                         </div>
                         <hr />
                         <div class="tool__service">
-                           <a href="#"
-                              >Trade-In Value <i class="fa fa-external-link-alt"></i
-                              ></a>
-                           <a href="#"
-                              >Honda Financial Services
-                           <i class="fa fa-external-link-alt"></i
-                              ></a>
-                           <a href="#"
-                              >Buyer’s Guide <i class="fa fa-external-link-alt"></i
-                              ></a>
-                           <a href="#"
-                              >For Financing <i class="fa fa-external-link-alt"></i
-                              ></a>
+                            <div class="tool__item">
+                                <a href="#">
+                                    <span>Trade-In Value</span>
+                                    <i class="fa fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <hr class="responsive__view">
+                            <div class="tool__item">
+                                <a href="#">
+                                    <span>Honda Financial Services</span>
+                                    <i class="fa fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <hr class="responsive__view">
+                            <div class="tool__item">
+                                <a href="#">
+                                    <span>Buyer’s Guide</span>
+                                    <i class="fa fa-external-link-alt"></i>
+                                 </a>
+                            </div>
+                            <hr class="responsive__view">
+                            <div class="tool__item">
+                                <a href="#">
+                                    <span>Financing</span> 
+                                    <i class="fa fa-external-link-alt"></i>
+                                 </a>
+                            </div>
+                            <hr class="responsive__view">
                         </div>
                      </div>
                   </div>
                </li>
                <hr class="responsive__view">
                <li class="nav-item nav__main" id="owner">
-                  <a class="nav-link" href="#" data-target="#navowners">
+                  <a class="nav-link" href="#" data-target="#navowners" id="ownerID">
                   Owners
                   <i class="fa fa-angle-down"></i>
                   <i class="fa fa-angle-up"></i>
-                  </a>
                   <i class="fa fa-angle-right"></i>
+                  </a>
                   <div class="nav__colapseitem" id="navowners">
+                    <a id="headerOwnerID" class="subMenu__header" href="#">
+                        <i class="fa fa-angle-left"></i>
+                    OWNERS
+                    </a>
                      <div class="nav__ownerItem">
                         <div class="nav__itemLeft">
                            <a href="#"
                               ><span>Owners Site</span>
                            <i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                            <a href="#"
                               ><span>Owner's Manual & Warranties </span
                               ><i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                            <a href="#"
                               ><span>Schedule Service</span>
                            <i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                            <a href="#"
                               ><span>Shop parts & Accessories</span>
                            <i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                            <a href="#"
                               ><span>Certified Body Shop Locator</span>
                            <i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                         </div>
                         <div class="nav__itemRight">
                            <a href="#"
                               ><span>Roadside Assistance</span>
                            <i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                            <a href="#"
                               ><span>Pay My Bill</span
                               ><i class="fa fa-external-link-alt"></i
                               ></a>
+                              <hr class="responsive__view">
                            <a href="#"
                               ><span>Recalls</span> <i class="fa fa-external-link-alt"></i
                               ></a>
-                           <a href="#"><span>Customer Service</span></a>
+                              <hr class="responsive__view">
+                           <a href="#">
+                               <span>Customer Service</span>
+                            </a>
+                            <hr class="responsive__view">
                         </div>
                      </div>
                   </div>
                </li>
                <hr class="responsive__view">
                <li class="nav-item" id="explore">
-                  <a class="nav-link" href="#" data-target="#navExplore">
+                  <a class="nav-link" href="#" data-target="#navExplore" id="exploreID">
                   Explore
                   <i class="fa fa-angle-down"></i>
                   <i class="fa fa-angle-up"></i>
-                  </a>
                   <i class="fa fa-angle-right"></i>
+                  </a>
+                  
                   <div class="nav__colapseitem" id="navExplore">
+                    <a id="headerExploreID" class="subMenu__header" href="#">
+                        <i class="fa fa-angle-left"></i>
+                        EXPLORE
+                    </a>
                      <div class="nav__exploreItem">
                         <a href="#"><span>Honda Safety</span></a>
+                        <hr class="responsive__view">
                         <a href="#"
                            ><span>Honda Sensing<sup>@</sup></span></a
                            >
+                           <hr class="responsive__view">
                         <a href="#"><span>Rugged Capability</span></a>
+                        <hr class="responsive__view">
                         <a href="#"><span>Electrified Vehicles</span></a>
+                        <hr class="responsive__view">
                         <a href="#"><span>News & Events</span></a>
+                        <hr class="responsive__view">
                         <a href="#"
                            ><span>Honda Racing</span>
                         <i class="fa fa-external-link-alt"></i
                            ></a>
+                           <hr class="responsive__view">
                         <a href="#"
                            ><span>Honda in the Community</span>
                         <i class="fa fa-external-link-alt"></i
                            ></a>
+                           <hr class="responsive__view">
                         <a href="#"
                            ><span>Honda on Inclusion and Diversity</span>
                         <i class="fa fa-external-link-alt"></i
                            ></a>
+                           <hr class="responsive__view">
                      </div>
                   </div>
                </li>
@@ -964,11 +1020,10 @@
 	 M15.6,12.9h-2v7.2h-3v-7.2H9.1v-2.6h1.4V8.7c-0.1-1.6,1-2.9,2.6-3c0.1,0,0.3,0,0.4,0l2.2,0v2.5h-1.6c-0.3,0-0.6,0.2-0.6,0.6
 	c0,0,0,0.1,0,0.1v1.5h2.3L15.6,12.9z"></path>
                             </svg>
-
                         </a>
                         <!-- icon instagram -->
                         <a href="https://instagram.com/honda/" class="" aria-label="Circular Instagram icon containing link to Honda Instagram page. [hyperlink to: https://www.instagram.com/honda/]" target="_blank" data-utopia-id="aria-label=" circular="" instagram="" icon=""
-                            containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.instagram.com="" ] ""="" data-utopia-function="utopiaFooterLinks">
+                            containing="" link="" to="" honda="" page.="" [hyperlink="" to:="" https:="" www.instagram.com="" ]  data-utopia-function="utopiaFooterLinks">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.6 23.9" style="enable-background:new 0 0 23.6 23.9;" xml:space="preserve">
                                 <style type="text/css">
                                     #fs3-ig {
@@ -1916,7 +1971,9 @@
                                     </g>
                                 </g>
                             </svg>
+                            <div>
 
+                            </div>
                         </a>
                     </div>
                 </div>
