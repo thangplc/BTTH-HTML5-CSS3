@@ -50,10 +50,17 @@ document.getElementById("headerVehicleID").onclick = closeSubMenu;
 document.getElementById("headerToolID").onclick = closeSubMenu;
 document.getElementById("headerOwnerID").onclick = closeSubMenu;
 document.getElementById("headerExploreID").onclick = closeSubMenu;
+document.getElementById("headersubID").onclick=closeSubMenu;
+document.getElementById("headercarID").onclick=closeSubMenu;
+document.getElementById("headervantruckID").onclick=closeSubMenu;
+document.getElementById("headerelectricedID").onclick=closeSubMenu;
 function closeSubMenu(clicked) {
     switch (this.id) {
         case "headerVehicleID":
             document.getElementById("navVehicle").classList.remove("vehicleList-show");
+            setTimeout(function(){
+                document.getElementsByClassName("vehicleList__content")[0].classList.remove("vehicleList__content-showed");
+            }, 600);
             break;
         case "headerToolID":
             document.getElementById("navtool").classList.remove("navdrop__show");
@@ -64,7 +71,34 @@ function closeSubMenu(clicked) {
         case "headerExploreID":
             document.getElementById("navExplore").classList.remove("navdrop__show");
             break;
+        case "headersubID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-trans");
+            setTimeout(function() {
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-showed");
+                document.getElementById("suvscross").classList.remove("vehicleList__carList-showed");
+            }, 600);
+        case "headercarID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-trans");
+            setTimeout(function() {
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-showed");
+                document.getElementById("cars-sedan").classList.remove("vehicleList__carList-showed");
+                document.getElementById("cars-hachback").classList.remove("vehicleList__carList-showed");
+            }, 600);
+        case "headervantruckID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-trans");
+            setTimeout(function() {
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-showed");
+                document.getElementById("minivan-truck").classList.remove("vehicleList__carList-showed");
+            }, 600);
+        case "headerelectricedID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-trans");
+            setTimeout(function() {
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.remove("vehicleList__carInfo-showed");
+                document.getElementById("electrified").classList.remove("vehicleList__carList-showed");
+            }, 600);
         }
+        
+
 
 }
 
@@ -137,12 +171,34 @@ document.getElementById("van-truckID").onclick=VehicleListShow;
 document.getElementById("electricID").onclick=VehicleListShow;
 
 function VehicleListShow(clicked){
-    document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
     switch(this.id){
         case "suvID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
+            document.getElementById("suvscross").classList.toggle("vehicleList__carList-showed");
             setTimeout(function(){
-                document.getElementById("suvscross").style.display="block";
                 document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans"); 
+            }, 200);
+            break;
+        case "carsID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
+            document.getElementById("cars-sedan").classList.toggle("vehicleList__carList-showed");
+            document.getElementById("cars-hachback").classList.toggle("vehicleList__carList-showed");
+            setTimeout(function(){
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans"); 
+            }, 200);
+            break;
+        case "van-truckID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
+            document.getElementById("minivan-truck").classList.toggle("vehicleList__carList-showed");
+            setTimeout(function(){
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans");
+            }, 200);
+            break;
+        case "electricID":
+            document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
+            document.getElementById("electrified").classList.toggle("vehicleList__carList-showed");
+            setTimeout(function(){
+                document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans");
             }, 200);
             break;
     }
