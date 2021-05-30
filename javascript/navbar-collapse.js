@@ -105,9 +105,9 @@ function closeSubMenu(clicked) {
 // collapse Menu
 function getidButton(clicked) {
     document.getElementById("vehicle").classList.remove("is-active");
-    document.getElementById("toolID").classList.remove("is-active");
-    document.getElementById("ownerID").classList.remove("is-active");
-    document.getElementById("exploreID").classList.remove("is-active");
+    document.getElementById("tool").classList.remove("is-active");
+    document.getElementById("owner").classList.remove("is-active");
+    document.getElementById("explore").classList.remove("is-active");
     document.getElementsByClassName("vehicleList__content")[0].style.position = "relative";
     var idBtn = this.id;
     if (idBtn == "vehicle") {
@@ -169,12 +169,17 @@ document.getElementById("suvID").onclick=VehicleListShow;
 document.getElementById("carsID").onclick=VehicleListShow;
 document.getElementById("van-truckID").onclick=VehicleListShow;
 document.getElementById("electricID").onclick=VehicleListShow;
-
+document.getElementById("futureID").onclick=VehicleListShow;
 function VehicleListShow(clicked){
     switch(this.id){
         case "suvID":
             document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
             document.getElementById("suvscross").classList.toggle("vehicleList__carList-showed");
+            document.getElementById("futureID").classList.remove("actived");
+            document.getElementById("suvID").classList.toggle("actived");
+            document.getElementById("carsID").classList.remove("actived");
+            document.getElementById("van-truckID").classList.remove("actived");
+            document.getElementById("electricID").classList.remove("actived");
             setTimeout(function(){
                 document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans"); 
             }, 200);
@@ -183,6 +188,11 @@ function VehicleListShow(clicked){
             document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
             document.getElementById("cars-sedan").classList.toggle("vehicleList__carList-showed");
             document.getElementById("cars-hachback").classList.toggle("vehicleList__carList-showed");
+            document.getElementById("futureID").classList.remove("actived");
+            document.getElementById("suvID").classList.remove("actived");
+            document.getElementById("carsID").classList.toggle("actived");
+            document.getElementById("van-truckID").classList.remove("actived");
+            document.getElementById("electricID").classList.remove("actived");
             setTimeout(function(){
                 document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans"); 
             }, 200);
@@ -190,6 +200,11 @@ function VehicleListShow(clicked){
         case "van-truckID":
             document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
             document.getElementById("minivan-truck").classList.toggle("vehicleList__carList-showed");
+            document.getElementById("futureID").classList.remove("actived");
+            document.getElementById("suvID").classList.remove("actived");
+            document.getElementById("carsID").classList.remove("actived");
+            document.getElementById("van-truckID").classList.toggle("actived");
+            document.getElementById("electricID").classList.remove("actived");
             setTimeout(function(){
                 document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans");
             }, 200);
@@ -197,9 +212,21 @@ function VehicleListShow(clicked){
         case "electricID":
             document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-showed");
             document.getElementById("electrified").classList.toggle("vehicleList__carList-showed");
+            document.getElementById("futureID").classList.remove("actived");
+            document.getElementById("suvID").classList.remove("actived");
+            document.getElementById("carsID").classList.remove("actived");
+            document.getElementById("van-truckID").classList.remove("actived");
+            document.getElementById("electricID").classList.toggle("actived");
             setTimeout(function(){
                 document.getElementsByClassName("vehicleList__carInfo")[0].classList.toggle("vehicleList__carInfo-trans");
             }, 200);
+            break;
+        case "futureID":
+            document.getElementById("futureID").classList.toggle("actived");
+            document.getElementById("suvID").classList.remove("actived");
+            document.getElementById("carsID").classList.remove("actived");
+            document.getElementById("van-truckID").classList.remove("actived");
+            document.getElementById("electricID").classList.remove("actived");
             break;
     }
 }
