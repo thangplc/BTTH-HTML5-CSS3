@@ -633,7 +633,7 @@ a:hover {
     border-bottom: #007cc0 1px solid;
     text-align: center;
     background-color: #eeeeee;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .honda__logo svg {
@@ -644,11 +644,28 @@ a:hover {
 }
 
 
+/* RESPONSIVE CONTACT LOGO */
+
+
+/* logo tablet */
+
+@media only screen and (max-width: 1024px) {
+    .honda__logo svg {
+        height: 60px;
+        width: 92px;
+        fill: #007cc0;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 736px) {}
+
+
 /* HONDA CONTACT */
 
 .honda__contact {
     width: 97%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     border-bottom: #007cc0 1px solid;
 }
 
@@ -659,7 +676,7 @@ a:hover {
 }
 
 .honda-stay-in-touch {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     text-align: left;
 }
 
@@ -688,8 +705,15 @@ border: 1px solid blue;
 }
 */
 
+@media only screen and (max-width: 1024px) {}
+
 
 /*  honda search*/
+
+.honda-search {
+    padding-bottom: 2rem;
+    border: 1px solid blue;
+}
 
 .honda-search form {
     max-width: 535px;
@@ -726,6 +750,10 @@ border: 1px solid blue;
 
 
 /* stay informed */
+
+.honda-stay-informed {
+    border: 1px solid black;
+}
 
 .honda-stay-informed button {
     border-radius: 34.5px;
