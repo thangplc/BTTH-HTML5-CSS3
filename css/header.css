@@ -50,6 +50,9 @@ html.submenu-opened{
     margin-left: 1rem;
     z-index: 2;
 }
+.nav__menu, .nav__menu ul{
+    height: 49px;
+}
 .nav__menu ul li a.nav-link{
     color: white;
     transition: color .25s;
@@ -135,6 +138,7 @@ html.submenu-opened{
 .vehiclelist__type{
     background-color: #FFFFFF;
     width: 100%;
+    height: 63px;
     padding: 0 30px;
     border-bottom: 1px solid #dedede;
     z-index: 10;
@@ -285,15 +289,17 @@ html.submenu-opened{
     max-height: 0;
     overflow: hidden;
     transition: max-height .15s;
+    text-align: center;
 }
 .nav__colapseitemContent{
-    width: 90%;
+    width: 100%;
+    margin: auto;
     margin: 20px 0;
+    padding: 0 10px;
 }
 .tool__itemlist{
     display: flex;
     width: 100%;
-    height: fit-content;
     margin: auto;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -319,11 +325,11 @@ html.submenu-opened{
 }
 .tool__service{
     padding: 20px 0 0;
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 14px;
     color: #007cc0;
 }
@@ -468,10 +474,14 @@ html.submenu-opened{
         overflow-y: auto;
         position: fixed;
         right: 0;
-        top: 48px;
+        top: 49px;
         transform: translateY(-200%);
         z-index: -2;
         transition: transform .9s;
+        height: 100vh;
+    }
+    .nav__menu ul{
+        height: max-content;
     }
     .nav__menu ul li a.nav-link{
         color: #00324f;
@@ -505,7 +515,12 @@ html.submenu-opened{
     .responsive__view{
         display: block;
     }
-    .nav-item{
+    .nav-item>a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #language{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -561,12 +576,119 @@ html.submenu-opened{
         left: 0;
         transition: left .9s;
     }
+    .vehicleList__carInfo{
+        width: 100%;
+        padding: 0;
+        background-color: #eee;
+    }
+    .vehicleList__carInfo .vehiclelist__item{
+        width: 100%;
+    }
+    .vehiclelist__car{
+        width: 95%;
+        padding: 0 10px;
+    }
     .vehicleList__content, .vehicleList__carInfo{
         display: none;
     }
     .vehicleList__content-showed{
         display: block;
     }
+    .vehicleList__carInfo-showed{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 2000;
+    }
+    .vehicleList__carInfo-trans{
+        left: 0;
+        transition: left 0.9s;
+    }
+    .vehiclelist__title{
+        display: none;
+    }
+    #suvscross{
+        display: none;
+    }
+
+
+    .nav__colapseitem{
+        color: #00324F;
+        background: #eee;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        max-height: 100vh;
+        z-index: 100;
+        left: 100%;
+        transition: left .9s;
+    }
+    .navdrop__show{
+        left: 0;
+        transition: left 0.9s;
+    }
+    .nav__colapseitem>hr{
+        display: none;
+    }
+    .nav__colapseitemContent{
+        margin: auto;
+        width: 95%;
+    }
+    .tool__itemlist, .tool__service{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .tool__item{
+        text-align: left;
+        padding: 0;
+        height: 49px;
+        line-height: 49px;
+    }
+    .tool__itemlist .tool__item i{
+        display: none;
+        text-align: left;
+    }
+    .tool__item a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__ownerItem{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .nav__itemLeft, .nav__itemRight{
+        width: 95%;
+        margin: auto;
+        padding: 0 10px;
+        border: none;
+    }
+    .nav__itemLeft>a, .nav__itemRight>a{
+        color: #00324F;
+        height: 49px;
+    }
+    .nav__exploreItem{
+        width: 95%;
+        margin: auto;
+        padding: 0 10px;
+    }
+    .nav__exploreItem a{
+        color: #00324F;
+        height: 49px;
+    }
+    .vehiclelist__car{
+        margin: auto;
+    }
+}
+@media screen and (min-width:768px){
+   .col-md-3 {
+       flex: 0 0 32px;
+       max-width: 40%;
+   }
 }
 @media screen and (min-width:992px){
     .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right,.honda-search__hide,.fa-angle-right,a.subMenu__header, .subMenu__item i.fa-external-link-alt{
@@ -596,14 +718,14 @@ html.submenu-opened{
         max-width: 20%;
     }
 }
-@media screen and (min-width: 1053px ) and (max-width:1499px) {
+@media screen and (min-width: 1140px ) and (max-width:1329.99px) {
     .vehiclelist__type ul{
-        width: 80%;
+        max-width: 85%;
     }
 }
-@media screen and (min-width: 1500px ) {
+@media screen and (min-width: 1330px ) {
     .vehiclelist__type ul{
-        width: 55%;
+        max-width: 70%;
     }
     .car_Imgtext{
         width: 250px;
