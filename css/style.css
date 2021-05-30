@@ -67,11 +67,9 @@ a:hover {
 
 .touts__item {
     /* border: 2px solid green; */
-    padding: 15px;
+    /* padding: 15px; */
     padding: 35px 25px;
     background-color: #fff;
-    height: 291px;
-    height: 273px;
     border-radius: 5px;
     box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
 }
@@ -83,6 +81,7 @@ a:hover {
     margin: 25px 0;
     color: #00324f;
     font-weight: 700;
+    /* border: 1px solid red; */
 }
 
 .touts__item i {
@@ -108,7 +107,85 @@ a:hover {
 }
 
 
-/* .touts__item button:hover {} */
+/* REPONSIVE TOUTS */
+
+
+/* reponsive tablet: ipad */
+
+@media screen and (max-width:1024px) {
+    .touts__content {
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        gap: 10px;
+        width: 97%;
+        padding: 15px 10px;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+        /* grid-template-rows: repeat(2, 175px); */
+        /* border: 1px solid rgb(17, 17, 16); */
+        text-align: center;
+    }
+    .touts__item h3 {
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+        /* margin: 25px 0; */
+        color: #00324f;
+        font-weight: 700;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    .touts__item {
+        /* border: 2px solid green; */
+        padding: 35px 25px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    }
+    .touts__item button {
+        margin-top: 25px;
+    }
+    .touts__item:last-of-type button {
+        margin-top: 9px;
+    }
+}
+
+
+/* reponsive moblie: touts */
+
+@media screen and (max-width:736px) {
+    .touts__content {
+        display: grid;
+        gap: 15px;
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); */
+        /* border: 1px solid rgb(17, 17, 16); */
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        grid-template-rows: repeat(2, 175px);
+        text-align: center;
+    }
+    .touts__item {}
+    .touts__item h3 {
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+        margin: 25px 0;
+        color: #00324f;
+        font-weight: 700;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    .touts__item button {
+        /* margin-top: 25px; */
+        visibility: hidden;
+    }
+    .touts__item:last-of-type button {
+        /* margin-top: 10px; */
+    }
+}
+
+
+/* END REPONSIVE TOUTS */
 
 
 /* END TOUTS */
@@ -153,7 +230,7 @@ a:hover {
 .explore__left:hover>.explore__certified>button {
     transition: all .6s;
     color: #007cc0;
-    border: 2px solid #007cc0;
+    /* border: 2px solid #007cc0; */
     background-color: rgba(255, 255, 255, .0);
 }
 
@@ -212,7 +289,7 @@ a:hover {
     border-radius: 1.95rem;
     background-color: #007cc0;
     color: #fff;
-    border: 2px solid #007cc0;
+    /* border: 2px solid #007cc0; */
     font-size: 15px;
     font-weight: 600;
     padding: 5px 10px;
@@ -244,7 +321,61 @@ a:hover {
 .explore-modal {
     position: absolute;
     z-index: 9999;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+
+/* RESPONSIVE EXPLORE */
+
+
+/* responsive table: explore */
+
+@media only screen and (max-width: 1024px) {
+    .explore {
+        height: 400px;
+        /* padding: 10px 0; */
+        /* border: 1px solid black; */
+    }
+    .explore__content {
+        width: 98%;
+        display: grid;
+        grid-gap: 15px;
+        /* border: 1px solid red; */
+        grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
+        /* grid-template-rows: repeat(1, 350px); */
+        height: 350px;
+    }
+    /* .explore__left {
+        border: 1px solid green;
+    } */
+    /* .explore__right {
+        border: 1px solid blue;
+    } */
+    .explore__howtovideo {
+        top: 217px;
+    }
+}
+
+
+/* responsive mobile: explore */
+
+@media only screen and (max-width: 736px) {
+    .explore__content {
+        width: 98%;
+        padding-bottom: 300px;
+    }
+    .explore__content a {
+        width: 100%;
+        height: 300px;
+    }
+    .explore__certified {
+        top: 85%;
+    }
+    .explore__certified span {}
+    .explore__certifie p {
+        font-size: 8px;
+        fill: #fff;
+    }
 }
 
 
@@ -287,6 +418,7 @@ a:hover {
 
 .discover-row {
     /* border: 1px solid black; */
+    margin: 0 auto;
 }
 
 .discover-col {
@@ -296,7 +428,19 @@ a:hover {
     text-align: center;
     width: 100%;
     box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
-    /* max-height: 500px; */
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+}
+
+.discover-col:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.discover-col:nth-of-type(5) {
+    margin-left: 0;
 }
 
 .discover__img {
@@ -349,6 +493,8 @@ a:hover {
     height: 52%;
     /* border: 1px solid blue; */
     padding-bottom: 40px;
+    padding-top: 1.5rem;
+    margin: 0 auto;
 }
 
 .discover__text h5 {
@@ -405,6 +551,69 @@ a:hover {
     border: 1px solid #e42525;
     color: #e42525;
     transition: all .4s;
+}
+
+
+/* RESPONSIVE DISCOVER */
+
+
+/* tablet */
+
+@media only screen and (max-width: 1024px) {
+    .discover {
+        /* border: 1px solid red; */
+    }
+    .discover-row {
+        display: grid;
+        padding: 0;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .discover-col {
+        margin-top: 10px;
+        margin-left: 0;
+        /* margin-right: 10px; */
+        height: auto;
+    }
+    .discover__title p {
+        padding: 0 25px;
+    }
+    /* class break line */
+    .discover-col-break {
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+
+
+/* mobile */
+
+@media only screen and (max-width:736px) {
+    .discover {
+        margin-top: 300px;
+    }
+    .discover-col {
+        margin-left: 0;
+        /* height: 453px; */
+    }
+    .discover-row {
+        display: grid;
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .discover__title>h2 {
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .discover-col>a>button {
+        padding: 5px 35px;
+    }
+    .w-100 {
+        width: 0 !important;
+    }
+    .discover-col-break {
+        visibility: hidden;
+    }
 }
 
 
