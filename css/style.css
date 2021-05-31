@@ -598,6 +598,10 @@ a:hover {
 
 .honda__linkitem li {}
 
+.panel-body {
+    /* background-color: #fff; */
+}
+
 
 /* FOOTER */
 
@@ -1149,6 +1153,7 @@ footer {
         display: none;
     }
     .honda-collapse {
+        height: auto;
         margin-top: -29px;
         display: block;
         margin-bottom: 15px;
@@ -1399,6 +1404,7 @@ footer {
         margin-top: -29px;
         display: block;
         margin-bottom: 15px;
+        height: auto;
     }
     .panel-default:first-of-type {
         border-top: 1px solid rgba(59, 59, 59, .2);
@@ -1537,16 +1543,18 @@ footer {
     /* -------------------------------DISCOVER HONDA---------------------------------- */
     .discover {
         margin-top: 600px;
-        /* border: 1px solid red; */
+        /* padding-top: 25px; */
+        border: 1px solid red;
+    }
+    .discover__content {
+        padding-top: 45px;
     }
     .discover-col {
         max-width: 280px;
         /* border: 1px solid green; */
         margin: 0 auto !important;
     }
-    .discover-col:nth-of-type(1) {
-        padding-top: 25px;
-    }
+    .discover-col:nth-of-type(1) {}
     .discover-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1635,10 +1643,15 @@ footer {
         top: 4px;
     }
     /* ----------------------COPYRIGHT----------------------------------------- */
+    footer {
+        /* border: 1px solid red; */
+    }
+    .footer__copyright {
+        /* border: 1px solid yellow; */
+    }
     .footer__copyright .copyright-row {
         width: 100%;
         display: block;
-        /* border: 1px solid yellow; */
     }
     .copyright-col {
         text-align: center !important;
@@ -1666,6 +1679,7 @@ footer {
         margin-top: -29px;
         display: block;
         margin-bottom: 15px;
+        min-height: auto;
     }
     .panel-default:first-of-type {
         border-top: 1px solid rgba(59, 59, 59, .2);
