@@ -57,7 +57,7 @@
 }
 .cr__overplay{
     background-color: #00324F;
-    height: 40px;
+    height: 60px;
     width: 100%;
     display: block;
     z-index: 2;
@@ -81,6 +81,19 @@
     transform: translateX(-50%);
     width: 95%;
     padding: 0;
+}
+.newProduct__content-showed{
+    animation: displayItem 1s linear 0s 1;
+}
+@keyframes displayItem{
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
 }
 .newProduct__content .newProduct__item {
     width: 50%;
@@ -138,12 +151,20 @@
     border-color: #fff;
     transition: background-color .8s;
 }
+.newProduct__item:last-child .newProduct-caption__text{
+    text-align: left;
+    padding: 5px 0;
+    margin-bottom: 50px;
+}
 .newProduct__item:first-child:hover .newProduct-caption__btn{
     background-color: transparent;
 }
 .newProduct__item:last-child .newProduct-caption__btn:hover{
     background-color: #fff;
     color: #2298DC;
+}
+.newProduct-tabletID-hidden{
+    display: none;
 }
 @media screen and (min-width:1401px){
     .img-view1400{
@@ -155,7 +176,7 @@
         display: block;
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767.9px){
     #carousel__main{
         background-color: #fff;
     }
@@ -166,6 +187,40 @@
     .carousel-indicators li.active{
         background-color: #2198dc;
     }
+    .newProduct{
+        height: fit-content;
+    }
+    .newProduct__content{
+        position: relative;
+        top: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .newProduct__content .newProduct__item{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .newProduct-caption__text{
+        font-size: 14px;
+    }
+    .newProduct__item:last-child .newProduct-caption{
+        width: 80%;
+        text-align: center;
+        top: 75%;
+        left: 50%;
+    }
+    .newProduct__item:last-child .newProduct-caption__text{
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }
+    .newProduct__bg{
+        display: none;
+    }
+    .cr__overplay{
+        background-color: #fff;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1023.9px){
     .img-view768{
@@ -175,7 +230,9 @@
         width: 80%;
         top: 50%;
         left: 45%;
-
+    }
+    .newProduct__bg{
+        background-color: #fff;
     }
 }
 @media screen and (min-width:550.5px) and (max-width:767.9px){
@@ -186,5 +243,8 @@
 @media screen and (max-width:550px){
     .img-view320{
         display: block;
+    }
+    .newProduct__item:last-child .newProduct-caption__text{
+        margin-bottom: 2px;
     }
 }
