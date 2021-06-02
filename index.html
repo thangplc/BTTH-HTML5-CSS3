@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/carousel.css" />
 </head>
 
-<body>
+<body onresize="windowWidth()" onload="windowWidth()">
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg fixed-top justify-content-between">
         <div id="navbaroverlay" style="visibility: visible"></div>
@@ -764,33 +764,39 @@
         
       </div>
     <div class="cr__overplay"></div>
-    <div class="newProduct">
-        <div class="newProduct__bg"></div>
-        <div class="newProduct__content row justify-content-evenly">
-            <div class="newProduct__item col-12 col-md-6">
-                <img class="img-view1400" src="./images/MY22-ApolloFC-homepageT3-1400-2x-2x.png">
-                <img class="img-view1024" src="./images/MY22-ApolloFC-homepageT3-1024-2x-2x.png">
-                <img class="img-view768" src="./images/MY22-ApolloFC-homepageT3-768-2x-2x.png">
-                <img class="img-view550" src="./images/MY22-ApolloFC-homepageT3-768-2x-2x.png">
-                <img class="img-view320" src="./images/MY22-ApolloFC-homepageT3-768-2x-2x.png">
-                <div class="newProduct-caption text-center">
-                    <h5 class="newProduct-caption__text">Coming Soon: The All-New Civic Sedan</h5>
-                    <a href="" class="car__btnitem newProduct-caption__btn">LEARN MORE</a>
-                </div>
-            </div>
-            <div class="newProduct__item col-12 col-md-6">
-                <img class="img-view1400" src="./images/MY21-Passport-non-VLP-flex-tout-1400-2x.jpg">
-                <img class="img-view1024" src="./images/MY21-Passport-non-VLP-flex-tout-1024-2x.png">
-                <img class="img-view768" src="./images/MY21-Passport-non-VLP-flex-tout-768-2x.jpg">
-                <img class="img-view550" src="./images/MY21-Passport-non-VLP-flex-tout-550-2x.jpg">
-                <img class="img-view320" src="./images/MY21-Passport-non-VLP-flex-tout-320-2x.jpg">
-                <div class="newProduct-caption pl-4">
-                    <h5 class="newProduct-caption__header">BUILD & PRICE</h5>
-                    <h5 class="newProduct-caption__text text-left pt-3 pb-5">Personalize a 2021 Passport to make it your own.</h5>
-                    <a href="" class="car__btnitem newProduct-caption__btn">BUILD MY VEHICLE</a>
+    <div id="newProduct-tabletID" class="newProduct__md">
+        <div id="newProduct-tabletID__main">
+            <div class="newProduct">
+                <div class="newProduct__bg"></div>
+                <div class="newProduct__content row justify-content-evenly">
+                    <div class="newProduct__item col-12 col-md-6">
+                        <img class="img-view1400" src="./images/MY22-ApolloFC-homepageT3-1400-2x-2x.png">
+                        <img class="img-view1024" src="./images/MY22-ApolloFC-homepageT3-1024-2x-2x.png">
+                        <img class="img-view768" src="./images/MY22-ApolloFC-homepageT3-768-2x-2x.png">
+                        <img class="img-view550" src="./images/MY22-ApolloFC-homepageT3-768-2x-2x.png">
+                        <img class="img-view320" src="./images/MY22-ApolloFC-homepageT3-768-2x-2x.png">
+                        <div class="newProduct-caption text-center">
+                            <h5 class="newProduct-caption__text">Coming Soon: The All-New Civic Sedan</h5>
+                            <a href="" class="car__btnitem newProduct-caption__btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="newProduct__item col-12 col-md-6">
+                        <img class="img-view1400" src="./images/MY21-Passport-non-VLP-flex-tout-1400-2x.jpg">
+                        <img class="img-view1024" src="./images/MY21-Passport-non-VLP-flex-tout-1024-2x.png">
+                        <img class="img-view768" src="./images/MY21-Passport-non-VLP-flex-tout-768-2x.jpg">
+                        <img class="img-view550" src="./images/MY21-Passport-non-VLP-flex-tout-550-2x.jpg">
+                        <img class="img-view320" src="./images/MY21-Passport-non-VLP-flex-tout-320-2x.jpg">
+                        <div class="newProduct-caption pl-4">
+                            <h5 class="newProduct-caption__header">BUILD & PRICE</h5>
+                            <h5 class="newProduct-caption__text">Personalize a 2021 Passport to make it your own.</h5>
+                            <a href="" class="car__btnitem newProduct-caption__btn">BUILD MY VEHICLE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="newProduct-phoneID" class="newProduct__phone">
     </div>
     <!-- TOUTS -->
     <section class="touts">
@@ -2449,6 +2455,7 @@
     <!-- END JAVASCRIpT -->
     <script src="./javascript/navbar-collapse.js "></script>
     <script src="./javascript/collapse.js"></script>
+    <script src="./javascript/carousel.js"></script>
     <!-- Carousel-->
     <!-- <script>
         $('.carousel').carousel({
