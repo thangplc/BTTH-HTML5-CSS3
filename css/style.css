@@ -52,6 +52,7 @@ a:hover {
 /* touts content */
 
 .touts__content {
+    padding-top: 35px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -260,7 +261,7 @@ a:hover {
     font-size: 60px;
     line-height: 60px;
     color: #00324f;
-    /* font-weight: 300; */
+    font-weight: 300;
 }
 
 .discover__title p {
