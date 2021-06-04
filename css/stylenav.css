@@ -58,9 +58,11 @@ body {
 .navtab-link::after {
     content: "";
 }
-.navtab-link:focus{
+
+.navtab-link:focus {
     color: #337ab7;
 }
+
 .navtab-link:focus::after {
     content: "";
     border-bottom: 5px solid #337ab7;
@@ -251,6 +253,10 @@ body {
     margin-bottom: 30px;
 }
 
+.car1 .row p {
+    font-size: 15px;
+}
+
 .family {
     margin-top: 100px;
     /* border: 1px solid red; */
@@ -275,16 +281,8 @@ body {
     font-size: 30px;
 }
 
-.price p {
-    font-size: 15px;
-}
-
 .rating span {
     font-size: 30px;
-}
-
-.price p {
-    font-size: 15px;
 }
 
 .car2 {
@@ -302,7 +300,7 @@ body {
 }
 
 .car2 .family {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .car3 {
@@ -320,7 +318,7 @@ body {
 }
 
 .car3 .family {
-    margin-top: 70px;
+    margin-top: 86px;
 }
 
 .car4 {
@@ -338,7 +336,7 @@ body {
 }
 
 .car4 .family {
-    margin-top: 70px;
+    margin-top: 83px;
 }
 
 .car5 {
@@ -356,7 +354,7 @@ body {
 }
 
 .car5 .family {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .car6 {
@@ -374,7 +372,7 @@ body {
 }
 
 .car6 .family {
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 .car7 {
@@ -392,7 +390,7 @@ body {
 }
 
 .car7 .family {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .car8 {
@@ -410,7 +408,7 @@ body {
 }
 
 .car8 .family {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 #right {
@@ -452,6 +450,7 @@ body {
     color: #00446b;
 }
 
+
 /* .right {} */
 
 @media screen and (max-width: 768px) {
@@ -466,7 +465,7 @@ body {
         /* độ rộng */
         width: 50%;
         left: 1%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     .car p:first-child {
         text-align: center;
@@ -782,6 +781,10 @@ body {
     font-weight: bold;
 }
 
+.electrified .family {
+    margin-top: 0px;
+}
+
 .electrified1 {
     position: relative;
 }
@@ -803,6 +806,7 @@ body {
 }
 
 .electrified .row {
+    display: flex;
     margin-bottom: 30px;
 }
 
@@ -813,6 +817,10 @@ body {
 .electrified2 .electrified {
     color: white;
     margin-top: 0px;
+}
+
+.electrified2 .family {
+    margin-top: 49px;
 }
 
 .electrified2 .electrified svg {
@@ -827,6 +835,10 @@ body {
 .electrified3 .electrified {
     color: white;
     margin-top: 0px;
+}
+
+.electrified3 .family {
+    margin-top: 110px;
 }
 
 .electrified3 .electrified svg {
@@ -848,6 +860,16 @@ body {
     margin: 60px 0 20px 0px;
 }
 
+.electrified4 .family {
+    width: 110%;
+    display: flex;
+    margin-top: 58px;
+}
+
+.electrified4 .family span {
+    padding-top: 10px;
+}
+
 .electrified5 {
     position: relative;
 }
@@ -860,6 +882,26 @@ body {
 .electrified5 .electrified svg {
     width: 60%;
     margin: 60px 0 20px 0px;
+}
+
+.electrified5 .electrified .row {
+    display: flex;
+}
+
+.electrified5 .electrified .row .span {
+    padding-bottom: 15px;
+}
+
+.electrified5 .electrified .price span {
+    font-size: 25px !important;
+    line-height: 55px !important;
+    font-weight: 300 !important;
+}
+
+.electrified5 .electrified .rating span {
+    font-size: 36px !important;
+    line-height: 50px !important;
+    font-weight: 300 !important;
 }
 
 
@@ -912,4 +954,61 @@ body {
 
 #myTabContent {
     color: white;
+}
+
+
+/* future text */
+
+.future-content {
+    border: 1px solid red;
+    width: 50%;
+    height: 100%;
+    padding-left: 45px;
+    padding-top: 20px;
+}
+
+.future-content p {
+    border: 1px solid red;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.future-content svg {
+    margin-top: 90px;
+    width: 45%;
+    height: 70px;
+    border: 1px solid red;
+}
+
+.future-text {
+    margin-top: 30px;
+    width: 55%;
+    border: 1px solid red;
+    font-size: 14px;
+    line-height: 24px !important;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.btn-future {
+    padding: 3px 55px;
+    border-radius: 1.95rem;
+    margin-top: 60px;
+    border: 2px solid #fff;
+    background-color: #337ab7;
+}
+
+.btn-future a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.btn-future:hover {
+    background-color: #fff;
+}
+
+.btn-future:hover>a {
+    color: #337ab7;
 }
