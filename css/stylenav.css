@@ -48,32 +48,33 @@ body {
     justify-content: center;
 }
 
-.nav-link {
-    color: black;
+.navtab-link {
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
     color: black;
 }
 
-.nav-link::after {
+.navtab-link::after {
     content: "";
 }
-
-.nav-link:focus::after {
+.navtab-link:focus{
+    color: #337ab7;
+}
+.navtab-link:focus::after {
     content: "";
-    border-bottom: 3px solid blue;
+    border-bottom: 5px solid #337ab7;
     display: block;
-    fill: blue;
+    fill: #337ab7;
 }
 
-.nav-link:hover {
+.navtab-link:hover {
     color: #2198bc;
     font-weight: 600;
 }
 
-.nav-item {
-    margin: 0 10px;
+.honda__vehicles .navtab-item {
+    margin: 0 24px;
     background-color: transparent;
     color: #f5f5f5 !important;
     /* background-color: transparent !important; */
@@ -250,23 +251,20 @@ body {
     margin-bottom: 30px;
 }
 
-.car1 .family {
+.family {
     margin-top: 100px;
-    /* border: 1px solid red !important; */
-    display: flex !important;
+    /* border: 1px solid red; */
 }
 
 .family span {
     color: white;
     font-size: 15px;
-    /* border: 1px solid red; */
 }
 
 .family img {
     width: 40%;
     height: 50px;
     margin-left: 56px;
-    /* border: 1px solid red; */
 }
 
 .price {
@@ -293,12 +291,6 @@ body {
     position: relative;
 }
 
-.car2 .family {
-    margin-top: 50px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
-}
-
 .car2 .car {
     color: white;
     margin-top: 0px;
@@ -315,12 +307,6 @@ body {
 
 .car3 {
     position: relative;
-}
-
-.car3 .family {
-    margin-top: 85px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
 }
 
 .car3 .car {
@@ -341,12 +327,6 @@ body {
     position: relative;
 }
 
-.car4 .family {
-    margin-top: 86px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
-}
-
 .car4 .car {
     color: white;
     margin-top: 0px;
@@ -365,12 +345,6 @@ body {
     position: relative;
 }
 
-.car5 .family {
-    margin-top: 30px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
-}
-
 .car5 .car {
     color: white;
     margin-top: 0px;
@@ -387,12 +361,6 @@ body {
 
 .car6 {
     position: relative;
-}
-
-.car6 .family {
-    margin-top: 110px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
 }
 
 .car6 .car {
@@ -418,12 +386,6 @@ body {
     margin-top: 0px;
 }
 
-.car7 .family {
-    margin-top: 80px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
-}
-
 .car7 .car svg {
     width: 60%;
     margin: 60px 0 20px 0px;
@@ -442,16 +404,9 @@ body {
     margin-top: 0px;
 }
 
-.car8 .family {
-    margin-top: 84px !important;
-    /* border: 1px solid red !important; */
-    display: flex !important;
-}
-
 .car8 .car svg {
     width: 60%;
-    padding: 0;
-    margin: 60px 0 20px 0;
+    margin: 60px 0 20px 0px;
 }
 
 .car8 .family {
@@ -497,7 +452,7 @@ body {
     color: #00446b;
 }
 
-.right {}
+/* .right {} */
 
 @media screen and (max-width: 768px) {
     .car1 {
@@ -806,25 +761,6 @@ body {
 
 /* electrified  */
 
-#electric .family {
-    /* border: 1px solid red !important; */
-    display: flex;
-}
-
-#electric .family span {
-    /* border: 1px solid red; */
-}
-
-.electrified p {
-    font-size: 15px !important;
-    line-height: 23px !important;
-    font-weight: 400 !important;
-}
-
-#electric .family img {
-    /* border: 1px solid goldenrod; */
-}
-
 .electrifiedExplore {
     border-radius: 20px;
     border: 2px solid white;
@@ -874,10 +810,6 @@ body {
     position: relative;
 }
 
-.electrified2 .family {
-    margin-top: 45px !important;
-}
-
 .electrified2 .electrified {
     color: white;
     margin-top: 0px;
@@ -890,10 +822,6 @@ body {
 
 .electrified3 {
     position: relative;
-}
-
-.electrified3 .family {
-    margin-top: 83px !important;
 }
 
 .electrified3 .electrified {
@@ -915,21 +843,6 @@ body {
     margin-top: 0px;
 }
 
-.electrified4 .row {
-    display: flex !important;
-}
-
-.electrified4 .row>p {
-    font-size: 15px !important;
-    line-height: 23px !important;
-    font-weight: 400 !important;
-    /* border: 1px solid #fff !important; */
-}
-
-.electrified4 .family {
-    margin-top: 53px !important;
-}
-
 .electrified4 .electrified svg {
     width: 60%;
     margin: 60px 0 20px 0px;
@@ -947,10 +860,6 @@ body {
 .electrified5 .electrified svg {
     width: 60%;
     margin: 60px 0 20px 0px;
-}
-
-.electrified5 .family {
-    margin-top: 105px !important;
 }
 
 
@@ -1003,71 +912,4 @@ body {
 
 #myTabContent {
     color: white;
-}
-
-
-/* future */
-
-.future1 {
-    /* border: 1px solid red; */
-    position: relative;
-}
-
-.future-content {
-    /* border: 1px solid blue; */
-    position: absolute;
-    left: 5%;
-    width: 50%;
-    height: 100%;
-    padding-top: 25px;
-}
-
-.future-text {
-    width: 55%;
-    /* border: 1px solid yellow !important; */
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.future-content p:first-of-type {
-    padding-bottom: 50px;
-    /* border: 1px solid yellow !important; */
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 600;
-}
-
-.future-content svg {
-    width: 37%;
-    height: 60px;
-    margin: 60px 0 20px 0;
-    padding-left: -20px !important;
-    /* border: 1px solid yellow !important; */
-}
-
-.btn-future {
-    margin-top: 60px;
-    border-radius: 1.95rem;
-    padding: 2px 80px;
-    border: 1px solid #fff !important;
-    background-color: #007cc0;
-}
-
-.btn-future:hover {
-    border: 1px solid #fff !important;
-    background-color: #fff;
-    transition: all .7s;
-}
-
-.btn-future:hover>a {
-    color: #007cc0;
-}
-
-.btn-future a {
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 600;
-    color: #fff;
 }
