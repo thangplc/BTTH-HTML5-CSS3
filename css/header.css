@@ -301,7 +301,7 @@ html.submenu-opened{
     max-height: 0;
     overflow: hidden;
     transition: max-height .15s;
-    text-align: center;
+    /* text-align: center; */
 }
 .nav__colapseitemContent{
     width: 100%;
@@ -702,7 +702,9 @@ html.submenu-opened{
         display: block;
         padding-left: 15px;
     }
-    
+    .tool__item p{
+        width: auto;
+    }
 }
 @media screen and (min-width:768px){
    .col-md-4 {
