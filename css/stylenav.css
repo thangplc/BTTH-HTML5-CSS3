@@ -63,7 +63,6 @@ body {
 }
 .navtab-link:focus::after {
     content: "";
-
     border-bottom: 5px solid #337ab7;
     display: block;
     fill: #337ab7;
