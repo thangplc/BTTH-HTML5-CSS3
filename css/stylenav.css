@@ -453,144 +453,6 @@ body {
 
 /* .right {} */
 
-@media screen and (max-width: 768px) {
-    .car1 {
-        background-image: url(../image/MY21-accord-full-line-1400-2x.webp);
-    }
-    #left {
-        /* canh giữa */
-        margin: 0 auto;
-        /* vị trí tọa độ */
-        top: 7%;
-        /* độ rộng */
-        width: 50%;
-        left: 1%;
-        /* border: 1px solid red; */
-    }
-    .car p:first-child {
-        text-align: center;
-    }
-    #left .car svg {
-        margin-left: 45px;
-        margin: 0;
-        width: 80%;
-    }
-    .car-content {
-        opacity: 0;
-    }
-    .car .row {
-        position: absolute;
-        top: 20%;
-    }
-    .car .price {
-        margin-right: 90px;
-    }
-    .price span {
-        font-size: 35px;
-    }
-    .price p {
-        font-size: 17px;
-    }
-    .rating {
-        text-align: right;
-    }
-    .rating span {
-        font-size: 35px;
-    }
-    .button .carExplore {
-        font-size: 20px;
-        margin-right: 60px;
-    }
-    .button .carBuild {
-        font-size: 20px;
-    }
-    .family {
-        /* border: 1px solid red; */
-        margin-top: 50px;
-        margin-left: 100px;
-    }
-    .family img {
-        /* border: 1px solid red; */
-        opacity: 0;
-    }
-    #right {
-        width: 70%;
-        left: 20%;
-        top: -63%;
-    }
-    /* cars slide 1 */
-}
-
-@media screen and (max-width: 414px) {
-    .car1 {
-        background-image: url(../image/MY21-accord-full-line-320-2x.webp);
-    }
-    #left {
-        /* canh giữa */
-        margin: 0 auto;
-        /* vị trí tọa độ */
-        top: 38%;
-        /* độ rộng */
-        width: 80%;
-        left: 10%;
-    }
-    .car p:first-child {
-        text-align: center;
-    }
-    #left .car svg {
-        width: 80%;
-        margin-left: 30px;
-    }
-    .car-content {
-        opacity: 0;
-    }
-    .car .row {
-        position: absolute;
-        top: 15%;
-    }
-    .row .price {
-        margin-right: 10px;
-    }
-    .price span {
-        font-size: 35px;
-    }
-    .price p {
-        font-size: 14px;
-    }
-    .rating {
-        text-align: right;
-    }
-    .rating p {
-        font-size: 14px;
-    }
-    .rating span {
-        font-size: 35px;
-    }
-    .button {
-        position: absolute;
-        top: 35%;
-    }
-    .button .carExplore {
-        font-size: 15px;
-        margin-right: 20px;
-    }
-    .button .carBuild {
-        font-size: 15px;
-    }
-    .family {
-        margin-top: 50px;
-        margin-left: 100px;
-    }
-    .family img {
-        opacity: 0;
-    }
-    #right {
-        width: 70%;
-        left: 20%;
-        top: -63%;
-    }
-}
-
 
 /* SUV */
 
@@ -1011,4 +873,97 @@ body {
 
 .btn-future:hover>a {
     color: #337ab7;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) and (max-height:1024px) and (orientation: portrait) {
+    /* CAR */
+    .car {
+        /* border: 1px solid red; */
+    }
+    /* car 1/8 */
+    .car1 {
+        background-image: url(../image/MY21-accord-full-line-1400-2x.webp);
+    }
+    /* car1/8 */
+    .car1 .car-left .car {
+        /* width: 50%; */
+    }
+    .car-left {
+        /* padding-left: 0; */
+        border: 1px solid red;
+        /* height: 100%; */
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .car1 {
+        background-image: url(../image/MY21-accord-full-line-320-2x.webp);
+    }
+    #left {
+        /* canh giữa */
+        margin: 0 auto;
+        /* vị trí tọa độ */
+        top: 38%;
+        /* độ rộng */
+        width: 80%;
+        left: 10%;
+    }
+    .car p:first-child {
+        text-align: center;
+    }
+    #left .car svg {
+        width: 80%;
+        margin-left: 30px;
+    }
+    .car-content {
+        opacity: 0;
+    }
+    .car .row {
+        position: absolute;
+        top: 15%;
+    }
+    .row .price {
+        margin-right: 10px;
+    }
+    .price span {
+        font-size: 35px;
+    }
+    .price p {
+        font-size: 14px;
+    }
+    .rating {
+        text-align: right;
+    }
+    .rating p {
+        font-size: 14px;
+    }
+    .rating span {
+        font-size: 35px;
+    }
+    .button {
+        position: absolute;
+        top: 35%;
+    }
+    .button .carExplore {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .button .carBuild {
+        font-size: 15px;
+    }
+    .family {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .family img {
+        opacity: 0;
+    }
+    #right {
+        width: 70%;
+        left: 20%;
+        top: -63%;
+    }
 }

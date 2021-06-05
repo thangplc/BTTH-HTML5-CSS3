@@ -806,11 +806,15 @@ footer {
     .touts__item:last-of-type button {
         /* margin-top: 10px; */
     }
-    .touts__item:nth-of-type(1) h3 {
-        padding-bottom: 16px;
+    .touts__item h3 {
+        /* border: 1px solid red; */
     }
-    .touts__item:nth-of-type(2) h3 {
-        padding-bottom: 16px;
+    .touts__item:nth-of-type(2) button {
+        margin-top: 16px;
+        /* border: 1px solid red; */
+    }
+    .touts__item i {
+        /* border: 1px solid red; */
     }
     /* -------------------EXPLORE---------------- */
     .explore {
