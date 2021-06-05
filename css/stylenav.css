@@ -878,23 +878,394 @@ body {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 768px) and (max-height:1024px) and (orientation: portrait) {
+@media only screen and (max-width:1024px) and (orientation: portrait) {
     /* CAR */
     .car {
-        /* border: 1px solid red; */
+        border: 1px solid red;
+    }
+    .car p {
+        border: 1px solid red;
+    }
+    .car svg {
+        border: 1px solid red;
+    }
+    .car-left p {
+        text-align: justify;
+    }
+    .car .car-content {
+        padding: 0;
+        border: 1px solid red;
+    }
+    .family {
+        border: 1px solid red;
+    }
+    .car-content {
+        padding: 0;
+    }
+    .family span {
+        padding-top: 10px;
+        font-size: 12px;
+        white-space: nowrap;
     }
     /* car 1/8 */
     .car1 {
         background-image: url(../image/MY21-accord-full-line-1400-2x.webp);
     }
     /* car1/8 */
-    .car1 .car-left .car {
-        /* width: 50%; */
+    .car-left .car svg {
+        height: 70%;
+        width: 90%;
+    }
+    .car1 .car-left .car .car-content {
+        width: 90%;
+        padding: 0;
     }
     .car-left {
-        /* padding-left: 0; */
+        height: auto;
+        margin-left: -7%;
+    }
+    .car-left .row {
+        display: flex !important;
+        width: 100%;
+    }
+    .car-left .row span {
+        font-size: 24px;
+    }
+    .car-left .row p {
+        font-size: 13px;
+    }
+    .car-left .row .price {
+        margin-left: 0;
+        width: 45%;
+    }
+    .car-left .row .rating {
+        width: 45%;
+    }
+    .carExplore {
+        padding: 5px 24px;
+    }
+    .carBuild {
+        padding: 5px 24px;
+    }
+    .car1 .family {
+        display: flex !important;
+        margin-top: 80px;
+    }
+    .car1 .family span {
+        padding-top: 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .car1 .family img {
+        margin-left: 35px;
+    }
+    .right {
+        padding: 5px;
+        line-height: 10px;
+        width: auto;
+        font-size: 9px;
+    }
+    /*  CAR 2/8 */
+    .car2 svg {
+        width: 90%;
+        height: 90%;
+    }
+    .car2 .car-left {
+        margin-left: -7%
+    }
+    .car2 .family {
+        width: 100%;
+        display: flex;
+        margin-top: 86px;
+    }
+    .car2 .family img {
+        margin-left: 45px;
+    }
+    /* CAR 3.8 */
+    .car3 .car-left {
+        margin-left: -7%
+    }
+    .car3 .family {
+        display: flex;
+    }
+    /* CAR 4/8 */
+    .car4 .car-left {
+        margin-left: -7%
+    }
+    .car4 svg {
+        width: 90%;
+        height: 90%;
+    }
+    .car4 .family {
+        margin-top: 80px;
+        display: flex;
+    }
+    .car4 .family img {
+        margin-left: 35px;
+    }
+    .car5 .car-content {
+        padding: 0 !important;
+    }
+    /* CAR5/8 */
+    .car5 .car-left {
+        margin-left: -7%
+    }
+    .car5 svg {
+        width: 90%;
+        height: 90%;
+    }
+    .car5 .family {
+        margin-top: 30px;
+        display: flex;
+    }
+    .car5 .family img {
+        margin-left: 45px;
+    }
+    .car5 .car-content {
+        padding: 0 !important;
+    }
+    /* car 6/8 */
+    .car6 .car-left {
+        margin-left: -7%
+    }
+    .car6 svg {
+        width: 90%;
+        height: 90%;
+    }
+    .car6 .family {
+        margin-top: 99px;
+        display: flex;
+    }
+    .car6 .family img {
+        margin-left: 45px;
+    }
+    .car6 .car-content {
+        padding: 0 !important;
+    }
+    /* car 7/8 */
+    .car7 .family {
+        display: flex;
+    }
+    /* car 8/8 */
+    .car8 .family {
+        margin-top: 90px;
+        display: flex;
+    }
+    /* SUVS */
+    .suvs-content {
+        padding: 0;
+    }
+    /* MINIVAN */
+    .minivan-content {
+        padding: 0;
+    }
+    /* ELECTRIFIED */
+    .electrified-content {
+        padding: 0;
+    }
+    .electrified2 .family {
+        margin-top: 60px;
+        display: flex;
+    }
+    .electrified3 .family {
+        margin-top: 150px;
+        display: flex;
+    }
+    .electrified4 .button {
+        display: flex;
+    }
+    .electrified4 .family {
+        margin-top: 83px;
+        display: flex;
+    }
+    .electrified5 .family {
+        margin-top: 70px;
+        display: flex;
+    }
+    /* PRE-OWNERS */
+    .pre-left {
+        margin-left: -7%;
         border: 1px solid red;
-        /* height: 100%; */
+    }
+    .pre-left svg {
+        width: 90% !important;
+        height: 100%;
+        border: 1px solid red;
+    }
+    .pre-content {
+        padding: 0;
+        text-align: justify;
+    }
+    /* FUTURE */
+    .future-text {
+        width: 90%;
+    }
+    .future-content svg {
+        width: 90%;
+        border: 1px saddlebrown solid;
+    }
+}
+
+@media only screen and (max-width:1024px) and (orientation: landscape) {
+    .car {
+        border: 1px solid red;
+    }
+    .car p {
+        border: 1px solid red;
+    }
+    .car svg {
+        width: 70% !important;
+        border: 1px solid red;
+    }
+    .car-left {
+        margin-left: -4.5%;
+    }
+    .car-left p {
+        text-align: justify;
+    }
+    .car .car-content {
+        padding: 0;
+        border: 1px solid red;
+    }
+    .family {
+        border: 1px solid red;
+    }
+    .car-content {
+        padding: 0;
+    }
+    .family span {
+        padding-top: 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .right {
+        padding: 5px;
+        line-height: 10px;
+        width: auto;
+        font-size: 9px;
+    }
+    /* car1 */
+    .car-content {
+        width: 70%;
+    }
+    .car1 .family {
+        display: flex;
+        margin-top: 90px;
+    }
+    .car1 .family img {
+        margin-left: 120px;
+    }
+    .car1 .family span {
+        padding-top: 10px !important;
+    }
+    /* car2 */
+    .car2 .family {
+        display: flex;
+        margin-top: 40px;
+    }
+    .car2 .family img {
+        margin-left: 120px;
+    }
+    .car2 .family span {
+        padding-top: 10px !important;
+    }
+    /* car3 */
+    .car3 .family {
+        display: flex;
+        margin-top: 80px;
+    }
+    .car3 .family img {
+        margin-left: 120px;
+    }
+    .car3 .family span {
+        padding-top: 10px !important;
+    }
+    /* car4 */
+    .car4 .family {
+        display: flex;
+        margin-top: 80px;
+    }
+    .car4 .family img {
+        margin-left: 120px;
+    }
+    /* car5 */
+    .car5 .family {
+        display: flex;
+        margin-top: 20px;
+    }
+    .car5 .family img {
+        margin-left: 129px;
+    }
+    /* car6 */
+    .car6 .family {
+        display: flex;
+        margin-top: 85px;
+    }
+    .car6 .family img {
+        margin-left: 129px;
+    }
+    /* car7 */
+    .car7 .family {
+        display: flex;
+        margin-top: 80px;
+    }
+    .car7 .family img {
+        margin-left: 129px;
+    }
+    /* car8 */
+    .car8 .family {
+        display: flex;
+        margin-top: 76px;
+    }
+    .car8 .family img {
+        margin-left: 129px;
+    }
+    /* SUVS */
+    .suvs-content {
+        padding: 0;
+        width: 85% !important;
+    }
+    /* MINIVAN */
+    .minivan-content {
+        padding: 0;
+        width: 85% !important;
+    }
+    /* ELECTRIFIED */
+    .electrified-content {
+        padding: 0;
+        width: 85% !important;
+    }
+    /* .electrified2 */
+    .electrified2 .family {
+        display: flex;
+        padding-top: 20px;
+    }
+    .electrified2 .family img {
+        margin-left: 120px;
+    }
+    /* .electrified3 */
+    .electrified3 .family {
+        display: flex;
+        padding-top: 20px;
+    }
+    .electrified3 .family img {
+        margin-left: 120px;
+    }
+    /* .electrified4 */
+    .electrified4 .family {
+        display: flex;
+        padding-top: 20px;
+    }
+    .electrified4 .family img {
+        margin-left: 120px;
+    }
+    /* .electrified5 */
+    .electrified5 .family {
+        display: flex;
+        margin-top: 50px;
+    }
+    .electrified5 .family img {
+        margin-left: 120px;
     }
 }
 
