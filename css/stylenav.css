@@ -59,11 +59,11 @@ body {
     content: "";
 }
 
-.navtab-link:focus {
+.navtab-item .active {
     color: #337ab7;
 }
 
-.navtab-link:focus::after {
+.navtab-item .active::after {
     content: "";
     border-bottom: 5px solid #337ab7;
     display: block;
@@ -74,7 +74,6 @@ body {
     color: #2198bc;
     font-weight: 600;
 }
-
 .honda__vehicles .navtab-item {
     margin: 0 24px;
     background-color: transparent;
@@ -1011,4 +1010,45 @@ body {
 
 .btn-future:hover>a {
     color: #337ab7;
+}
+.nav-tabs__arrow{
+    display: none;
+}
+@media screen and (max-width:1024px){
+    .nav-tabs__menu{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .nav-tabs__arrow{
+        display: block;
+        margin: 0 10px 0 10px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+    }
+    .nav-tabs__menu i{
+        display: block;
+        font-size: 14px;
+        padding-bottom: 15px;
+        padding-top: 2px;
+    }
+    .nav-tabs{
+        width: 90%;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .navtab-item{
+        width: max-content;
+    }
+    .navtab-link{
+        display: block;
+        width: max-content;
+        word-wrap: initial;
+    }
+}
+@media screen and (max-width:950px){
+    .nav-tabs{
+        justify-content: start;
+    }
 }

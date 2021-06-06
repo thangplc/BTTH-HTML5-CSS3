@@ -56,6 +56,7 @@ html.submenu-opened{
 .nav__menu ul li a.nav-link{
     color: white;
     transition: color .25s;
+    cursor: pointer;
 }
 .nav__menu a i.fa-angle-down, .nav__menu a i.fa-angle-up, .nav__menu i.fa-angle-right, .nav__menu i.fa-angle-left{
     padding-left: 2px;
