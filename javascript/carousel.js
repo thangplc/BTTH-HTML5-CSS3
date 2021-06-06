@@ -18,6 +18,7 @@ function windowWidth(){
       winHeight = document.documentElement.clientHeight;
     }
     changeNewproductElement();
+
   }
 
 function changeNewproductElement(){

@@ -44,7 +44,7 @@
         <div class="nav__menu" id="navbarMenu">
             <ul class="navbar-nav ml-auto" id="menuList">
                 <li class="nav-item nav__main" id="vehicle">
-                    <a href="#" class="nav-link" data-target="#navVehicle">
+                    <a class="nav-link" data-target="#navVehicle">
                         <!-- data-toggle="collapse" -->
                         VEHICLES
                         <i class="fa fa-angle-down"></i>
@@ -514,7 +514,7 @@
                     </div>
                 </div>
                 <li class="nav-item nav__main" id="tool">
-                    <a class="nav-link" href="#" data-target="#navtool" id="toolID">
+                    <a class="nav-link" data-target="#navtool" id="toolID">
                         SHOPPING TOOLS
                         <i class="fa fa-angle-down"></i>
                         <i class="fa fa-angle-up"></i>
@@ -598,7 +598,7 @@
                 </li>
                 <hr class="responsive__view">
                 <li class="nav-item nav__main" id="owner">
-                    <a class="nav-link" href="#" data-target="#navowners" id="ownerID">
+                    <a class="nav-link" data-target="#navowners" id="ownerID">
                         Owners
                         <i class="fa fa-angle-down"></i>
                         <i class="fa fa-angle-up"></i>
@@ -644,7 +644,7 @@
                 </li>
                 <hr class="responsive__view">
                 <li class="nav-item" id="explore">
-                    <a class="nav-link" href="#" data-target="#navExplore" id="exploreID">
+                    <a class="nav-link" data-target="#navExplore" id="exploreID">
                         Explore
                         <i class="fa fa-angle-down"></i>
                         <i class="fa fa-angle-up"></i>
@@ -804,27 +804,36 @@
     <!-- OUR VEHICLES -->
     <div class="honda__vehicles">
         <h2 id="title-ourVehicles">Our Vehicles</h2>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="navtab-item" role="presentation">
-                <a class="navtab-link active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="true">CARS</a>
-            </li>
-            <li class="navtab-item" role="presentation">
-                <a class="navtab-link" id="suvs-tab" data-toggle="tab" href="#suvs" role="tab" aria-controls="suvs" aria-selected="false">
-                    SUVS & CROSSOVERS</a>
-            </li>
-            <li class="navtab-item" role="presentation">
-                <a class="navtab-link" id="minian-tab" data-toggle="tab" href="#minian" role="tab" aria-controls="minian" aria-selected="false">MINIVAN & TRUCK</a>
-            </li>
-            <li class="navtab-item" role="presentation">
-                <a class="navtab-link" id="electrified-tab" data-toggle="tab" href="#electric" role="tab" aria-controls="electrified" aria-selected="false">ELECTRIFIED</a>
-            </li>
-            <li class="navtab-item" role="presentation">
-                <a class="navtab-link" id="pre-tab" data-toggle="tab" href="#pre" role="tab" aria-controls="pre" aria-selected="false">PRE-OWNED</a>
-            </li>
-            <li class="navtab-item" role="presentation">
-                <a class="navtab-link" id="future-tab" data-toggle="tab" href="#futured" role="tab" aria-controls="future" aria-selected="false">FUTURE</a>
-            </li>
-        </ul>
+        <div class="nav-tabs__menu">
+            <div class="nav-tabs__arrow" id="navtabsPre">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="navtab-item" role="presentation">
+                    <a class="navtab-link active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="true">CARS</a>
+                </li>
+                <li class="navtab-item" role="presentation">
+                    <a class="navtab-link" id="suvs-tab" data-toggle="tab" href="#suvs" role="tab" aria-controls="suvs" aria-selected="false">
+                        SUVS & CROSSOVERS</a>
+                </li>
+                <li class="navtab-item" role="presentation">
+                    <a class="navtab-link" id="minian-tab" data-toggle="tab" href="#minian" role="tab" aria-controls="minian" aria-selected="false">MINIVAN & TRUCK</a>
+                </li>
+                <li class="navtab-item" role="presentation">
+                    <a class="navtab-link" id="electrified-tab" data-toggle="tab" href="#electric" role="tab" aria-controls="electrified" aria-selected="false">ELECTRIFIED</a>
+                </li>
+                <li class="navtab-item" role="presentation">
+                    <a class="navtab-link" id="pre-tab" data-toggle="tab" href="#pre" role="tab" aria-controls="pre" aria-selected="false">PRE-OWNED</a>
+                </li>
+                <li class="navtab-item" role="presentation">
+                    <a class="navtab-link" id="future-tab" data-toggle="tab" href="#futured" role="tab" aria-controls="future" aria-selected="false">FUTURE</a>
+                </li>
+            </ul>
+            <div class="nav-tabs__arrow" id="navtabsNext">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+
         <div class="tab-content" id="myTabContent">
             <!-- TAB CAR-->
             <div class="tab-pane fade  show active" id="car" role="tabpanel" aria-labelledby="car-tab">
@@ -3122,8 +3131,7 @@
                                         <div class="rating">
                                             <span>47/340</span>
                                             <p>
-                                                MILE EPA/COMBINED
-                                                <br> RANGE RATING<a href="#">*</a>
+                                                MILE EPA/COMBINED RANGE RATING<a href="#">*</a>
                                             </p>
                                         </div>
                                     </div>
@@ -3223,20 +3231,16 @@
                                         <div class="price">
                                             <span class="lease">Lease Only</span>
                                             <p>
-                                                ATTRACTIVE
-                                                <br>RATES AVAILABLE<a href="#">*</a>
+                                                ATTRACTIVE RATES AVAILABLE<a href="#">*</a>
                                             </p>
                                         </div>
                                         <div class="rating">
                                             <span>360</span>
                                             <p>
-                                                MILE
-                                                <br>EPA RANGE
-                                                <br> RATING<a href="#">*</a>
+                                                MILE EPA RANGE RATING<a href="#">*</a>
                                             </p>
                                         </div>
                                     </div>
-                                    <!-- 121 -->
                                     <div class="button">
                                         <a class="electrifiedExplore" href="#">EXPLORE</a>
                                         <a class="electrifiedBuild" href="#">BUILD</a>
@@ -3384,10 +3388,9 @@
                                     <p class="pre-content">
                                         With a 182-point inspection, limited vehicle warranty with 7-year powertrain coverage* and free vehice history report, our Certified Pre-Owned Vehicles are everything you can expect form a Honda and more.
                                     </p>
-                                    <!-- thang -->
-                                    <button class="button btn-future">
+                                    <div class="button btn-future ">
                                         <a href="#">SHOP CERTIFIED</a>
-                                    </button>
+                                    </div>
                                 </div>
 
                             </div>
@@ -3521,8 +3524,7 @@
             </div>
         </div>
     </div>
-
-    <!-- end our vehicles -->
+    <!-- new product present when devive is smart phone -->
     <div id="newProduct-phoneID" class="newProduct__phone">
     </div>
 
@@ -5185,11 +5187,7 @@
     <script src="./javascript/footer-link-collapse.js"></script>
     <script src="./javascript/carousel.js"></script>
     <!-- Carousel-->
-    <!-- <script>
-        $('.carousel').carousel({
-            interval: false,
-        });
-    </script> -->
+    <script src="./javascript/ourvehiclenav.js"></script>
 </body>
 
 </html>
