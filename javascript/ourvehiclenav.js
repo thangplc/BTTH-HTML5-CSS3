@@ -18,7 +18,13 @@ function selectNavtab(clicked){
     }
     if (this.id==="navtabsPre"){
         if(actived-1>=0){
-            scrollItem(actived-2);
+            if(actived-2<0){
+                scrollItem(0);
+            }
+            else{
+                scrollItem(actived-2);
+            }
+            
             navtabsItem.children[actived-1].children[0].click();
         }
         else{
