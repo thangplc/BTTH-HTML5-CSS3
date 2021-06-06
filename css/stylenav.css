@@ -822,7 +822,6 @@ body {
 /* future text */
 
 .future-content {
-    border: 1px solid red;
     width: 50%;
     height: 100%;
     padding-left: 45px;
@@ -830,7 +829,6 @@ body {
 }
 
 .future-content p {
-    border: 1px solid red;
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
@@ -840,13 +838,11 @@ body {
     margin-top: 90px;
     width: 45%;
     height: 70px;
-    border: 1px solid red;
 }
 
 .future-text {
     margin-top: 30px;
     width: 55%;
-    border: 1px solid red;
     font-size: 14px;
     line-height: 24px !important;
     font-weight: 400;
@@ -923,26 +919,30 @@ body {
 /* RESPONSIVE */
 
 @media only screen and (max-width:1024px) and (orientation:portrait) {
+    .fa-chevron-right {
+        font-size: 35px;
+        font-weight: 800 !important;
+    }
+    .fa-chevron-left {
+        font-size: 35px;
+        font-weight: 800 !important;
+    }
+    .btn-prev-next {
+        width: 42px;
+        height: 70px;
+        top: 210px;
+    }
     /* CAR */
-    .car {
-        border: 1px solid red;
-    }
-    .car p {
-        border: 1px solid red;
-    }
-    .car svg {
-        border: 1px solid red;
-    }
+    .car {}
+    .car p {}
+    .car svg {}
     .car-left p {
         text-align: justify;
     }
     .car .car-content {
         padding: 0;
-        border: 1px solid red;
     }
-    .family {
-        border: 1px solid red;
-    }
+    .family {}
     .car-content {
         padding: 0;
     }
@@ -1129,12 +1129,10 @@ body {
     /* PRE-OWNERS */
     .pre-left {
         margin-left: -7%;
-        border: 1px solid red;
     }
     .pre-left svg {
         width: 90% !important;
         height: 100%;
-        border: 1px solid red;
     }
     .pre-content {
         padding: 0;
@@ -1146,20 +1144,27 @@ body {
     }
     .future-content svg {
         width: 90%;
-        border: 1px saddlebrown solid;
     }
 }
 
 @media only screen and (max-width:1024px) and (orientation: landscape) {
-    .car {
-        border: 1px solid red;
+    .fa-chevron-right {
+        font-size: 30px;
+        font-weight: 800 !important;
     }
-    .car p {
-        border: 1px solid red;
+    .fa-chevron-left {
+        font-size: 30px;
+        font-weight: 800 !important;
     }
+    .btn-prev-next {
+        width: 40px;
+        height: 50px;
+        top: 210px;
+    }
+    .car {}
+    .car p {}
     .car svg {
         width: 70% !important;
-        border: 1px solid red;
     }
     .car-left {
         margin-left: -4.5%;
@@ -1169,12 +1174,10 @@ body {
     }
     .car .car-content {
         padding: 0;
-        border: 1px solid red;
     }
     .family {
         margin-top: -45px;
         margin-left: 0;
-        border: 1px solid red;
     }
     .car-content {
         padding: 0;
@@ -1327,9 +1330,13 @@ body {
     .btn-prev-next {
         width: 25px;
         height: 40px;
+        top: 175px;
     }
     .row p {
         text-align: left !important;
+    }
+    .car-left .row p {
+        font-size: 11px;
     }
     /* -----------------set background --------------*/
     .car1 {
@@ -1427,7 +1434,6 @@ body {
         text-align: center;
     }
     .car .car-left .row {
-        border: 1px solid red;
         margin-top: -9px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1447,7 +1453,6 @@ body {
         padding-bottom: 15px;
         padding-left: 39px;
         width: 100%;
-        border: 1px solid red
     }
     /* car1 */
     .car1 .family {
@@ -1469,7 +1474,6 @@ body {
         font-size: 12px;
     }
     .car1 .car-left .row {
-        border: 1px solid red;
         margin-top: -5px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1490,7 +1494,6 @@ body {
         font-size: 12px;
     }
     .car2 .car-left .row {
-        border: 1px solid red;
         margin-top: -5px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1511,7 +1514,6 @@ body {
         font-size: 12px;
     }
     .car3 .car-left .row {
-        border: 1px solid red;
         margin-top: -5px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1532,7 +1534,6 @@ body {
         font-size: 12px;
     }
     .car4 .car-left .row {
-        border: 1px solid red;
         margin-top: -5px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1553,7 +1554,6 @@ body {
         font-size: 12px;
     }
     .car5 .car-left .row {
-        border: 1px solid red;
         margin-top: -9px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1574,7 +1574,6 @@ body {
         font-size: 12px;
     }
     .car6 .car-left .row {
-        border: 1px solid red;
         margin-top: -9px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1595,7 +1594,6 @@ body {
         font-size: 12px;
     }
     .car7 .car-left .row {
-        border: 1px solid red;
         margin-top: -9px !important;
         margin-left: 22px !important;
         width: 90% !important;
@@ -1626,16 +1624,244 @@ body {
     }
     .pre-left svg {
         margin-top: 10px !important;
-        margin-left: 15px !important;
-        width: 60%;
+        margin-left: 65px !important;
+        width: 60% !important;
         height: 60px !important;
     }
     .pre-content {
         width: 80%;
         padding: 0;
-        margin-left: 20px;
+        margin-top: -20px !important;
+        margin-left: 30px;
         line-height: 20px;
         font-size: 11px !important;
-        border: 1px solid red;
+        font-weight: 400 !important;
+    }
+    .pre1 .right {
+        left: 40%;
+    }
+    .btn-future {
+        margin: 0 auto;
+        width: 70%;
+        padding: 2px 25px;
+    }
+    .btn-future a {
+        font-size: 14px;
+        padding-left: 27px;
+    }
+    /* future */
+    .future-content {
+        top: 47% !important;
+        width: 100%;
+        position: absolute;
+    }
+    .future-text {
+        padding: 0;
+        width: 80%;
+        margin-top: 5px !important;
+        margin-left: 30px;
+        line-height: 20px;
+        font-size: 11px !important;
+        font-weight: 400 !important;
+    }
+    .future-content p {
+        text-align: center
+    }
+    .future-content svg {
+        margin-top: 10px !important;
+        margin-left: 65px !important;
+        width: 60% !important;
+        height: 60px !important;
+    }
+    .btn-future {
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 44px;
+    }
+    .btn-future a {
+        font-size: 14px;
+        padding-left: 27px;
+    }
+    /* electrified */
+    #electric .car-left {}
+    /* electrified1 */
+    .electrified1 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .electrified1 .car-left .electrified-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .electrified1 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .electrified1 .car-left .button {
+        padding-left: 25px;
+    }
+    /* electrified2 */
+    .electrified2 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .electrified2 .car-left .electrified-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .electrified2 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .electrified2 .car-left .button {
+        padding-left: 25px;
+    }
+    /* electrified3 */
+    .electrified3 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .electrified3 .car-left .electrified-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .electrified3 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .electrified3 .car-left .button {
+        padding-left: 25px;
+    }
+    /* electrified4 */
+    .electrified4 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .electrified4 .car-left .electrified-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .electrified4 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .electrified4 .car-left .button {
+        padding-left: 25px;
+    }
+    /* electrified5 */
+    .electrified5 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .electrified5 .car-left .electrified-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .electrified5 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .electrified5 .car-left .row .price span {
+        line-height: 25px !important;
+    }
+    .electrified5 .car-left .row .price p {
+        font-size: 11px;
+    }
+    .electrified5 .car-left .button {
+        padding-left: 25px;
+    }
+    /* minivan */
+    .minivan-ip8 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .minivan-ip8 .car-left .min-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .minivan-ip8 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .minivan-ip8 .car-left .row .price span {
+        line-height: 25px !important;
+    }
+    .minivan-ip8 .car-left .row .price p {
+        font-size: 11px;
+    }
+    .minivan-ip8 .car-left .button {
+        padding-left: 25px;
+    }
+    /* suvs */
+    .suvs-ip8 .car-left svg {
+        margin-top: 10px !important;
+        margin-left: 40px !important;
+        width: 80%;
+        height: 60px !important;
+    }
+    .suvs-ip8 .car-left .min-content {
+        margin-top: -5px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+    }
+    .suvs-ip8 .car-left .row {
+        margin-top: -9px !important;
+        margin-left: 22px !important;
+        width: 90% !important;
+        font-size: 12px;
+        display: flex;
+    }
+    .suvs-ip8 .car-left .row .price span {
+        line-height: 25px !important;
+    }
+    .suvs-ip8 .car-left .row .price p {
+        font-size: 11px;
+    }
+    .suvs-ip8 .car-left .button {
+        padding-left: 25px;
     }
 }
