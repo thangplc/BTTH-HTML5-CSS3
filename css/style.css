@@ -527,10 +527,6 @@ a:hover {
 
 /* stay informed */
 
-.honda-stay-informed {
-    /* border: 1px solid black; */
-}
-
 .honda-stay-informed button {
     border-radius: 34.5px;
     background-color: #fff;
@@ -556,10 +552,6 @@ a:hover {
 
 
 /* HONDA LINK */
-
-.honda__link {
-    /* border: 2px solid red; */
-}
 
 .honda-collapse {
     display: none;
@@ -596,13 +588,6 @@ a:hover {
 .honda__linkitem a:hover {
     text-decoration: underline;
 }
-
-.honda__linkitem li {}
-
-.panel-body {
-    /* background-color: #fff; */
-}
-
 
 /* FOOTER */
 
@@ -675,10 +660,6 @@ footer {
 
 /* footer brands */
 
-.footer__brand {
-    /* border: 1px solid #e49125; */
-}
-
 .footer__brand svg {
     fill: #fff;
     width: 70%;
@@ -688,10 +669,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 25px;
-}
-
-.footer__brandItem {
-    /* border: 1px solid #fff; */
 }
 
 
@@ -801,24 +778,14 @@ footer {
 
 /* IPAD PORTRAIT */
 
-@media only screen and (max-width: 1024px) and (min-height: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
     /* ----------------TOUTS------------------- */
-    .touts__item:last-of-type button {
-        /* margin-top: 10px; */
-    }
-    .touts__item h3 {
-        /* border: 1px solid red; */
-    }
-    .touts__item:nth-of-type(2) button {
-        margin-top: 16px;
-        /* border: 1px solid red; */
-    }
-    .touts__item i {
-        /* border: 1px solid red; */
-    }
     /* -------------------EXPLORE---------------- */
     .explore {
         height: 400px;
+    }
+    .honda__linkcontent{
+        grid-template-columns: none;
     }
     .explore__content {
         width: 98%;
@@ -1014,7 +981,7 @@ footer {
         border-top: 1px solid rgba(59, 59, 59, .2);
     }
     .panel-default {
-        width: 760px;
+        width: 100%;
         height: auto;
         /* border: 1px solid red; */
         border-bottom: 1px solid rgba(59, 59, 59, .2);
@@ -1028,25 +995,32 @@ footer {
         color: black;
         padding-left: 15px;
     }
-    .panel-heading a {
+    h4.panel-title{
         font-size: 15px;
         font-weight: 600;
         color: black;
+        line-height: 30px;
     }
-    .panel-default>.panel-heading {
+    .panel-heading {
         position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        vertical-align: middle;
     }
     .panel-heading .fa {
-        position: absolute;
+        /* position: absolute;
         right: 10px;
-        top: 8px;
+        top: 8px; */
+        width: 30px;
+        height: 30px;
         border: 1px solid #2198dc;
         border-radius: 50%;
         padding: 5px 5px;
+        color: black;
     }
     .panel-heading {
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding: 7px 0;
     }
 }
 
@@ -1072,11 +1046,8 @@ footer {
         color: #fff;
     }
     /* ---------------------------DISCOVER HONDA------------------- */
-    .discover {
-        /* border: 1px solid red; */
-    }
     .discover__content {
-        /* border: 1px solid red; */
+
         width: 70%;
     }
     .discover-row {
@@ -1167,7 +1138,7 @@ footer {
         border-top: 1px solid rgba(59, 59, 59, .2);
     }
     .panel-default {
-        width: 1014px;
+        width: 100%;
         height: auto;
         /* border: 1px solid red; */
         border-bottom: 1px solid rgba(59, 59, 59, .2);
@@ -1181,25 +1152,32 @@ footer {
         color: black;
         padding-left: 15px;
     }
-    .panel-heading a {
+    h4.panel-title{
         font-size: 15px;
         font-weight: 600;
         color: black;
+        line-height: 30px;
     }
-    .panel-default>.panel-heading {
+    .panel-heading {
         position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        vertical-align: middle;
     }
     .panel-heading .fa {
-        position: absolute;
+        /* position: absolute;
         right: 10px;
-        top: 8px;
+        top: 8px; */
+        width: 30px;
+        height: 30px;
         border: 1px solid #2198dc;
         border-radius: 50%;
         padding: 5px 5px;
+        color: black;
     }
     .panel-heading {
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding: 7px 0;
     }
     /* -----------------------------FOOTER-------------------------- */
     .footer__brand {
@@ -1242,7 +1220,7 @@ footer {
 
 /* IP8 PLUS PORTRAIT */
 
-@media only screen and (max-width: 736px) and (min-width: 414px) and (orientation:portrait) {
+@media only screen and (max-width: 767.9px){
     /* -------------------------------TOUTS---------------------------------- */
     .touts__content {
         display: grid;
@@ -1286,12 +1264,9 @@ footer {
         padding-left: 0;
         padding-right: 0;
     }
-    .explore__left {}
-    .explore__right {}
     .explore__certified>p {
         color: #fff;
     }
-    .explore__howtovideo {}
     /* -------------------------------DISCOVER HONDA---------------------------------- */
     .discover {
         margin-top: 450px;
@@ -1402,6 +1377,10 @@ footer {
     }
     /* ------------------------------- FOOTER COLLAPSE -----------------------------*/
     /* honda collapse */
+    .honda__linkcontent{
+        grid-template-columns: none;
+    }
+    
     .honda__linkitem {
         display: none;
     }
@@ -1415,7 +1394,7 @@ footer {
         border-top: 1px solid rgba(59, 59, 59, .2);
     }
     .panel-default {
-        width: 410px;
+        width: 100%;
         height: auto;
         /* border: 1px solid red; */
         border-bottom: 1px solid rgba(59, 59, 59, .2);
@@ -1429,25 +1408,32 @@ footer {
         color: black;
         padding-left: 15px;
     }
-    .panel-heading a {
+    h4.panel-title{
         font-size: 15px;
         font-weight: 600;
         color: black;
+        line-height: 30px;
     }
-    .panel-default>.panel-heading {
+    .panel-heading {
         position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        vertical-align: middle;
     }
     .panel-heading .fa {
-        position: absolute;
+        /* position: absolute;
         right: 10px;
-        top: 8px;
+        top: 8px; */
+        width: 30px;
+        height: 30px;
         border: 1px solid #2198dc;
         border-radius: 50%;
         padding: 5px 5px;
+        color: black;
     }
     .panel-heading {
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding: 7px 0;
     }
     /* -------------------------------BRANDS---------------------------------- */
     .footer__brand {

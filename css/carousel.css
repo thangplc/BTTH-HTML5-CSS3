@@ -328,4 +328,8 @@ i.icon-show{
         margin-bottom: 2px;
     }
 }
+.carousel__btnPlay{
+    right: 30px;
+    bottom: 72px;
+}
 
