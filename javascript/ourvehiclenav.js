@@ -37,6 +37,8 @@ function findnavtabitem(){
     var selectionCount =document.querySelectorAll("#myTab>.navtab-item").length;
     let activedID=0;
     for (i=0;i<selectionCount;i++){
+        console.log(navtabsItem.children[i].children[0]);
+
         if (navtabsItem.children[i].children[0].classList.contains("active")){
             activedID=i;
             break;
