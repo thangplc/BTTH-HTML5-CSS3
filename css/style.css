@@ -1502,7 +1502,6 @@ footer {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-template-rows: repeat(2, 175px);
         text-align: center;
-        border: 1px solid red;
         padding: 15px 35px;
     }
     .touts__item h3 {
@@ -1548,15 +1547,12 @@ footer {
     /* -------------------------------DISCOVER HONDA---------------------------------- */
     .discover {
         margin-top: 600px;
-        /* padding-top: 25px; */
-        border: 1px solid red;
     }
     .discover__content {
         padding-top: 45px;
     }
     .discover-col {
         max-width: 280px;
-        /* border: 1px solid green; */
         margin: 0 auto !important;
     }
     .discover-col:nth-of-type(1) {}
