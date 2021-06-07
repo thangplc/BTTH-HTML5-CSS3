@@ -1024,202 +1024,6 @@ footer {
     }
 }
 
-
-/* IPAD LANDSCAPE */
-
-@media only screen and (max-width: 1024px) and (min-height: 768px) and (orientation: landscape) {
-    /* -------------------EXPLORE---------------- */
-    .explore {
-        height: 400px;
-    }
-    .explore__content {
-        width: 98%;
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
-        height: 375px;
-    }
-    .explore__howtovideo {
-        top: 251px;
-    }
-    .explore__certified>p {
-        color: #fff;
-    }
-    /* ---------------------------DISCOVER HONDA------------------- */
-    .discover__content {
-
-        width: 70%;
-    }
-    .discover-row {
-        display: grid;
-        padding: 0;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .discover-col {
-        margin-top: 10px;
-        margin-left: 0;
-        /* margin-right: 10px; */
-        height: auto;
-    }
-    .discover__title p {
-        padding: 0 25px;
-    }
-    /* class break line */
-    .discover-col-break {
-        /* visibility: hidden; */
-        display: none;
-    }
-    /* --------------------------CONTACT-------------------------- */
-    /* honda logo */
-    .honda__logo svg {
-        height: 60px;
-        width: 92px;
-        fill: #007cc0;
-        cursor: pointer;
-    }
-    /* honda stay in touch*/
-    .honda-stay-in-touch {
-        order: 1;
-        padding-bottom: 15px;
-        width: 50%;
-        /* border-bottom: 1px solid rgba(59, 59, 59, .2); */
-    }
-    .honda-stay-in-touch svg {
-        fill: #2198dc;
-        height: 1.35rem;
-        width: 1.35rem;
-    }
-    /* honda search */
-    .honda-search {
-        order: 3;
-        padding-top: -45px;
-        padding-bottom: 20px;
-    }
-    .honda-search i {
-        font-size: 14px;
-        left: 13px;
-        top: 39px;
-    }
-    .honda-search input::placeholder {
-        font-size: 14px;
-        font-weight: 500;
-    }
-    /* honda-stay-informed */
-    .honda-stay-informed {
-        width: 50%;
-        order: 2;
-        padding-bottom: 15px;
-        /* border-bottom: 1px solid rgba(59, 59, 59, .2); */
-    }
-    .honda-stay-informed button {
-        border-radius: 34.5px;
-        background-color: #fff;
-        color: #007cc0;
-        border: 2px solid #007cc0;
-        font-size: 12px;
-        font-weight: 800;
-        /* height: 40px; */
-        padding: 5px 30px;
-        margin-top: 10px;
-        float: right;
-    }
-    /* ----------------------------HONDA LINK-------------------------- */
-    .honda__linkitem {
-        display: none;
-    }
-    .honda-collapse {
-        height: auto;
-        margin-top: -29px;
-        display: block;
-        margin-bottom: 15px;
-    }
-    .panel-default:first-of-type {
-        border-top: 1px solid rgba(59, 59, 59, .2);
-    }
-    .panel-default {
-        width: 100%;
-        height: auto;
-        /* border: 1px solid red; */
-        border-bottom: 1px solid rgba(59, 59, 59, .2);
-    }
-    .panel-body {
-        padding-top: 10px;
-    }
-    .panel-body>ul>li>a {
-        display: inline;
-        font-size: 13px;
-        color: black;
-        padding-left: 15px;
-    }
-    h4.panel-title{
-        font-size: 15px;
-        font-weight: 600;
-        color: black;
-        line-height: 30px;
-    }
-    .panel-heading {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        vertical-align: middle;
-    }
-    .panel-heading .fa {
-        /* position: absolute;
-        right: 10px;
-        top: 8px; */
-        width: 30px;
-        height: 30px;
-        border: 1px solid #2198dc;
-        border-radius: 50%;
-        padding: 5px 5px;
-        color: black;
-    }
-    .panel-heading {
-        padding: 7px 0;
-    }
-    /* -----------------------------FOOTER-------------------------- */
-    .footer__brand {
-        width: 100%;
-        margin-top: 25px;
-        margin-left: 0;
-        margin-right: 0;
-        border-top: rgb(255, 255, 255, .5) 1px solid;
-    }
-    .footer__brandContent {
-        /* border: 1px solid #fff; */
-        gap: 0;
-    }
-    .footer__brandItem {
-        margin: 0;
-        padding: 0;
-        /* border: 1px solid red; */
-    }
-    .footer__brand svg {
-        padding: 10px 0;
-        width: 80px !important;
-    }
-    .footer__brandItem title {
-        font-size: 100px !important;
-    }
-    .footer__cookiesContent {
-        width: 50%;
-        border-top: rgb(255, 255, 255, .5) 1px solid;
-        text-align: justify;
-        padding-left: 20PX;
-    }
-    .copyright-col {
-        width: 50%;
-    }
-}
-
-
-/* IP8 PLUS DEVICE */
-
-
-/* IP8 PLUS PORTRAIT */
-
 @media only screen and (max-width: 767.9px){
     /* -------------------------------TOUTS---------------------------------- */
     .touts__content {
@@ -1242,9 +1046,6 @@ footer {
     .touts__item button {
         /* margin-top: 25px; */
         visibility: hidden;
-    }
-    .touts__item:last-of-type button {
-        /* margin-top: 10px; */
     }
     /* -------------------------------EXPLORE---------------------------------- */
     .explore__content {
@@ -1477,10 +1278,7 @@ footer {
     }
 }
 
-
-/* IP8 PLUS LANDSCAPE */
-
-@media only screen and (max-width: 736px) and (min-width: 414px) and (orientation:landscape) {
+@media only screen and (max-width: 736px) and (min-width: 414px) {
     /* -------------------------------TOUTS---------------------------------- */
     .touts__content {
         display: grid;
@@ -1521,9 +1319,6 @@ footer {
         height: 480px;
         margin-left: 0;
     }
-    .explore__content>article>img {}
-    .explore__left {}
-    .explore__right {}
     .explore__certified>p {
         color: #fff;
     }
@@ -1672,7 +1467,6 @@ footer {
         border-top: 1px solid rgba(59, 59, 59, .2);
     }
     .panel-default {
-        width: 727px;
         height: auto;
         /* border: 1px solid red; */
         border-bottom: 1px solid rgba(59, 59, 59, .2);
