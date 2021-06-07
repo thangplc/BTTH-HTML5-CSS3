@@ -166,6 +166,85 @@
 .newProduct-tabletID-hidden{
     display: none;
 }
+.carousel-control-prev .fa-chevron-left , .carousel-control-next .fa-chevron-right{
+    font-size: 40px;
+}
+.carousel__btnPlay{
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    height: 60px;
+    width: 60px;
+    background-color: #083C58;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+.btnPlay__main{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    position: relative;
+}
+.btnPlay__icon{
+    position: relative;
+    bottom: 100%;
+    transform: rotate(0);
+    color: #fff;
+    font-size: 22px;
+}
+.btnPlay__border{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    width: 50px; 
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.btnPlay__icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+i.icon-show{
+    display: block;
+}
+.ran{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 50px;
+    z-index: 100;
+}
+.ran svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.shape{
+    stroke-dasharray: 146.70338439941406 146.70338439941406;
+    stroke-dashoffset: 146.70338439941406;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: transparent;
+}
+.run{
+    stroke: #fff;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset linear 10s;
+}
 @media screen and (min-width:1401px){
     .img-view1400{
         display: block;
@@ -249,3 +328,4 @@
         margin-bottom: 2px;
     }
 }
+

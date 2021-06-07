@@ -353,7 +353,7 @@ html.submenu-opened{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 500px;
+    width: 530px;
     margin: 20px 0;
     font-size: 14px;
     line-height: 3;
@@ -379,7 +379,7 @@ html.submenu-opened{
 }
 .nav__exploreItem{
     padding: 0 20px;
-    width: 300px;
+    width: 330px;
     margin: 20px 0;
     font-size: 14px;
     line-height: 3;
@@ -599,7 +599,7 @@ html.submenu-opened{
         width: 100%;
     }
     .vehiclelist__car{
-        padding: 0 10px;
+        padding: 0 10px 50px;
     }
     .vehicleList__content, .vehicleList__carInfo{
         display: none;
@@ -713,6 +713,12 @@ html.submenu-opened{
         max-width: 33.333333%;
    }
 }
+@media screen and (min-width:576px){
+    .col-sm-6 {
+        flex: 0 0 47.4%;
+         max-width: 50%;
+    }
+ }
 @media screen and (min-width:1025px){
     .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right,.honda-search__hide,.fa-angle-right,a.subMenu__header, .subMenu__item i.fa-external-link-alt, #headercartypeID{
         display: none;
