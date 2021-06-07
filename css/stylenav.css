@@ -182,7 +182,12 @@ body {
     background-image: url(../image/MY22-ApolloFC-homepage-full-line-1400-2x.jpg);
 }
 
-
+#ourVH-carID .ourvehicle__detail{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0 20px;
+}
 /* btn-bs */
 
 .carousel-control-prev {
@@ -850,9 +855,11 @@ body {
 }
 
 .btn-future {
-    padding: 3px 55px;
+    width: 70%;
+    text-align: center;
+    padding: 3px 20px;
     border-radius: 1.95rem;
-    margin-top: 60px;
+    margin-top: 30px;
     border: 2px solid #fff;
     background-color: #337ab7;
 }
@@ -918,7 +925,7 @@ body {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width:1024px) and (orientation:portrait) {
+@media only screen and (max-width:1024px) and (min-width:768px) {
     .fa-chevron-right {
         font-size: 35px;
         font-weight: 800 !important;
@@ -933,9 +940,6 @@ body {
         top: 210px;
     }
     /* CAR */
-    .car {}
-    .car p {}
-    .car svg {}
     .car-left p {
         text-align: justify;
     }
@@ -1143,7 +1147,7 @@ body {
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1024px) and (min-width:768px) {
     .fa-chevron-right {
         font-size: 30px;
         font-weight: 800 !important;
@@ -1157,8 +1161,6 @@ body {
         height: 50px;
         top: 210px;
     }
-    .car {}
-    .car p {}
     .car svg {
         width: 70% !important;
     }
@@ -1315,8 +1317,22 @@ body {
 }
 
 @media screen and (max-width: 767.9px){
-    .car-content, .suvs-content, .honda__vehicles.family{
+    .car-content, .suvs-content, .minivan-content, .electrified-content, .family img{
         display: none;
+    }
+    #ourVH-carID svg{
+        padding: 0;
+        position: relative;
+        left: 33%;
+        transform: translateX(-50%);
+        margin: auto;
+        width: 65%;
+    }
+    #ourVH-carID .ourvehicle__detail{
+        justify-content: space-around;
+    }
+    #ourVH-carID .ourvehicle__detail>div{
+        text-align: center;
     }
     .fa-chevron-right {
         font-size: 25px;
@@ -1458,12 +1474,7 @@ body {
         width: 100%;
     }
     /* car1 */
-    .car1 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 50% !important;
-    }
+
     .car1 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1478,12 +1489,7 @@ body {
         display: flex;
     }
     /* car2 */
-    .car2 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 50% !important;
-    }
+
     .car2 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1498,12 +1504,6 @@ body {
         display: flex;
     }
     /* car3 */
-    .car3 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .car3 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1518,12 +1518,6 @@ body {
         display: flex;
     }
     /* car4 */
-    .car4 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .car4 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1538,12 +1532,6 @@ body {
         display: flex;
     }
     /* car5 */
-    .car5 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .car5 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1558,12 +1546,6 @@ body {
         display: flex;
     }
     /* car6 */
-    .car6 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .car6 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1578,12 +1560,6 @@ body {
         display: flex;
     }
     /* car7 */
-    .car7 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .car7 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1598,12 +1574,6 @@ body {
         display: flex;
     }
     /* car8 */
-    .car8 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .car8 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1619,16 +1589,10 @@ body {
         font-size: 13px;
         font-weight: 700;
     }
-    .pre-left svg {
-        margin-top: 10px !important;
-        margin-left: 65px !important;
-        width: 60% !important;
-        height: 60px !important;
-    }
     .pre-content {
         width: 80%;
         padding: 0;
-        margin-top: -20px !important;
+        margin-top: 20px !important;
         margin-left: 30px;
         line-height: 20px;
         font-size: 11px !important;
@@ -1638,57 +1602,51 @@ body {
         left: 40%;
     }
     .btn-future {
+        text-align: center;
         margin: 0 auto;
         width: 70%;
         padding: 2px 25px;
     }
     .btn-future a {
         font-size: 14px;
-        padding-left: 27px;
     }
     /* future */
-    .future-content {
-        top: 47% !important;
+    #ourVH-carID{
+        text-align: center;
         width: 100%;
+    }
+    .future-content{
+        height: fit-content;
         position: absolute;
+        top: 40%;
+        padding: 0;
     }
     .future-text {
         padding: 0;
         width: 80%;
-        margin-top: 5px !important;
-        margin-left: 30px;
+        margin-top: 10px;
         line-height: 20px;
-        font-size: 11px !important;
-        font-weight: 400 !important;
+        font-size: 11px;
+        font-weight: 400;
+        padding-left: 95px;
+        margin-right: 0;
     }
     .future-content p {
         text-align: center
     }
-    .future-content svg {
-        margin-top: 10px !important;
-        margin-left: 65px !important;
-        width: 60% !important;
-        height: 60px !important;
-    }
-    .btn-future {
-        margin: 0 auto;
+    .btn-future{
         width: 70%;
+        text-align: center;
+        margin: auto;
         margin-top: 20px;
-        margin-left: 44px;
     }
+
     .btn-future a {
+        text-align: center;
         font-size: 14px;
-        padding-left: 27px;
     }
     /* electrified */
-    #electric .car-left {}
     /* electrified1 */
-    .electrified1 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .electrified1 .car-left .electrified-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1702,16 +1660,7 @@ body {
         font-size: 12px;
         display: flex;
     }
-    .electrified1 .car-left .button {
-        padding-left: 25px;
-    }
     /* electrified2 */
-    .electrified2 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .electrified2 .car-left .electrified-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1725,16 +1674,7 @@ body {
         font-size: 12px;
         display: flex;
     }
-    .electrified2 .car-left .button {
-        padding-left: 25px;
-    }
     /* electrified3 */
-    .electrified3 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .electrified3 .car-left .electrified-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1748,16 +1688,8 @@ body {
         font-size: 12px;
         display: flex;
     }
-    .electrified3 .car-left .button {
-        padding-left: 25px;
-    }
+
     /* electrified4 */
-    .electrified4 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .electrified4 .car-left .electrified-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1771,16 +1703,7 @@ body {
         font-size: 12px;
         display: flex;
     }
-    .electrified4 .car-left .button {
-        padding-left: 25px;
-    }
     /* electrified5 */
-    .electrified5 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .electrified5 .car-left .electrified-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1794,22 +1717,7 @@ body {
         font-size: 12px;
         display: flex;
     }
-    .electrified5 .car-left .row .price span {
-        line-height: 25px !important;
-    }
-    .electrified5 .car-left .row .price p {
-        font-size: 11px;
-    }
-    .electrified5 .car-left .button {
-        padding-left: 25px;
-    }
     /* minivan */
-    .minivan-ip8 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .minivan-ip8 .car-left .min-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1829,16 +1737,7 @@ body {
     .minivan-ip8 .car-left .row .price p {
         font-size: 11px;
     }
-    .minivan-ip8 .car-left .button {
-        padding-left: 25px;
-    }
     /* suvs */
-    .suvs-ip8 .car-left svg {
-        margin-top: 10px !important;
-        margin-left: 40px !important;
-        width: 80%;
-        height: 60px !important;
-    }
     .suvs-ip8 .car-left .min-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1857,8 +1756,5 @@ body {
     }
     .suvs-ip8 .car-left .row .price p {
         font-size: 11px;
-    }
-    .suvs-ip8 .car-left .button {
-        padding-left: 25px;
     }
 }
