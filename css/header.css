@@ -472,9 +472,13 @@ html.submenu-opened{
     background-color: #007cc0;
     color: white;
 }
-
+/* @media screen and (min-width: 1024px){
+    nav.navbar .hamburger{
+        display: block;
+    }
+} */
 @media screen and (max-width:1024px){
-    .navbar .hamburger{
+    nav.navbar .hamburger{
         display: block;
     }
     #menuList{
@@ -718,9 +722,12 @@ html.submenu-opened{
         flex: 0 0 47.4%;
          max-width: 50%;
     }
+    .honda-search{
+        margin-bottom: 30px;
+    }
  }
-@media screen and (min-width:1025px){
-    .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right,.honda-search__hide,.fa-angle-right,a.subMenu__header, .subMenu__item i.fa-external-link-alt, #headercartypeID{
+@media screen and (min-width:1024px){
+    .navbar .hamburger, .responsive__view, .nav__menu a i.fa-angle-right, .navbar #navbarMenu .honda-search,.fa-angle-right,a.subMenu__header, .subMenu__item i.fa-external-link-alt, #headercartypeID{
         display: none;
     }
     .vehiclelist__type li.actived a::after{
