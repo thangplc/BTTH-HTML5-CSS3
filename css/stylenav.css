@@ -942,10 +942,6 @@ body {
     .car .car-content {
         padding: 0;
     }
-    .family {}
-    .car-content {
-        padding: 0;
-    }
     .family span {
         padding-top: 10px;
         font-size: 12px;
@@ -1319,6 +1315,9 @@ body {
 }
 
 @media screen and (max-width: 767.9px){
+    .car-content, .suvs-content, .honda__vehicles.family{
+        display: none;
+    }
     .fa-chevron-right {
         font-size: 25px;
         font-weight: 700 !important;
@@ -1448,10 +1447,8 @@ body {
     }
     .car-left .button {
         display: flex;
-        margin-top: -30px;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        padding-left: 39px;
+        justify-content: space-around;
+        margin-top: 10px;
         width: 100%;
     }
     /* car1 */
