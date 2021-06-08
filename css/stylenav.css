@@ -182,12 +182,14 @@ body {
     background-image: url(../image/MY22-ApolloFC-homepage-full-line-1400-2x.jpg);
 }
 
-#ourVH-carID .ourvehicle__detail{
+#ourVH-carID .ourvehicle__detail {
     display: flex;
     width: 100%;
     margin: auto;
     padding: 10px 0 20px;
 }
+
+
 /* btn-bs */
 
 .carousel-control-prev {
@@ -1316,11 +1318,15 @@ body {
     }
 }
 
-@media screen and (max-width: 767.9px){
-    .car-content, .suvs-content, .minivan-content, .electrified-content, .family img{
+@media screen and (max-width: 767.9px) {
+    .car-content,
+    .suvs-content,
+    .minivan-content,
+    .electrified-content,
+    .family img {
         display: none;
     }
-    #ourVH-carID svg{
+    #ourVH-carID svg {
         padding: 0;
         position: relative;
         left: 33%;
@@ -1328,10 +1334,10 @@ body {
         margin: auto;
         width: 65%;
     }
-    #ourVH-carID .ourvehicle__detail{
+    #ourVH-carID .ourvehicle__detail {
         justify-content: space-around;
     }
-    #ourVH-carID .ourvehicle__detail>div{
+    #ourVH-carID .ourvehicle__detail>div {
         text-align: center;
     }
     .fa-chevron-right {
@@ -1474,7 +1480,6 @@ body {
         width: 100%;
     }
     /* car1 */
-
     .car1 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1489,7 +1494,6 @@ body {
         display: flex;
     }
     /* car2 */
-
     .car2 .car-left .car-content {
         margin-top: -5px !important;
         margin-left: 22px !important;
@@ -1611,11 +1615,11 @@ body {
         font-size: 14px;
     }
     /* future */
-    #ourVH-carID{
+    #ourVH-carID {
         text-align: center;
         width: 100%;
     }
-    .future-content{
+    .future-content {
         height: fit-content;
         position: absolute;
         top: 40%;
@@ -1634,13 +1638,12 @@ body {
     .future-content p {
         text-align: center
     }
-    .btn-future{
+    .btn-future {
         width: 70%;
         text-align: center;
         margin: auto;
         margin-top: 20px;
     }
-
     .btn-future a {
         text-align: center;
         font-size: 14px;
@@ -1688,7 +1691,6 @@ body {
         font-size: 12px;
         display: flex;
     }
-
     /* electrified4 */
     .electrified4 .car-left .electrified-content {
         margin-top: -5px !important;
@@ -1756,5 +1758,51 @@ body {
     }
     .suvs-ip8 .car-left .row .price p {
         font-size: 11px;
+    }
+    /*  */
+    .tab-content .tab-pane .carousel .carousel-inner .car-left .family {
+        /* border: 1px solid red !important; */
+        text-align: center;
+        height: 90px;
+        font-size: 9px;
+    }
+    .family img {
+        display: none;
+    }
+    .electrified1 .car-left .family {
+        display: none;
+    }
+    .car2 .car-left .family {
+        padding-top: 40px;
+    }
+    .car3 .family {
+        margin-top: 71px;
+    }
+    .car4 .family {
+        margin-top: 76px;
+    }
+    .car5 .family {
+        margin-top: 74px;
+    }
+    .car6 .family {
+        margin-top: 86px;
+    }
+    .car7 .family {
+        margin-top: 88px;
+    }
+    .car8 .family {
+        margin-top: 65px;
+    }
+    .electrified2 .family {
+        padding-top: 40px;
+    }
+    .electrified3 .family {
+        margin-top: 45px;
+        padding-top: 40px;
+    }
+    .electrified4 .family {
+        margin-top: 20px;
+        padding-top: 34px;
+        padding-left: 37px;
     }
 }
