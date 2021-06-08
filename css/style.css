@@ -1384,7 +1384,7 @@ footer {
     .honda-stay-in-touch {
         order: 2;
         width: 100%;
-        text-align: center;
+        text-align: center !important;
         padding: 0 25px;
     }
     .honda-stay-in-touch p {

@@ -1353,9 +1353,6 @@ body {
         height: 40px;
         top: 175px;
     }
-    .row p {
-        text-align: left !important;
-    }
     .car-left .row p {
         font-size: 11px;
     }
