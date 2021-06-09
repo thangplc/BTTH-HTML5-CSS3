@@ -908,6 +908,9 @@ body {
         overflow-x: scroll;
         flex-wrap: nowrap;
     }
+    .nav-tabs::-webkit-scrollbar{
+        display: none;
+    }
     .navtab-item {
         width: max-content;
     }
